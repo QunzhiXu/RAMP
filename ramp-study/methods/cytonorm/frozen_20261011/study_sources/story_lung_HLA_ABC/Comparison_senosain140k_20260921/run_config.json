@@ -1,0 +1,25 @@
+{
+  "case": "lung_story",
+  "root": "/Users/qxu6/Documents/New project/final_xu",
+  "comparison": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/Comparison_senosain140k_20260921",
+  "datasets": [
+    "Senosain CyTOF",
+    "Cords IMC",
+    "Zheng mIF"
+  ],
+  "markers": [
+    "CD3",
+    "CD4",
+    "CD8",
+    "CD31",
+    "KI67",
+    "VIMENTIN",
+    "EPI",
+    "CD45",
+    "HLA_DR"
+  ],
+  "input_manifest_sha256": "e49bcd9ea0a318b83a219d60daa6ae8643bbaa6a979672a6c407a9fd7f457604",
+  "seed": 42,
+  "maxfuse_seed": 20260830,
+  "scope": "same shared marker set and exact original full story cell cohort for every method"
+}

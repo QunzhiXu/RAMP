@@ -1,0 +1,37 @@
+{
+  "case": "hnscc_story",
+  "root": "/Users/qxu6/Documents/New project/final_xu",
+  "comparison": "/Users/qxu6/Documents/New project/final_xu/figure_HNSCC/Comparison",
+  "datasets": [
+    "GSE212797_ADT",
+    "Haist_CODEX"
+  ],
+  "markers": [
+    "CD45",
+    "CD3",
+    "CD7",
+    "CD4",
+    "CD8",
+    "CD25",
+    "CD20",
+    "CD38",
+    "CD56",
+    "CD57",
+    "CD16",
+    "CD11c",
+    "CD11b",
+    "HLA-DR",
+    "CD21",
+    "CD31",
+    "CD69",
+    "ICOS",
+    "PD1",
+    "CD45RO",
+    "CD45RA",
+    "PD-L1"
+  ],
+  "input_manifest_sha256": "6704b0b5b573f4e966cbcb97fa059c886f66a2e322c46458bccfb9a77b0dcd7d",
+  "seed": 42,
+  "maxfuse_seed": 20260830,
+  "scope": "same shared marker set and exact original full story cell cohort for every method"
+}

@@ -1,0 +1,5 @@
+cyCombine==0.3.0
+harmony==1.2.3
+batchelor==1.18.1
+SingleCellExperiment==1.24.0
+BiocParallel==1.36.0

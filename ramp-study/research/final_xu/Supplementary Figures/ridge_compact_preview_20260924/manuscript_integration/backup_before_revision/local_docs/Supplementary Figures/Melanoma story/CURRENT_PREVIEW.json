@@ -1,0 +1,16 @@
+{
+  "version": "raw_labels_20260924",
+  "figure": "ridge_full_range_20260922/output/melanoma_story_supplement.png",
+  "umap_cells": 40000,
+  "alignment_cells": 165686,
+  "metric_update": false,
+  "status": "rendered_and_verified",
+  "folder": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924",
+  "png": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924/output/png/figure_s6_melanoma_story.png",
+  "pdf": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924/output/pdf/figure_s6_melanoma_story.pdf",
+  "ridge_display_units": 38,
+  "ridge_display_cells": 165686,
+  "previous_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Melanoma story/ridge_full_range_20260922",
+  "revision": "Raw label only; full density range and all other pixels unchanged.",
+  "ridge_outline": "Full-support density with endpoints at baseline"
+}

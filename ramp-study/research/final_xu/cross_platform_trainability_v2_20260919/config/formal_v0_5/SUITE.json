@@ -1,0 +1,502 @@
+{
+  "status": "released",
+  "profile": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/PROFILE.json",
+  "profile_sha256": "6dd82a5e955ea7315221d49ac69e480cd6abb6c00acd7a0df0c2964fe81d7f0b",
+  "shards": [
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/bone_marrow__unaligned.json",
+      "sha256": "7c4a018b98d5b0bd12094bbec6d1dd648a604487dab30fb2bf8771381e858516",
+      "jobs": 1172,
+      "task": "bone_marrow",
+      "method": "unaligned"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/bone_marrow__ramp.json",
+      "sha256": "d0820857b4faf89e38926f9547067e0e646e3632044223f60c4e10e3940a4248",
+      "jobs": 1172,
+      "task": "bone_marrow",
+      "method": "ramp"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/bone_marrow__harmony_direct.json",
+      "sha256": "377ae5c157803647621e254fc42010e7fe577262eb23996788d396366827b4c2",
+      "jobs": 1172,
+      "task": "bone_marrow",
+      "method": "harmony_direct"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/bone_marrow__cycombine.json",
+      "sha256": "7eeea37981082094532dd6871cde8f38001be7dedf1f54249d8af87bcd1f7647",
+      "jobs": 1172,
+      "task": "bone_marrow",
+      "method": "cycombine"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/bone_marrow__cytonorm.json",
+      "sha256": "42bb9686897025b839d1c97557d6d81c1bded29c574b2fd38e95d22234fda45c",
+      "jobs": 1172,
+      "task": "bone_marrow",
+      "method": "cytonorm"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/bone_marrow__fastmnn.json",
+      "sha256": "3b17c3a14933b87ae19e3f806f64c35cbab01229465185f8b607573214ef2c36",
+      "jobs": 1163,
+      "task": "bone_marrow",
+      "method": "fastmnn"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/bone_marrow__maxfuse.json",
+      "sha256": "71a46d92068ab6f972c9998bcad6133c5d0a5f62482e65eac7c8aa425496872a",
+      "jobs": 1163,
+      "task": "bone_marrow",
+      "method": "maxfuse"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/bone_marrow__clipped_zscore.json",
+      "sha256": "e740179c89c10b64630625944affc31d8f35715eb652f3e04c43c26bde187d3a",
+      "jobs": 1172,
+      "task": "bone_marrow",
+      "method": "clipped_zscore"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/bone_marrow__minmax.json",
+      "sha256": "d52526d41e0767a01425b83f7c43573e900375121a833b0cc426aac48b434c13",
+      "jobs": 1172,
+      "task": "bone_marrow",
+      "method": "minmax"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/bone_marrow__percentile.json",
+      "sha256": "40744cc6b03f2366e77e622dfde95511728053dfe329ab2efdfda7e0837a03e3",
+      "jobs": 1172,
+      "task": "bone_marrow",
+      "method": "percentile"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/tnbc__unaligned.json",
+      "sha256": "9f50b68af9d37a42421f65263c79ad869722839d8f1dfa9a2ef4c50cf86d5ccb",
+      "jobs": 963,
+      "task": "tnbc",
+      "method": "unaligned"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/tnbc__ramp.json",
+      "sha256": "90057893c52f7a0426b3f131f4f643342d65ea2a5f1b0f81aa4dd7f3e29c63c4",
+      "jobs": 963,
+      "task": "tnbc",
+      "method": "ramp"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/tnbc__harmony_direct.json",
+      "sha256": "7a0c4185434abadc085c136f1f6fce60139f0ae9608bbc89a08efd8ed8a1fdd5",
+      "jobs": 963,
+      "task": "tnbc",
+      "method": "harmony_direct"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/tnbc__cycombine.json",
+      "sha256": "e28884e5210083b60428df46c5c54ebdaab405a0f1bfaa3e70446dd45472e03e",
+      "jobs": 963,
+      "task": "tnbc",
+      "method": "cycombine"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/tnbc__cytonorm.json",
+      "sha256": "2a670bfcf2adf8db9cd390d154d50c2ba5234fe29088ea3a8a2e1c6994f6d304",
+      "jobs": 963,
+      "task": "tnbc",
+      "method": "cytonorm"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/tnbc__fastmnn.json",
+      "sha256": "33f77895bef301b880e6832867d3d85d518a9d41b8037d7cd11d1eb3f5e0d7f8",
+      "jobs": 954,
+      "task": "tnbc",
+      "method": "fastmnn"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/tnbc__maxfuse.json",
+      "sha256": "4acbf974cf1d66b3c663518d500549854d0cd2e1d0f37f71a92c6061e6915e83",
+      "jobs": 954,
+      "task": "tnbc",
+      "method": "maxfuse"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/tnbc__clipped_zscore.json",
+      "sha256": "2d071b99456fdb8683653c1a309f339c45c8ab089ca009270b02127fe9bde032",
+      "jobs": 963,
+      "task": "tnbc",
+      "method": "clipped_zscore"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/tnbc__minmax.json",
+      "sha256": "0ed90d5ccbf86d07b7bb25031a24b82c2526fd7e575a6e680f3fec962e061485",
+      "jobs": 963,
+      "task": "tnbc",
+      "method": "minmax"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/tnbc__percentile.json",
+      "sha256": "4eb6980c9e1952d675808510a913e45f610e3e767a0c5c2febed23a2c0444d26",
+      "jobs": 963,
+      "task": "tnbc",
+      "method": "percentile"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma__unaligned.json",
+      "sha256": "64aa375dddbb36e218e804f34b5c04bbd4f756bf4fe00e5b2bfbdbf8459db8b4",
+      "jobs": 238,
+      "task": "melanoma",
+      "method": "unaligned"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma__ramp.json",
+      "sha256": "f7e2512f2d44c51e448509789b0d266c6d7e34e42a41492d777d68e92a8cc029",
+      "jobs": 238,
+      "task": "melanoma",
+      "method": "ramp"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma__harmony_direct.json",
+      "sha256": "ae98d209606c86679d4512c87a6d7d486a0acca991b655442fa882caa7f43713",
+      "jobs": 238,
+      "task": "melanoma",
+      "method": "harmony_direct"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma__cycombine.json",
+      "sha256": "059e1a6cb96a31d1fc442074128517a40b408e0df93d5cfecf5e80793e9b6c00",
+      "jobs": 238,
+      "task": "melanoma",
+      "method": "cycombine"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma__cytonorm.json",
+      "sha256": "7caf7712119b4d8a991006f4cb23e3c2631c783a09dd182fb9b7ab72350baefc",
+      "jobs": 238,
+      "task": "melanoma",
+      "method": "cytonorm"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma__fastmnn.json",
+      "sha256": "bebbad21b206cfd7d0dd61617cb66708c9eba037451fe215cd6f66f35b5388b6",
+      "jobs": 229,
+      "task": "melanoma",
+      "method": "fastmnn"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma__maxfuse.json",
+      "sha256": "5b786f8c22be2dcaf76c8448b06e0d72cf790ae70581c27fc698a0d8c2e73d4b",
+      "jobs": 229,
+      "task": "melanoma",
+      "method": "maxfuse"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma__clipped_zscore.json",
+      "sha256": "0e9298ad4f066cd5ed903d9b7c7f542050da1724096949878a70376e051da1d1",
+      "jobs": 238,
+      "task": "melanoma",
+      "method": "clipped_zscore"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma__minmax.json",
+      "sha256": "828acabe84f081c5eef419a9cdd12e645e2ab53bc03c53a94ebddbff1546002b",
+      "jobs": 238,
+      "task": "melanoma",
+      "method": "minmax"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma__percentile.json",
+      "sha256": "1a0ebc73072bec75d95984e7cf124805197348b15c3d72e9f5499f65c8c0c999",
+      "jobs": 238,
+      "task": "melanoma",
+      "method": "percentile"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_cancer__unaligned.json",
+      "sha256": "a2aa70523165fd34732b2dca7811055e798130e37101e7ae1ad62f228f62a2b5",
+      "jobs": 750,
+      "task": "lung_cancer",
+      "method": "unaligned"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_cancer__ramp.json",
+      "sha256": "aa6b4ff7f77f6a89f9e7780ff9df459549d7342c6b5e8ed9e7f840ff44951b56",
+      "jobs": 750,
+      "task": "lung_cancer",
+      "method": "ramp"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_cancer__harmony_direct.json",
+      "sha256": "16d09f2fb484218afa592a01baf8c79c4fa58562b2b730c06e72cdb55db8463a",
+      "jobs": 750,
+      "task": "lung_cancer",
+      "method": "harmony_direct"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_cancer__cycombine.json",
+      "sha256": "b695f5284d696533045187085f0605b6e11fd9ee5b12eaf05e75f166b03d50d0",
+      "jobs": 750,
+      "task": "lung_cancer",
+      "method": "cycombine"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_cancer__cytonorm.json",
+      "sha256": "1a92b5d918258c07b9b084597fdf04dfa6af2402c4c6a1aef02250ff1212552c",
+      "jobs": 750,
+      "task": "lung_cancer",
+      "method": "cytonorm"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_cancer__fastmnn.json",
+      "sha256": "d3507fb7cf733a33aa11a89b2acb161cc5cf3319db6e751fabec97066544f2a6",
+      "jobs": 741,
+      "task": "lung_cancer",
+      "method": "fastmnn"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_cancer__maxfuse.json",
+      "sha256": "f293b6d4d89ff967dadf811346b1fc8579b3751722a5ee4bb0e4ef033cc9e81c",
+      "jobs": 741,
+      "task": "lung_cancer",
+      "method": "maxfuse"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_cancer__clipped_zscore.json",
+      "sha256": "8eac0f3f86ae2a998282605e692c8b01fe0f83858d6aebc78730be219be827cf",
+      "jobs": 750,
+      "task": "lung_cancer",
+      "method": "clipped_zscore"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_cancer__minmax.json",
+      "sha256": "867e4e62198d8421a137f876ff877f8d1bb2130258a155c2a3ffb74c62ea12c0",
+      "jobs": 750,
+      "task": "lung_cancer",
+      "method": "minmax"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_cancer__percentile.json",
+      "sha256": "24454c1eee7cab6fde8111b37fd5a1cfbf62a0a504a8e484ceebf69bbcdff2d9",
+      "jobs": 750,
+      "task": "lung_cancer",
+      "method": "percentile"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_story__unaligned.json",
+      "sha256": "97eaabf1d773a74e48c32fd87b60d7218ccbe78420ffeea1ca7ba5f1db94b5fe",
+      "jobs": 873,
+      "task": "lung_story",
+      "method": "unaligned"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_story__ramp.json",
+      "sha256": "47c3017daae483fc37cfbcb4be6edb31240182221acd1c52b01e1db861709774",
+      "jobs": 873,
+      "task": "lung_story",
+      "method": "ramp"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_story__harmony_direct.json",
+      "sha256": "a80802144c2d080b0a99683cbcbcec1333d8d297ba5b86dc14ba4e4d3daa7dbf",
+      "jobs": 873,
+      "task": "lung_story",
+      "method": "harmony_direct"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_story__cycombine.json",
+      "sha256": "d4a6576fd3319e8a717b4c3a519d0186a90161be42b44eb1701e45723d28be54",
+      "jobs": 873,
+      "task": "lung_story",
+      "method": "cycombine"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_story__cytonorm.json",
+      "sha256": "787700398d49d2181fee6d71fbc964256f3134693ba5820e2e826a657a97212d",
+      "jobs": 873,
+      "task": "lung_story",
+      "method": "cytonorm"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_story__fastmnn.json",
+      "sha256": "1c8e74c3e8b55e8f73e1007e490c9d857d9a877cd8013df2497f1109de6d38e1",
+      "jobs": 864,
+      "task": "lung_story",
+      "method": "fastmnn"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_story__maxfuse.json",
+      "sha256": "1ed8fe1d6d81a64f639a963bd078964320dc7e1f228c4a0d076cb062ec93ba3b",
+      "jobs": 864,
+      "task": "lung_story",
+      "method": "maxfuse"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_story__clipped_zscore.json",
+      "sha256": "acca1688fb04e6469e09a60c3dc21a75af1ecdef789cfce0b6011262030b8080",
+      "jobs": 873,
+      "task": "lung_story",
+      "method": "clipped_zscore"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_story__minmax.json",
+      "sha256": "80b9f02b0d70db4d1558150c7f2031b9dc50c8b4b8e778b2cb93d917b45323c1",
+      "jobs": 873,
+      "task": "lung_story",
+      "method": "minmax"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/lung_story__percentile.json",
+      "sha256": "f7fc81bddfd91c5dc77245e9a2ade9beeb2e12e6fd9da6bbff2c76add4732a0f",
+      "jobs": 873,
+      "task": "lung_story",
+      "method": "percentile"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma_story__unaligned.json",
+      "sha256": "68d40d9152ee858e4c4135c9b5183308f3db75af83a2f458d64f1b5bde8e59d0",
+      "jobs": 553,
+      "task": "melanoma_story",
+      "method": "unaligned"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma_story__ramp.json",
+      "sha256": "389716dabc1e1b0d1935d1b6d4e684b89c4ee1bf1a891d4c8adcd5fa1f050f8c",
+      "jobs": 553,
+      "task": "melanoma_story",
+      "method": "ramp"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma_story__harmony_direct.json",
+      "sha256": "54362ab88b9fe484fdd1fe7fa926f51abd5808110b110ebd7b2612039dfe6c26",
+      "jobs": 553,
+      "task": "melanoma_story",
+      "method": "harmony_direct"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma_story__cycombine.json",
+      "sha256": "f178cc43d19d8cf3207d70727986cce4cf09d245d525620cb23e82bb299ef130",
+      "jobs": 553,
+      "task": "melanoma_story",
+      "method": "cycombine"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma_story__cytonorm.json",
+      "sha256": "3c36e8abeb06b3906a01403ea1c2187b98b85185d08bce694439229af194f4f6",
+      "jobs": 553,
+      "task": "melanoma_story",
+      "method": "cytonorm"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma_story__fastmnn.json",
+      "sha256": "daa6fb63fbe7d9cbd18b3b7d1edbc7e6eb448cc1395d6256f38647f035f5bb7e",
+      "jobs": 553,
+      "task": "melanoma_story",
+      "method": "fastmnn"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma_story__maxfuse.json",
+      "sha256": "b7a069d28dccd5e6166abc6929b42b3ec66273a4e9be888a1ac391ae40bd260c",
+      "jobs": 553,
+      "task": "melanoma_story",
+      "method": "maxfuse"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma_story__clipped_zscore.json",
+      "sha256": "e3b39c642d1383f11037cb723f79599bc8e021e8548c12075ca39b8046eea23c",
+      "jobs": 553,
+      "task": "melanoma_story",
+      "method": "clipped_zscore"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma_story__minmax.json",
+      "sha256": "08a1ff7bbb56b2bc4b838518488fafd0a66d66ccd285da913658d24cd45d67e3",
+      "jobs": 553,
+      "task": "melanoma_story",
+      "method": "minmax"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/melanoma_story__percentile.json",
+      "sha256": "52087ebd4daa82080011f92ad041d3b53e4c5cc8e57a15e0b0c16c980bc9ed8e",
+      "jobs": 553,
+      "task": "melanoma_story",
+      "method": "percentile"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/hnscc_story__unaligned.json",
+      "sha256": "a16fe33a7edc8aa64f544ea35417b9f85cbcd673fbdf04d7653eddeb44dff66c",
+      "jobs": 792,
+      "task": "hnscc_story",
+      "method": "unaligned"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/hnscc_story__ramp.json",
+      "sha256": "8a48a8527f1199a5af08ac0699691754e6ad9e92fe93507fbc782c4164ad3bf4",
+      "jobs": 792,
+      "task": "hnscc_story",
+      "method": "ramp"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/hnscc_story__harmony_direct.json",
+      "sha256": "3cd444e7a8e1ddde3a301b6d1228625717d7f55923e962e69234a8b260039f19",
+      "jobs": 792,
+      "task": "hnscc_story",
+      "method": "harmony_direct"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/hnscc_story__cycombine.json",
+      "sha256": "b69b6693afae3b2a45adfb4a30c9a65350b4ef197f2ce5d23e52ec7f39b4dc93",
+      "jobs": 792,
+      "task": "hnscc_story",
+      "method": "cycombine"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/hnscc_story__cytonorm.json",
+      "sha256": "c10e4be3535441d99da8a4344976601b38a76bc1d76b7f21499c33fee5c5e450",
+      "jobs": 792,
+      "task": "hnscc_story",
+      "method": "cytonorm"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/hnscc_story__fastmnn.json",
+      "sha256": "e9704a705973b0584e68d7a97393b9ae4ddd9c91816b8323922a77ad31dbb323",
+      "jobs": 792,
+      "task": "hnscc_story",
+      "method": "fastmnn"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/hnscc_story__maxfuse.json",
+      "sha256": "dc26df5c64a1926b4718c304515bd5db0c78d1481c08e234f9bafd2840d6365f",
+      "jobs": 792,
+      "task": "hnscc_story",
+      "method": "maxfuse"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/hnscc_story__clipped_zscore.json",
+      "sha256": "1cf1d2fc57358703d3f792cfa05c439167382ed8613770dbc9df45939f12d014",
+      "jobs": 792,
+      "task": "hnscc_story",
+      "method": "clipped_zscore"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/hnscc_story__minmax.json",
+      "sha256": "deff572939956695d391b6ccc3aba4842af310ff6d35597f56461b46ec003668",
+      "jobs": 792,
+      "task": "hnscc_story",
+      "method": "minmax"
+    },
+    {
+      "config": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/hnscc_story__percentile.json",
+      "sha256": "a7e0dbd5f4356bc57675480115c6eef285c1ed0d950febdda0e45b139720a879",
+      "jobs": 792,
+      "task": "hnscc_story",
+      "method": "percentile"
+    }
+  ],
+  "output": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/results/formal_v0_5",
+  "preflight": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/formal_preflight_v0_5/REPORT.json",
+  "release_report": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/formal_preflight_v0_5/RELEASE_REPORT.json",
+  "release_report_sha256": "95714b054c7f2c61b26a9e43bb965855f1a6eb028670a89b6a929b1609cf23de",
+  "code_sha256": "e2e58006267a4831ec5d8e3353a546f11b835fdbe60b4df9554dc6427e6fb812"
+}

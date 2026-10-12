@@ -1,0 +1,88 @@
+{
+  "case": "Lung cancer benchmark",
+  "original_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Lung cancer benchmark/layout_v1",
+  "palette_mode": "fixed_technology_across_all_seven_figures",
+  "platforms": [
+    {
+      "dataset": "Senosain CyTOF",
+      "name": "CyTOF",
+      "technology": "CyTOF",
+      "color": "#38A169",
+      "available_units": 10,
+      "selected_unit_ids": [
+        "Senosain|13014",
+        "Senosain|13376",
+        "Senosain|13538",
+        "Senosain|13651",
+        "Senosain|13769",
+        "Senosain|14958",
+        "Senosain|15083",
+        "Senosain|15326",
+        "Senosain|15569",
+        "Senosain|7984"
+      ]
+    },
+    {
+      "dataset": "Cords IMC",
+      "name": "IMC",
+      "technology": "IMC",
+      "color": "#E58A2B",
+      "available_units": 10,
+      "selected_unit_ids": [
+        "Cords|175_191",
+        "Cords|175_43",
+        "Cords|176_358",
+        "Cords|178_457",
+        "Cords|178_486",
+        "Cords|86_28",
+        "Cords|86_30",
+        "Cords|87_257",
+        "Cords|88_367",
+        "Cords|88_452"
+      ]
+    },
+    {
+      "dataset": "Monkman CODEX",
+      "name": "CODEX",
+      "technology": "CODEX",
+      "color": "#2775B6",
+      "available_units": 10,
+      "selected_unit_ids": [
+        "Monkman|1E",
+        "Monkman|2B",
+        "Monkman|4B",
+        "Monkman|4E",
+        "Monkman|5E",
+        "Monkman|6D",
+        "Monkman|7B",
+        "Monkman|8C",
+        "Monkman|9A",
+        "Monkman|9B"
+      ]
+    }
+  ],
+  "full_units": 30,
+  "ridge_units": 30,
+  "full_cells": 60000,
+  "ridge_cells": 60000,
+  "selection": "All units retained",
+  "selection_seed": 20260922,
+  "style": {
+    "fill_alpha": 0.82,
+    "line_width_pt": 0.35,
+    "line_color": "80% RGB of platform fill",
+    "line_alpha": 0.9,
+    "zero_density_outline": "omit where normalized density <= 0.001",
+    "bins": 160,
+    "sigma_bins": 6,
+    "range_quantiles": [
+      0.005,
+      0.995
+    ],
+    "range_reference": "Full frozen cohort, unchanged from prior figures",
+    "curve_height": 0.7,
+    "curve_spacing": 0.57,
+    "platform_gap": 0.36,
+    "peak_normalized": true
+  }
+}

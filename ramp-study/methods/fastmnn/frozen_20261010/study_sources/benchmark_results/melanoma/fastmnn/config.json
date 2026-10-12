@@ -1,0 +1,149 @@
+{
+  "schema_version": "final_xu.fastmnn_benchmark.v1",
+  "benchmark_slug": "melanoma",
+  "benchmark_title": "Melanoma",
+  "method_label": "fastMNN (batchelor 1.18.1; corrected embedding)",
+  "expected_cells": 60000,
+  "expected_embedding_dimensions": 11,
+  "cell_id_column": "cell_id",
+  "batch_column": "dataset",
+  "sample_column": "unit_key",
+  "label_column": "celltype",
+  "missing_label": "Non-joint",
+  "datasets": [
+    {
+      "name": "MEL_Hickey2023_CODEX",
+      "expected_cells": 20000
+    },
+    {
+      "name": "MEL_Hoch2021_IMC",
+      "expected_cells": 20000
+    },
+    {
+      "name": "MEL_Ptacek2021_MIBI",
+      "expected_cells": 20000
+    }
+  ],
+  "markers": [
+    "CD163",
+    "CD3",
+    "CD31",
+    "CD68",
+    "CD8",
+    "HLA_DR",
+    "LAG3",
+    "PD1",
+    "PDL1",
+    "SMA",
+    "SOX10",
+    "VIMENTIN"
+  ],
+  "paths": {
+    "preprocessing_builder": "preprocessing/build_inputs.R",
+    "combined_input": "preprocessing/data/combined_analysis_ready.csv.gz",
+    "marker_file": "preprocessing/markers.txt",
+    "preprocessing_manifest": "preprocessing/preprocessing_manifest.json",
+    "algorithm_config": "algorithm_config.json",
+    "alignment_output": "alignment/data",
+    "display_metadata": "../../../benchmark_data/melanoma/relabel/relabeled_metadata.csv.gz",
+    "umap_output": "umap"
+  },
+  "umap": {
+    "n_neighbors": 30,
+    "min_dist": 0.15,
+    "metric": "euclidean",
+    "random_state": 42,
+    "transform_seed": 42,
+    "n_jobs": 1,
+    "low_memory": true,
+    "initialization": "spectral",
+    "initialization_sd": null
+  },
+  "palette": [
+    {
+      "label": "Non-joint",
+      "color": "#8C939B",
+      "legend_order": 0,
+      "draw_order": 1,
+      "point_size": 0.62,
+      "alpha": 0.28
+    },
+    {
+      "label": "Epithelial (non-joint)",
+      "color": "#F2C14E",
+      "legend_order": 1,
+      "draw_order": 9,
+      "point_size": 0.76,
+      "alpha": 0.76
+    },
+    {
+      "label": "CD4 T",
+      "color": "#00A6D6",
+      "legend_order": 2,
+      "draw_order": 6,
+      "point_size": 0.76,
+      "alpha": 0.76
+    },
+    {
+      "label": "CD8 T",
+      "color": "#1F4E79",
+      "legend_order": 3,
+      "draw_order": 7,
+      "point_size": 0.76,
+      "alpha": 0.76
+    },
+    {
+      "label": "Other T / CD8−",
+      "color": "#6F8FC5",
+      "legend_order": 4,
+      "draw_order": 5,
+      "point_size": 0.76,
+      "alpha": 0.76
+    },
+    {
+      "label": "NK",
+      "color": "#008B4F",
+      "legend_order": 5,
+      "draw_order": 8,
+      "point_size": 0.76,
+      "alpha": 0.76
+    },
+    {
+      "label": "Endothelial",
+      "color": "#7FBF3F",
+      "legend_order": 6,
+      "draw_order": 3,
+      "point_size": 0.76,
+      "alpha": 0.76
+    },
+    {
+      "label": "Myeloid",
+      "color": "#E68613",
+      "legend_order": 7,
+      "draw_order": 4,
+      "point_size": 0.76,
+      "alpha": 0.76
+    },
+    {
+      "label": "Stroma",
+      "color": "#9467BD",
+      "legend_order": 8,
+      "draw_order": 2,
+      "point_size": 0.76,
+      "alpha": 0.76
+    },
+    {
+      "label": "Tumor",
+      "color": "#D62728",
+      "legend_order": 9,
+      "draw_order": 0,
+      "point_size": 0.52,
+      "alpha": 0.42
+    }
+  ],
+  "dataset_colors": {
+    "MEL_Hickey2023_CODEX": "#2F6FB0",
+    "MEL_Hoch2021_IMC": "#E58A2B",
+    "MEL_Ptacek2021_MIBI": "#38A169"
+  }
+}

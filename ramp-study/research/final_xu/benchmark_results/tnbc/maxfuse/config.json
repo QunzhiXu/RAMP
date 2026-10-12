@@ -1,0 +1,34 @@
+{
+  "schema_version": "final_xu.maxfuse_benchmark.v2",
+  "benchmark_slug": "tnbc",
+  "benchmark_title": "TNBC",
+  "shared_markers": ["CD11C", "CD20", "CD3", "CD31", "CD4", "CD68", "CD8", "HLA_DR", "KI67", "PANCK", "SMA"],
+  "datasets": [
+    {"name": "Tietscher IMC", "slug": "tietscher_imc", "display": "Tietscher IMC", "expected_cells": 20000, "shared_input": "benchmark_data/tnbc/tietscher_imc/alignment_input_11.csv.gz", "input_protocol": {"name": "raw_no_transform", "description": "Exact canonical raw/source-scale values; float64 conversion only; no transformation."}},
+    {"name": "Meyer IMC", "slug": "meyer_imc", "display": "Meyer IMC", "expected_cells": 25211, "shared_input": "benchmark_data/tnbc/meyer_imc/alignment_input_11.csv.gz", "input_protocol": {"name": "raw_no_transform", "description": "Exact canonical raw/source-scale values; float64 conversion only; no transformation."}},
+    {"name": "Shiao CODEX", "slug": "shiao_codex", "display": "Shiao CODEX", "expected_cells": 20000, "shared_input": "benchmark_data/tnbc/shiao_codex/alignment_input_11.csv.gz", "input_protocol": {"name": "raw_no_transform", "description": "Exact canonical raw/source-scale values; float64 conversion only; no transformation."}}
+  ],
+  "expected_cells": 65211,
+  "combined_shared_reference_npy": "benchmark_data/tnbc/input/raw.npy",
+  "display_metadata": "benchmark_data/tnbc/relabel/relabeled_metadata.csv.gz",
+  "label_column": "celltype",
+  "missing_label": "Non-joint",
+  "base_seed": 20260830,
+  "feature_protocol": {"active_mode": "shared_only", "description": "The active panel intentionally reuses the shared panel for this equal-information benchmark."},
+  "fit_sampling": {"strategy": "unit_balanced", "cap_per_dataset": 4000, "drop_zero_within_cell_variance": true, "reuse_across_hubs": true},
+  "pairwise_config": "benchmark_results/tnbc/maxfuse/pairwise_config.json",
+  "three_view_extension": {"method": "MaxFuse pairwise hub-pivot chaining + independent ridge MAXVAR-GCCA", "pca_components": 11, "gcca_components": 11, "gcca_ridge": 0.001, "outer_reuse_policy": "allow"},
+  "umap": {"n_neighbors": 30, "min_dist": 0.15, "init_kind": "gaussian_seed42"},
+  "dataset_colors": {"Tietscher IMC": "#2F6FB0", "Meyer IMC": "#8C564B", "Shiao CODEX": "#9EDAE5"},
+  "palette": [
+    {"label": "Non-joint", "color": "#8C939B", "legend_order": 0, "draw_order": 1, "point_size": 0.60, "alpha": 0.22},
+    {"label": "B lineage", "color": "#F2C14E", "legend_order": 1, "draw_order": 2, "point_size": 0.72, "alpha": 0.74},
+    {"label": "CD4 T", "color": "#17BECF", "legend_order": 2, "draw_order": 3, "point_size": 0.72, "alpha": 0.74},
+    {"label": "CD8 T", "color": "#1F4E79", "legend_order": 3, "draw_order": 4, "point_size": 0.72, "alpha": 0.74},
+    {"label": "Endothelial", "color": "#59A14F", "legend_order": 4, "draw_order": 5, "point_size": 0.72, "alpha": 0.74},
+    {"label": "Myeloid", "color": "#E17C05", "legend_order": 5, "draw_order": 6, "point_size": 0.72, "alpha": 0.74},
+    {"label": "NK", "color": "#00A087", "legend_order": 6, "draw_order": 7, "point_size": 0.72, "alpha": 0.74},
+    {"label": "Stroma", "color": "#9467BD", "legend_order": 7, "draw_order": 8, "point_size": 0.72, "alpha": 0.74},
+    {"label": "Tumor / epithelial", "color": "#D62728", "legend_order": 8, "draw_order": 0, "point_size": 0.56, "alpha": 0.45}
+  ]
+}

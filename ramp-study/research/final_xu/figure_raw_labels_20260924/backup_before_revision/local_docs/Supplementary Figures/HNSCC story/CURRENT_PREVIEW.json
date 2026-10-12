@@ -1,0 +1,20 @@
+{
+  "status": "rendered_and_verified",
+  "version": "ridge_full_range_20260922",
+  "folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/HNSCC story/ridge_full_range_20260922",
+  "png": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/HNSCC story/ridge_full_range_20260922/output/hnscc_story_supplement.png",
+  "pdf": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/HNSCC story/ridge_full_range_20260922/output/pdf/hnscc_story_supplement.pdf",
+  "caption": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/HNSCC story/ridge_full_range_20260922/CAPTION.md",
+  "readme": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/HNSCC story/ridge_full_range_20260922/README_ZH.md",
+  "qa": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/HNSCC story/ridge_full_range_20260922/QA.json",
+  "cells": 94488,
+  "sample_units": 77,
+  "shared_markers": 22,
+  "ramp_story_rendering": "Identical pixels at matched size for both UMAP views",
+  "updated": "2026-09-22",
+  "ridge_display_units": 30,
+  "ridge_display_cells": 47488,
+  "previous_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/HNSCC story/ridge_uniform_20260922",
+  "revision": "Complete density support and padded axes; unchanged bandwidth, cell/sample selection, colors and UMAP pixels",
+  "ridge_outline": "Full-support density with endpoints at baseline"
+}

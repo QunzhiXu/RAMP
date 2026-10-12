@@ -1,0 +1,74 @@
+{
+  "case": "TNBC",
+  "original_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/TNBC/layout_v1",
+  "palette_mode": "fixed_technology_across_all_seven_figures",
+  "platforms": [
+    {
+      "dataset": "Tietscher IMC",
+      "name": "IMC1",
+      "technology": "IMC",
+      "color": "#E58A2B",
+      "available_units": 1,
+      "selected_unit_ids": [
+        "Tietscher IMC|BB165"
+      ]
+    },
+    {
+      "dataset": "Meyer IMC",
+      "name": "IMC2",
+      "technology": "IMC2",
+      "color": "#F2BD77",
+      "available_units": 5,
+      "selected_unit_ids": [
+        "Meyer IMC|B12.02518",
+        "Meyer IMC|B12.64192",
+        "Meyer IMC|B13.50280",
+        "Meyer IMC|B15.54100",
+        "Meyer IMC|B15.60754"
+      ]
+    },
+    {
+      "dataset": "Shiao CODEX",
+      "name": "CODEX",
+      "technology": "CODEX",
+      "color": "#2775B6",
+      "available_units": 5,
+      "selected_unit_ids": [
+        "Shiao CODEX|h05",
+        "Shiao CODEX|h09",
+        "Shiao CODEX|h12",
+        "Shiao CODEX|h17",
+        "Shiao CODEX|h30"
+      ]
+    }
+  ],
+  "full_units": 11,
+  "ridge_units": 11,
+  "full_cells": 62701,
+  "ridge_cells": 62701,
+  "selection": "All units retained",
+  "selection_seed": 20260922,
+  "style": {
+    "fill_alpha": 0.82,
+    "line_width_pt": 0.35,
+    "line_color": "80% RGB of platform fill",
+    "line_alpha": 0.9,
+    "zero_density_outline": "continuous over full display range, including zero-density tails",
+    "bins": "Extended grid at the original bin width",
+    "sigma_bins": 6,
+    "range_quantiles": null,
+    "bandwidth_reference_quantiles": [
+      0.005,
+      0.995
+    ],
+    "bandwidth_reference_bins": 160,
+    "gaussian_truncate_sigma": 4,
+    "padding_bins": 26,
+    "range_reference": "Full frozen cohort minimum to maximum, plus at least four Gaussian bandwidths at both ends",
+    "curve_height": 0.7,
+    "curve_spacing": 0.57,
+    "platform_gap": 0.36,
+    "peak_normalized": true
+  },
+  "previous_ridge_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/TNBC/ridge_uniform_20260922"
+}

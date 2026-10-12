@@ -1,0 +1,81 @@
+{
+  "schema_version": "final_xu.harmony_benchmark.v1",
+  "benchmark": "bone_marrow",
+  "display_name": "Bone marrow",
+  "input": {
+    "kind": "split_csv",
+    "paths": [
+      "benchmark_data/bone_marrow/bm_codex/alignment_input_14.csv.gz",
+      "benchmark_data/bone_marrow/bm_cytof/alignment_input_14.csv.gz",
+      "benchmark_data/bone_marrow/triana_abseq/alignment_input_14.csv.gz"
+    ],
+    "markers": [
+      "CD117", "CD11B", "CD11C", "CD123", "CD14", "CD3", "CD33",
+      "CD34", "CD38", "CD4", "CD45", "CD45RA", "CD61", "CD8"
+    ],
+    "source_scale_note": "Frozen cross-technology provider values: CODEX intensity, CyTOF normalized values, and AbSeq antibody UMI counts; not a common raw-count scale."
+  },
+  "expected": {
+    "cells": 88031,
+    "markers": [
+      "CD117", "CD11B", "CD11C", "CD123", "CD14", "CD3", "CD33",
+      "CD34", "CD38", "CD4", "CD45", "CD45RA", "CD61", "CD8"
+    ],
+    "dataset_order": ["BM CODEX", "BM CyTOF", "Triana AbSeq"],
+    "dataset_counts": {"BM CODEX": 30000, "BM CyTOF": 30000, "Triana AbSeq": 28031}
+  },
+  "umap": {
+    "parameters": {
+      "n_neighbors": 30,
+      "min_dist": 0.15,
+      "metric": "euclidean",
+      "random_state": 42,
+      "transform_seed": 42,
+      "n_jobs": 1,
+      "low_memory": true
+    },
+    "initialization": {"kind": "seeded_gaussian", "seed": 42, "sd": 0.0001}
+  },
+  "display": {
+    "relabel_file": "benchmark_data/bone_marrow/relabel/relabeled_metadata.csv.gz",
+    "label_order": [
+      "Mature / CODEX B", "Pre / immature B", "Plasma cell", "CD4 T", "CD8 T",
+      "Other T / NKT", "NK", "Monocyte", "Macrophage", "Dendritic", "Other myeloid",
+      "Promyelocytic progenitors", "HSPC / progenitor", "CODEX erythroid",
+      "Triana erythroid progenitor", "Megakaryocytic", "Endothelial", "Stromal / VSMC",
+      "Unclassified / technical"
+    ],
+    "celltype_style": {
+      "Mature / CODEX B": {"color": "#D81B60", "legend_order": 0, "draw_order_bottom_to_top": 1, "point_size": 1.15, "alpha": 0.60, "zorder": 2},
+      "Pre / immature B": {"color": "#F06292", "legend_order": 1, "draw_order_bottom_to_top": 2, "point_size": 1.15, "alpha": 0.60, "zorder": 3},
+      "Plasma cell": {"color": "#8E24AA", "legend_order": 2, "draw_order_bottom_to_top": 3, "point_size": 1.15, "alpha": 0.60, "zorder": 4},
+      "CD4 T": {"color": "#1769AA", "legend_order": 3, "draw_order_bottom_to_top": 4, "point_size": 1.15, "alpha": 0.60, "zorder": 5},
+      "CD8 T": {"color": "#00A6D6", "legend_order": 4, "draw_order_bottom_to_top": 5, "point_size": 1.15, "alpha": 0.60, "zorder": 6},
+      "Other T / NKT": {"color": "#6A5ACD", "legend_order": 5, "draw_order_bottom_to_top": 6, "point_size": 1.15, "alpha": 0.60, "zorder": 7},
+      "NK": {"color": "#00A087", "legend_order": 6, "draw_order_bottom_to_top": 7, "point_size": 1.15, "alpha": 0.60, "zorder": 8},
+      "Monocyte": {"color": "#F39C12", "legend_order": 7, "draw_order_bottom_to_top": 8, "point_size": 1.15, "alpha": 0.60, "zorder": 9},
+      "Macrophage": {"color": "#B45F06", "legend_order": 8, "draw_order_bottom_to_top": 9, "point_size": 1.15, "alpha": 0.60, "zorder": 10},
+      "Dendritic": {"color": "#7CB342", "legend_order": 9, "draw_order_bottom_to_top": 10, "point_size": 1.15, "alpha": 0.60, "zorder": 11},
+      "Other myeloid": {"color": "#A66E3F", "legend_order": 10, "draw_order_bottom_to_top": 11, "point_size": 1.15, "alpha": 0.60, "zorder": 12},
+      "Promyelocytic progenitors": {"color": "#FF7043", "legend_order": 11, "draw_order_bottom_to_top": 12, "point_size": 1.15, "alpha": 0.60, "zorder": 13},
+      "HSPC / progenitor": {"color": "#7E57C2", "legend_order": 12, "draw_order_bottom_to_top": 13, "point_size": 1.15, "alpha": 0.60, "zorder": 14},
+      "CODEX erythroid": {"color": "#C2185B", "legend_order": 13, "draw_order_bottom_to_top": 14, "point_size": 1.15, "alpha": 0.60, "zorder": 15},
+      "Triana erythroid progenitor": {"color": "#EC407A", "legend_order": 14, "draw_order_bottom_to_top": 15, "point_size": 1.15, "alpha": 0.60, "zorder": 16},
+      "Megakaryocytic": {"color": "#8D6E63", "legend_order": 15, "draw_order_bottom_to_top": 16, "point_size": 1.15, "alpha": 0.60, "zorder": 17},
+      "Endothelial": {"color": "#43A047", "legend_order": 16, "draw_order_bottom_to_top": 17, "point_size": 1.15, "alpha": 0.60, "zorder": 18},
+      "Stromal / VSMC": {"color": "#00897B", "legend_order": 17, "draw_order_bottom_to_top": 18, "point_size": 1.15, "alpha": 0.60, "zorder": 19},
+      "Unclassified / technical": {"color": "#697386", "legend_order": 18, "draw_order_bottom_to_top": 0, "point_size": 0.90, "alpha": 0.18, "zorder": 1}
+    },
+    "dataset_colors": {"BM CODEX": "#3E70B2", "BM CyTOF": "#55A868", "Triana AbSeq": "#E28B35"},
+    "shuffle_dataset_points": false,
+    "dataset_point_size": 1.15,
+    "dataset_alpha": 0.60,
+    "figure_size": [17.0, 7.7],
+    "celltype_legend_y": 0.065,
+    "celltype_legend_ncol": 5,
+    "celltype_legend_fontsize": 7.2,
+    "dataset_legend_y": 0.016,
+    "dataset_legend_fontsize": 8.5,
+    "layout_bottom": 0.19
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/umap/results/RAMP_UMAP.npy",
+    "local": "data/RAMP_UMAP.npy",
+    "sha256": "be8d789bb39a32a49e4cff6ffa06049d993bab110c7010e75a9993c9e57ae893"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/data_umap/data/CELL_METADATA.csv.gz",
+    "local": "data/CELL_METADATA.csv.gz",
+    "sha256": "74461a04818108949a19099ae6688339b820bdd4966394f9cf93b7bc30d22070"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/Figure/Panel B/provenance/VERIFICATION.json",
+    "local": "provenance/PANEL_B_VERIFICATION.json",
+    "sha256": "50036983b05505eb2e588d423584e25dd073ad3ff0145647ad854ba966a116ea"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/raw_data/lung_cancer/Cords2024/Paper_Cords_2024.md",
+    "local": "provenance/Cords2024_paper.md",
+    "sha256": "52eabac92f6ae89933f880f27ad8dc695c389af348467518bd052f93937d4f72"
+  }
+]

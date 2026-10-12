@@ -1,0 +1,14 @@
+{
+  "version": "ridge_full_range_20260922",
+  "benchmark": "melanoma_three_platform",
+  "title": "Melanoma 1 | CODEX, IMC and MIBI",
+  "folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Melanoma three-platform/ridge_full_range_20260922",
+  "png": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Melanoma three-platform/ridge_full_range_20260922/output/melanoma_three_platform_supplement.png",
+  "pdf": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Melanoma three-platform/ridge_full_range_20260922/output/pdf/melanoma_three_platform_supplement.pdf",
+  "status": "rendered_and_verified",
+  "ridge_display_units": 46,
+  "ridge_display_cells": 60000,
+  "previous_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Melanoma three-platform/ridge_uniform_20260922",
+  "revision": "Complete density support and padded axes; unchanged bandwidth, cell/sample selection, colors and UMAP pixels",
+  "ridge_outline": "Full-support density with endpoints at baseline"
+}

@@ -1,0 +1,7 @@
+{
+  "version": "lung_reference_update_20260921",
+  "figure": "lung_reference_update_20260921/Combined/figure_2_lung_reference_update.pdf",
+  "selection": "lung_reference_update_20260921/selection",
+  "comparison": "story_lung_HLA_ABC/Comparison_senosain140k_20260921",
+  "scope": "Only lung_story refreshed; E/F gating and other six integration tasks unchanged"
+}

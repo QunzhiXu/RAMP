@@ -1,0 +1,46 @@
+{
+  "schema_version": "final_xu.fastmnn_repro.v1",
+  "method_label": "fastMNN (batchelor 1.18.1; corrected embedding)",
+  "cell_id_column": "cell_id",
+  "batch_column": "dataset",
+  "sample_column": "unit_key",
+  "batch_levels": [
+    "MEL_Hickey2023_CODEX",
+    "MEL_Hoch2021_IMC",
+    "MEL_Ptacek2021_MIBI"
+  ],
+  "input_scale": {
+    "status": "analysis_ready",
+    "name": "melanoma provider analysis-ready/source-scale shared proteins",
+    "description": "Dataset-specific provider-supported passthrough: Hickey tissue-wise z values, Hoch exprs=asinh(counts/1), and Ptacek provider processed arcsinh scale.",
+    "preprocessing_record_file": "preprocessing/preprocessing_manifest.json",
+    "preprocessing_record_sha256": "054822434440f99998ec57d3b0505c6fde2b78e50a7722b417c8efdcc2b9bb34",
+    "input_sha256": "0d496dc5c71110e1b7f168efd3cf4b99bba1f51dcb8d7be4d17d0adb075464fb",
+    "marker_file_sha256": "9314e9a8dfe93fa305cda18ddd0ad6e63a1c4c22693106f2c7ec5cef43d1b5ec",
+    "algorithm_internal_cosine_normalization": true,
+    "algorithm_applies_other_expression_transform": false
+  },
+  "algorithm_parameters": {
+    "seed": 42,
+    "rng_kind": "Mersenne-Twister",
+    "normal_kind": "Inversion",
+    "sample_kind": "Rejection",
+    "k": 20,
+    "prop_k": null,
+    "cos_norm": true,
+    "ndist": 3,
+    "requested_d": 50,
+    "d_policy": "request 50; batchelor realizes min(50, n_markers - 1, n_cells - 1)",
+    "deferred": true,
+    "weights": null,
+    "get_variance": true,
+    "merge_order": null,
+    "auto_merge": false,
+    "min_batch_skip": 0,
+    "subset_row": null,
+    "correct_all": false,
+    "pca_solver": "IrlbaParam",
+    "neighbor_solver": "KmknnParam",
+    "parallel_solver": "SerialParam"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "final_xu.maxfuse_benchmark.v2",
+  "benchmark_slug": "lung_cancer",
+  "benchmark_title": "Lung cancer",
+  "result_subdir": "maxfuse_v2",
+  "shared_markers": ["CD3", "CD4", "CD8", "CD31", "HLA_DR", "KI67", "VIMENTIN", "EPI"],
+  "datasets": [
+    {
+      "name": "Senosain CyTOF", "slug": "senosain_cytof", "display": "Senosain CyTOF", "expected_cells": 20000,
+      "shared_input": "benchmark_results/lung_cancer/maxfuse_v2/method_inputs/senosain_cytof_shared.csv.gz",
+      "active_input": "benchmark_results/lung_cancer/maxfuse_v2/method_inputs/senosain_cytof_active.csv.gz",
+      "active_markers": ["EPCAM", "CCASP3", "TP53", "HLA_ABC", "CD31", "THIOREDOXIN", "B_CATENIN", "HER2", "P_STAT6", "P_STAT5", "TTF1", "P_AKT", "KI67", "CD45", "CD56", "VIMENTIN", "P_STAT3", "CD4", "MDM2", "EPI", "MET", "TP63", "CK7", "EGFR", "CD44", "P_ERK", "CD8", "CD24", "CD3", "CD11B", "P_S6", "HLA_DR", "PD_L1", "HISTONE_H3"],
+      "input_protocol": {"name": "senosain_asinh_c5_zscore", "description": "Provider-normalized/denoised event values; arcsinh(x/5), then within-dataset sample-SD marker z-score."}
+    },
+    {
+      "name": "Cords IMC", "slug": "cords_imc", "display": "Cords IMC", "expected_cells": 20000,
+      "shared_input": "benchmark_results/lung_cancer/maxfuse_v2/method_inputs/cords_imc_shared.csv.gz",
+      "active_input": "benchmark_results/lung_cancer/maxfuse_v2/method_inputs/cords_imc_active.csv.gz",
+      "active_markers": ["Myeloperoxidase (MPO)", "FSP1 / S100A4", "SMA", "Histone H3", "FAP", "HLA_DR", "CD146", "Cadherin-11", "Carbonic Anhydrase IX", "Collagen I + Fibronectin", "VCAM1", "CD20", "CD68", "Indoleamine 2- 3-dioxygenase (IDO)", "CD3", "Podoplanin", "MMP11", "CD279 (PD-1)", "CD73", "MMP9", "p75 (CD271)", "TCF1/TCF7", "CD10", "VIMENTIN", "FOXP3", "CD45RA + CD45R0", "PNAd", "CD8", "CD248 / Endosialin", "LYVE-1", "PDGFR-b", "CD34", "CD4", "CD31", "CXCL12", "CCL21", "EPI", "Cadherin-6", "KI67", "Caveolin-1", "CD15"],
+      "input_protocol": {"name": "cords_provider_asinh_c1_zscore", "description": "Provider c_counts_asinh after global 99th-percentile censoring and arcsinh cofactor 1; then within-dataset sample-SD marker z-score."}
+    },
+    {
+      "name": "Monkman CODEX", "slug": "monkman_codex", "display": "Monkman CODEX", "expected_cells": 20000,
+      "shared_input": "benchmark_results/lung_cancer/maxfuse_v2/method_inputs/monkman_codex_shared.csv.gz",
+      "active_input": "benchmark_results/lung_cancer/maxfuse_v2/method_inputs/monkman_codex_active.csv.gz",
+      "active_markers": ["CD31", "CD4", "CD15", "CD44", "CD107a", "CD20", "CD68", "CD34", "CD45RO", "CD45", "CD141", "CD11b", "EPI", "Podoplanin", "CD197", "CD8", "CD25", "FoxP3", "HLA_DR", "VIMENTIN", "KI67", "CD117", "CD14", "CD163", "CD45RA", "CD3"],
+      "input_protocol": {"name": "monkman_provider_scaled_then_zscore", "description": "Provider H5AD X after arcsinh cofactor 150, marker-wise scaling and cell-wise scaling; then MaxFuse tutorial-style within-dataset marker z-score using sample SD (ddof=1)."}
+    }
+  ],
+  "expected_cells": 60000,
+  "display_metadata": "benchmark_data/lung_cancer/relabel/relabeled_metadata.csv.gz",
+  "label_column": "display_label",
+  "missing_label": "Mix",
+  "base_seed": 20260830,
+  "feature_protocol": {"active_mode": "dataset_active_inputs", "description": "Shared proteins initialize matching; each platform's processed native protein panel drives MaxFuse graph construction and refinement."},
+  "fit_sampling": {"strategy": "unit_balanced", "cap_per_dataset": null, "drop_zero_within_cell_variance": true, "reuse_across_hubs": true},
+  "pairwise_config": "benchmark_results/lung_cancer/maxfuse_v2/pairwise_config.json",
+  "pairwise_rank_adaptation": "clip_non_null_official_targets_to_each_view_feature_rank",
+  "three_view_extension": {"method": "MaxFuse pairwise hub-pivot chaining + independent ridge MAXVAR-GCCA", "pca_components": 50, "gcca_components": 15, "gcca_ridge": 0.001, "outer_reuse_policy": "allow"},
+  "umap": {"n_neighbors": 30, "min_dist": 0.12, "init_kind": "gaussian_seed42"},
+  "dataset_colors": {"Senosain CyTOF": "#1F77B4", "Cords IMC": "#8C564B", "Monkman CODEX": "#9EDAE5"},
+  "palette": [
+    {"label": "Tumor/Epithelial", "color": "#D73027", "legend_order": 0, "draw_order": 0, "point_size": 0.66, "alpha": 0.52},
+    {"label": "CD4 T", "color": "#E78AC3", "legend_order": 1, "draw_order": 6, "point_size": 0.72, "alpha": 0.78},
+    {"label": "CD8 T", "color": "#D95F02", "legend_order": 2, "draw_order": 2, "point_size": 0.72, "alpha": 0.74},
+    {"label": "B-like", "color": "#1F78B4", "legend_order": 3, "draw_order": 5, "point_size": 0.72, "alpha": 0.78},
+    {"label": "Myeloid", "color": "#E6AB02", "legend_order": 4, "draw_order": 4, "point_size": 0.72, "alpha": 0.74},
+    {"label": "Endothelial", "color": "#17BECF", "legend_order": 5, "draw_order": 3, "point_size": 0.72, "alpha": 0.74},
+    {"label": "Mix", "color": "#9CA3AF", "legend_order": 6, "draw_order": 1, "point_size": 0.60, "alpha": 0.34}
+  ]
+}

@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use RAMP, please cite the associated bioRxiv preprint."
+title: "RAMP Proteomics"
+type: software
+version: 2.3.0
+license: CC-BY-NC-ND-4.0
+repository-code: "https://github.com/QunzhiXu/RAMP"
+authors:
+  - family-names: Xu
+    given-names: Qunzhi
+    email: QXu6@mdanderson.org
+    orcid: "https://orcid.org/0000-0003-2524-2260"
+preferred-citation:
+  type: article
+  title: "Rank-Preserving Alignment Enables Cross-platform Learning and Phenotyping for Single-Cell and Spatial Proteomics"
+  authors:
+    - family-names: Xu
+      given-names: Qunzhi
+      orcid: "https://orcid.org/0000-0003-2524-2260"
+    - family-names: Le
+      given-names: Tian
+    - family-names: Luo
+      given-names: Zhicheng
+    - family-names: Ly
+      given-names: Christopher
+    - family-names: Yan
+      given-names: Yinqiao
+    - family-names: Zheng
+      given-names: Ye
+      email: yzheng8@mdanderson.org
+      orcid: "https://orcid.org/0000-0002-8806-2761"
+  journal: "bioRxiv"
+  doi: "10.64898/2026.09.25.754510"
+  date-published: "2026-10-01"
+  url: "https://www.biorxiv.org/content/10.64898/2026.09.25.754510v1"

@@ -1,0 +1,43 @@
+{
+  "algorithm_parameters": {
+    "alpha": 0.2,
+    "block_size": 0.05,
+    "early_stop": true,
+    "epsilon_cluster": 0.001,
+    "epsilon_harmony": 0.01,
+    "lambda": 1.0,
+    "max_iter": 10,
+    "max_iter_cluster": 20,
+    "nclust_policy": "min(round(n_cells / 30), 100)",
+    "ncores": 1,
+    "normal_kind": "Inversion",
+    "plot_convergence": false,
+    "return_object": false,
+    "rng_kind": "Mersenne-Twister",
+    "sample_kind": "Rejection",
+    "seed": 42,
+    "sigma": 0.1,
+    "tau": 0.0,
+    "theta": 2.0
+  },
+  "batch_column": "dataset",
+  "batch_levels": [
+    "Tietscher IMC",
+    "Meyer IMC",
+    "Shiao CODEX"
+  ],
+  "cell_id_column": "cell_id",
+  "input_scale": {
+    "algorithm_applies_transformation": false,
+    "description": "Frozen provider/source analysis-ready values supplied unchanged.",
+    "input_sha256": "c4af340380adbc5390efb9d0d06ad6631e8ff86c8d7c626d69b349fab87b2f4e",
+    "marker_file_sha256": "39bb80c51c6b7b246d915f2f524def088b056c51a9a083e2db44ea7fe79cce77",
+    "name": "source_scale",
+    "preprocessing_record_file": "/Users/qxu6/Documents/New project/final_xu/benchmark_results/tnbc/harmony/source_scale/preprocessing/preprocessing_record.txt",
+    "preprocessing_record_sha256": "2b3272aa907eec029f0abe3974e8d8a25396a170f7c062b24fca1d0899008683",
+    "status": "analysis_ready"
+  },
+  "method_label": "Harmony-direct (ADTnorm protocol; no PCA)",
+  "sample_column": "unit_key",
+  "schema_version": "final_xu.harmony_direct.v1"
+}

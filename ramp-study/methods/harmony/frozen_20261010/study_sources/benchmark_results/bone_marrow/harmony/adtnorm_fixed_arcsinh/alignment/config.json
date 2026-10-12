@@ -1,0 +1,43 @@
+{
+  "algorithm_parameters": {
+    "alpha": 0.2,
+    "block_size": 0.05,
+    "early_stop": true,
+    "epsilon_cluster": 0.001,
+    "epsilon_harmony": 0.01,
+    "lambda": 1.0,
+    "max_iter": 10,
+    "max_iter_cluster": 20,
+    "nclust_policy": "min(round(n_cells / 30), 100)",
+    "ncores": 1,
+    "normal_kind": "Inversion",
+    "plot_convergence": false,
+    "return_object": false,
+    "rng_kind": "Mersenne-Twister",
+    "sample_kind": "Rejection",
+    "seed": 42,
+    "sigma": 0.1,
+    "tau": 0.0,
+    "theta": 2.0
+  },
+  "batch_column": "dataset",
+  "batch_levels": [
+    "BM CODEX",
+    "BM CyTOF",
+    "Triana AbSeq"
+  ],
+  "cell_id_column": "cell_id",
+  "input_scale": {
+    "algorithm_applies_transformation": false,
+    "description": "ADTnorm official fixed element-wise transform asinh(1 + x/5).",
+    "input_sha256": "5f859bd319230e4938d9a3967cc7f01e6f2b0d65fe0d8a0c7b6e648863c032dc",
+    "marker_file_sha256": "af94ca61aed37d00fc8df1c273970aa82ea660cc9312222951a55a1568cc9809",
+    "name": "ADTnorm_fixed_arcsinh_a1_b1over5_c0",
+    "preprocessing_record_file": "/Users/qxu6/Documents/New project/final_xu/benchmark_results/bone_marrow/harmony/adtnorm_fixed_arcsinh/preprocessing/preprocessing_record.txt",
+    "preprocessing_record_sha256": "86534b4d9fa82e5c2ab7485921efed72bdec149d90da1b3f2b8622d49112d040",
+    "status": "analysis_ready"
+  },
+  "method_label": "Harmony-direct (ADTnorm protocol; no PCA)",
+  "sample_column": "unit_key",
+  "schema_version": "final_xu.harmony_direct.v1"
+}

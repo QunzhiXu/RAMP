@@ -1,0 +1,297 @@
+{
+  "schema_version": "final_xu.maxfuse_benchmark.v3",
+  "benchmark_slug": "melanoma",
+  "benchmark_title": "Melanoma",
+  "result_subdir": "maxfuse_archive",
+  "shared_markers": [
+    "CD163",
+    "CD3",
+    "CD31",
+    "CD68",
+    "CD8",
+    "HLA_DR",
+    "LAG3",
+    "PD1",
+    "PDL1",
+    "SMA",
+    "SOX10",
+    "VIMENTIN"
+  ],
+  "datasets": [
+    {
+      "name": "MEL_Hickey2023_CODEX",
+      "slug": "hickey_codex",
+      "display": "Hickey CODEX",
+      "expected_cells": 20000,
+      "shared_input": "benchmark_results/melanoma/maxfuse_v2/method_inputs/hickey_codex_shared.csv.gz",
+      "active_input": "benchmark_results/melanoma/maxfuse_v2/method_inputs/hickey_codex_active.csv.gz",
+      "active_markers": [
+        "CCR7",
+        "CD103",
+        "CD11B",
+        "CD11C",
+        "CD138",
+        "CD15",
+        "CD163",
+        "CD20",
+        "CD206",
+        "CD21",
+        "CD25",
+        "CD3",
+        "CD31",
+        "CD4",
+        "CD45",
+        "CD45RA",
+        "CD45RO",
+        "CD56",
+        "CD57",
+        "CD68",
+        "CD73",
+        "CD8",
+        "CLEC9A",
+        "CXCL10",
+        "CXCL13",
+        "CXCL9",
+        "CXCR3",
+        "CXCR5",
+        "COLLAGENIV",
+        "EOMES",
+        "EZH2",
+        "FAP",
+        "FOXP3",
+        "GATA3",
+        "GRANZYMEB",
+        "HLA_DR",
+        "ICOS",
+        "IL10",
+        "IRF8",
+        "KI67",
+        "LAG3",
+        "LDHA",
+        "MHCI",
+        "MMP9",
+        "MELANA",
+        "PD1",
+        "PDL1",
+        "PTEN",
+        "PODOPLANIN",
+        "SOX10",
+        "TCF17",
+        "TBET",
+        "VIMENTIN",
+        "SMA",
+        "BCATENIN",
+        "PERK12"
+      ],
+      "input_protocol": {
+        "name": "hickey_provider_tissue_z_then_zscore",
+        "description": "Provider tissue-wise marker z-normalized CODEX values; then MaxFuse tutorial-style within-dataset marker z-score using sample SD (ddof=1)."
+      }
+    },
+    {
+      "name": "MEL_Hoch2021_IMC",
+      "slug": "hoch_imc",
+      "display": "Hoch IMC",
+      "expected_cells": 20000,
+      "shared_input": "benchmark_results/melanoma/maxfuse_v2/method_inputs/hoch_imc_shared.csv.gz",
+      "active_input": "benchmark_results/melanoma/maxfuse_v2/method_inputs/hoch_imc_active.csv.gz",
+      "active_markers": [
+        "VIMENTIN",
+        "SMA",
+        "KRT5",
+        "CD38",
+        "HLA_DR",
+        "S100",
+        "CDH11",
+        "FAP",
+        "CD163",
+        "B2M",
+        "CD134",
+        "CD68",
+        "SLC2A12",
+        "CD3",
+        "LAG3",
+        "PD1",
+        "CCR2",
+        "PDL1",
+        "CD8",
+        "SOX10",
+        "CD31",
+        "MELANA",
+        "PRB",
+        "CPARP",
+        "CD15",
+        "MPO"
+      ],
+      "input_protocol": {
+        "name": "hoch_provider_asinh_c1_zscore",
+        "description": "Provider exprs=asinh(counts/1), then within-dataset sample-SD marker z-score."
+      }
+    },
+    {
+      "name": "MEL_Ptacek2021_MIBI",
+      "slug": "ptacek_mibi",
+      "display": "Ptacek MIBI",
+      "expected_cells": 20000,
+      "shared_input": "benchmark_results/melanoma/maxfuse_v2/method_inputs/ptacek_mibi_shared.csv.gz",
+      "active_input": "benchmark_results/melanoma/maxfuse_v2/method_inputs/ptacek_mibi_active.csv.gz",
+      "active_markers": [
+        "BETATUBULIN",
+        "CD11B",
+        "CD11C",
+        "CD14",
+        "CD163",
+        "CD20",
+        "CD3",
+        "CD31",
+        "CD4",
+        "CD45",
+        "CD45RO",
+        "CD56",
+        "CD68",
+        "CD8",
+        "FOXP3",
+        "GRANZYMEB",
+        "HLACLASS1ABANDCNAKATPASE",
+        "HLA_DR",
+        "IDO1",
+        "KI67",
+        "LAG3",
+        "PD1",
+        "PDL1",
+        "PODOPLANIN",
+        "SMA",
+        "SOX10",
+        "TIM3",
+        "VIMENTIN"
+      ],
+      "input_protocol": {
+        "name": "ptacek_provider_processed_zscore",
+        "description": "Provider denoised, normalized and arcsinh-transformed MIBI values, then within-dataset sample-SD marker z-score."
+      }
+    }
+  ],
+  "expected_cells": 60000,
+  "display_metadata": "benchmark_data/melanoma/relabel/relabeled_metadata.csv.gz",
+  "label_column": "celltype",
+  "missing_label": "Non-joint",
+  "base_seed": 20260830,
+  "feature_protocol": {
+    "active_mode": "dataset_active_inputs",
+    "description": "Shared proteins initialize matching; processed native protein panels drive MaxFuse graph construction and refinement."
+  },
+  "fit_sampling": {
+    "strategy": "unit_balanced",
+    "cap_per_dataset": null,
+    "drop_zero_within_cell_variance": true,
+    "reuse_across_hubs": true
+  },
+  "pairwise_config": "benchmark_results/melanoma/maxfuse_v2/pairwise_config.json",
+  "pairwise_rank_adaptation": "clip_non_null_official_targets_to_each_view_feature_rank",
+  "three_view_extension": {
+    "method": "MaxFuse Archive three-view workflow (pairwise hub-pivot chaining + iterative GCCA)",
+    "svd_components": {
+      "hickey_codex": null,
+      "hoch_imc": null,
+      "ptacek_mibi": null
+    },
+    "gcca_components": 15,
+    "gcca_initialization_max_iter": 2000,
+    "gcca_refinement_max_iter": 2000,
+    "gcca_tolerance": 0.001,
+    "view_order_policy": "cyclic_from_dataset_config_order",
+    "outer_reuse_policy": "allow"
+  },
+  "umap": {
+    "n_neighbors": 30,
+    "min_dist": 0.15,
+    "init_kind": "gaussian_seed42"
+  },
+  "dataset_colors": {
+    "MEL_Hickey2023_CODEX": "#2F6FB0",
+    "MEL_Hoch2021_IMC": "#E58A2B",
+    "MEL_Ptacek2021_MIBI": "#38A169"
+  },
+  "palette": [
+    {
+      "label": "Non-joint",
+      "color": "#8C939B",
+      "legend_order": 0,
+      "draw_order": 1,
+      "point_size": 0.62,
+      "alpha": 0.28
+    },
+    {
+      "label": "Epithelial (non-joint)",
+      "color": "#F2C14E",
+      "legend_order": 1,
+      "draw_order": 9,
+      "point_size": 0.76,
+      "alpha": 0.76
+    },
+    {
+      "label": "CD4 T",
+      "color": "#00A6D6",
+      "legend_order": 2,
+      "draw_order": 6,
+      "point_size": 0.76,
+      "alpha": 0.76
+    },
+    {
+      "label": "CD8 T",
+      "color": "#1F4E79",
+      "legend_order": 3,
+      "draw_order": 7,
+      "point_size": 0.76,
+      "alpha": 0.76
+    },
+    {
+      "label": "Other T / CD8−",
+      "color": "#6F8FC5",
+      "legend_order": 4,
+      "draw_order": 5,
+      "point_size": 0.76,
+      "alpha": 0.76
+    },
+    {
+      "label": "NK",
+      "color": "#008B4F",
+      "legend_order": 5,
+      "draw_order": 8,
+      "point_size": 0.76,
+      "alpha": 0.76
+    },
+    {
+      "label": "Endothelial",
+      "color": "#7FBF3F",
+      "legend_order": 6,
+      "draw_order": 3,
+      "point_size": 0.76,
+      "alpha": 0.76
+    },
+    {
+      "label": "Myeloid",
+      "color": "#E68613",
+      "legend_order": 7,
+      "draw_order": 4,
+      "point_size": 0.76,
+      "alpha": 0.76
+    },
+    {
+      "label": "Stroma",
+      "color": "#9467BD",
+      "legend_order": 8,
+      "draw_order": 2,
+      "point_size": 0.76,
+      "alpha": 0.76
+    },
+    {
+      "label": "Tumor",
+      "color": "#D62728",
+      "legend_order": 9,
+      "draw_order": 0,
+      "point_size": 0.52,
+      "alpha": 0.42
+    }
+  ]
+}

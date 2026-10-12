@@ -1,0 +1,26 @@
+{
+  "Bone marrow": [
+    "Harmony-direct"
+  ],
+  "TNBC": [
+    "Harmony-direct"
+  ],
+  "Melanoma three-platform": [
+    "RAMP"
+  ],
+  "Lung cancer benchmark": [
+    "Harmony-direct"
+  ],
+  "Lung HLA-ABC story": [
+    "Harmony-direct",
+    "RAMP"
+  ],
+  "Melanoma story": [
+    "Harmony-direct",
+    "RAMP"
+  ],
+  "HNSCC story": [
+    "Harmony-direct",
+    "RAMP"
+  ]
+}

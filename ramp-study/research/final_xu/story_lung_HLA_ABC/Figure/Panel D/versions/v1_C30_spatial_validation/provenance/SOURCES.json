@@ -1,0 +1,32 @@
+[
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/validation/results/C30_CELLS.csv.gz",
+    "local": "data/C30_CELLS.csv.gz",
+    "sha256": "6a0d8ccd24866e401867c7aa9f897a589bffa5373f508add2ba05daeb770fed6"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/validation/results/C30_DISPLAY.json",
+    "local": "provenance/C30_DISPLAY.json",
+    "sha256": "62910796fd8be72a13141b8fd9c3b616e1cd9d202f77453612f9de05a4982c94"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/validation/reference/C30_SELECTION.json",
+    "local": "provenance/C30_SELECTION.json",
+    "sha256": "0a0cf972997b4c525d80f12611aaf887f46760ceb15e7894658fed5323a2ffc4"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/validation/reference/C30_COLOR_SUMMARY.json",
+    "local": "provenance/C30_COLOR_SUMMARY.json",
+    "sha256": "c93100ebfb7dd9afbd42e86ed61783433e82dd6f1fd2e72f212975826f06f530"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/validation/results/RUN_MANIFEST.json",
+    "local": "provenance/VALIDATION_RUN_MANIFEST.json",
+    "sha256": "e712e7f23765c5cd374590f3eb5c72a8d75861f4dfa672ed25596664eb16e0b8"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/Figure/Panel B/provenance/VERIFICATION.json",
+    "local": "provenance/PANEL_B_VERIFICATION.json",
+    "sha256": "50036983b05505eb2e588d423584e25dd073ad3ff0145647ad854ba966a116ea"
+  }
+]

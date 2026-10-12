@@ -1,0 +1,93 @@
+{
+  "case": "Lung HLA-ABC story",
+  "original_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Lung HLA-ABC story/layout_v1_story84k",
+  "palette_mode": "fixed_technology_across_all_seven_figures",
+  "platforms": [
+    {
+      "dataset": "Senosain CyTOF",
+      "name": "CyTOF",
+      "technology": "CyTOF",
+      "color": "#38A169",
+      "available_units": 28,
+      "selected_unit_ids": [
+        "Senosain CyTOF|11538",
+        "Senosain CyTOF|11886",
+        "Senosain CyTOF|11952",
+        "Senosain CyTOF|13074",
+        "Senosain CyTOF|13276",
+        "Senosain CyTOF|13774",
+        "Senosain CyTOF|14836",
+        "Senosain CyTOF|14958",
+        "Senosain CyTOF|15506",
+        "Senosain CyTOF|7984"
+      ]
+    },
+    {
+      "dataset": "Zheng mIF",
+      "name": "mIF",
+      "technology": "mIF",
+      "color": "#D56D79",
+      "available_units": 28,
+      "selected_unit_ids": [
+        "Zheng mIF|P_17",
+        "Zheng mIF|P_2",
+        "Zheng mIF|P_24",
+        "Zheng mIF|P_25",
+        "Zheng mIF|P_27",
+        "Zheng mIF|P_3",
+        "Zheng mIF|P_31",
+        "Zheng mIF|P_32",
+        "Zheng mIF|P_33",
+        "Zheng mIF|P_5"
+      ]
+    },
+    {
+      "dataset": "Cords IMC",
+      "name": "IMC",
+      "technology": "IMC",
+      "color": "#E58A2B",
+      "available_units": 28,
+      "selected_unit_ids": [
+        "Cords IMC|175_65",
+        "Cords IMC|176_233",
+        "Cords IMC|176_282",
+        "Cords IMC|176_290",
+        "Cords IMC|176_323",
+        "Cords IMC|178_528",
+        "Cords IMC|86_142",
+        "Cords IMC|86_143",
+        "Cords IMC|87_202",
+        "Cords IMC|87_212"
+      ]
+    }
+  ],
+  "full_units": 84,
+  "ridge_units": 30,
+  "full_cells": 84000,
+  "ridge_cells": 30000,
+  "selection": "Display-only subset: deterministic SHA256 ranking of 20260922|dataset|unit ID; smallest hashes selected within platform; no expression, method or performance used",
+  "selection_seed": 20260922,
+  "style": {
+    "fill_alpha": 0.82,
+    "line_width_pt": 0.35,
+    "line_color": "80% RGB of platform fill",
+    "line_alpha": 0.9,
+    "zero_density_outline": "continuous over full display range, including zero-density tails",
+    "bins": "Extended grid at the original bin width",
+    "sigma_bins": 6,
+    "range_quantiles": null,
+    "bandwidth_reference_quantiles": [
+      0.005,
+      0.995
+    ],
+    "bandwidth_reference_bins": 160,
+    "gaussian_truncate_sigma": 4,
+    "padding_bins": 26,
+    "range_reference": "Full frozen cohort minimum to maximum, plus at least four Gaussian bandwidths at both ends",
+    "curve_height": 0.7,
+    "curve_spacing": 0.57,
+    "platform_gap": 0.36,
+    "peak_normalized": true
+  },
+  "previous_ridge_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Lung HLA-ABC story/ridge_uniform_20260922"
+}

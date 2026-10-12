@@ -1,0 +1,38 @@
+[
+  {
+    "key": "ABC",
+    "title": null,
+    "source": "/Users/qxu6/Documents/New project/lung_caf_covariate_fix_20260917/work/story_lung_HLA_ABC/Figure/Combined ABC/panels_ABC_preview.svg",
+    "local": "inputs/panels_ABC_preview.svg",
+    "sha256": "b144d3c7fe56d57cbad5a6adce94560fe827794d1aff6ef31033a310c5bb52f9",
+    "width_pt": 1019.04,
+    "height_pt": 198.0
+  },
+  {
+    "key": "D",
+    "title": "Validation in mIF",
+    "source": "/Users/qxu6/Documents/New project/lung_caf_covariate_fix_20260917/work/story_lung_HLA_ABC/Figure/Panel D/panel_D_validation.svg",
+    "local": "inputs/panel_D_validation.svg",
+    "sha256": "e29a60bddb90712c65bea4409b844b9322143f06bcdaca9d57e1514750eae374",
+    "width_pt": 352.8,
+    "height_pt": 198.0
+  },
+  {
+    "key": "E",
+    "title": "Immune composition",
+    "source": "/Users/qxu6/Documents/New project/lung_caf_covariate_fix_20260917/work/story_lung_HLA_ABC/Figure/Panel E/panel_E_immune_composition.svg",
+    "local": "inputs/panel_E_immune_composition.svg",
+    "sha256": "18ec8abc165cbe0ec6e16e192340e9e5f90a4651da1782c2adf75adc4fdfcad5",
+    "width_pt": 324.0,
+    "height_pt": 198.0
+  },
+  {
+    "key": "F",
+    "title": "Survival association",
+    "source": "/Users/qxu6/Documents/New project/lung_caf_covariate_fix_20260917/work/story_lung_HLA_ABC/Figure/Panel F/panel_F_survival.svg",
+    "local": "inputs/panel_F_survival.svg",
+    "sha256": "7315f3395a0e9edfb940df564edccc9623bd93b0fa4e69c48a2a7dd0e2d2de12",
+    "width_pt": 342.24,
+    "height_pt": 198.0
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "schema_version": "final_xu.cycombine_repro.v1",
+  "cell_id_column": "cell_id",
+  "batch_column": "dataset",
+  "sample_column": "unit_key",
+  "batch_levels": [
+    "dataset_A",
+    "dataset_B",
+    "dataset_C"
+  ],
+  "input_scale": {
+    "status": "analysis_ready",
+    "description": "Each dataset has already received its documented technology-specific preprocessing; no transform is applied inside algorithm/cycombine.",
+    "provenance_file": "preprocessing_manifest.json",
+    "algorithm_applies_transformation": false
+  },
+  "algorithm_parameters": {
+    "xdim": 8,
+    "ydim": 8,
+    "rlen": 10,
+    "seed": 840,
+    "norm_method": "rank",
+    "ties_method": "average",
+    "parametric": true,
+    "covariate": null,
+    "anchor": null
+  }
+}

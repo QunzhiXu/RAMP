@@ -1,0 +1,26 @@
+{
+  "case": "lung_story",
+  "root": "/Users/qxu6/Documents/New project/final_xu",
+  "comparison": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/Comparison/maxfuse_full_panel",
+  "datasets": [
+    "Senosain CyTOF",
+    "Cords IMC",
+    "Zheng mIF"
+  ],
+  "markers": [
+    "CD3",
+    "CD4",
+    "CD8",
+    "CD31",
+    "KI67",
+    "VIMENTIN",
+    "EPI",
+    "CD45",
+    "HLA_DR"
+  ],
+  "input_manifest_sha256": "f720d0e13a8d18b73a125c540e42cffc8b5fb3164ebbcf11f916e8bb50258a4c",
+  "seed": 42,
+  "maxfuse_seed": 20260830,
+  "scope": "full native active protein panel; exact original story cells and shared marker list; per-assay transforms unchanged",
+  "full_input_manifest_sha256": "4abde453ebea89d546f2b7b697c97087580096ddbfd680ea67acfaed5058e6e5"
+}

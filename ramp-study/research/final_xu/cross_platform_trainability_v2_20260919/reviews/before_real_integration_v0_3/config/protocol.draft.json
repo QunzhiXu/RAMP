@@ -1,0 +1,312 @@
+{
+  "schema_version": "0.2.0",
+  "status": "draft",
+  "formal_run_enabled": false,
+  "scope": "J1,J2,J3,J4; no gating",
+  "seed": 20260919,
+  "q_grid": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "methods": [
+    "unaligned",
+    "ramp",
+    "harmony_direct",
+    "cycombine",
+    "cytonorm",
+    "fastmnn",
+    "maxfuse",
+    "clipped_zscore",
+    "minmax",
+    "percentile"
+  ],
+  "candidate_fit_budgets": [
+    2,
+    5,
+    10,
+    20,
+    50,
+    100,
+    200,
+    500,
+    1000,
+    2000,
+    5000
+  ],
+  "candidate_mlp_widths": [
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "repetitions": null,
+  "validation_budget": null,
+  "calibration_per_unit": null,
+  "note": "Budgets/identities/method adapters are not frozen; candidates are not executable formal configuration.",
+  "exclude_labels": [
+    "Non-joint",
+    "Mix",
+    "Unclassified / technical",
+    "Unannotated",
+    "nan",
+    "Other",
+    "Others",
+    "Other / uncertain",
+    "Non-joint / ambiguous"
+  ],
+  "tasks": [
+    {
+      "name": "bone_marrow",
+      "layout": "benchmark",
+      "historical_references": {
+        "metadata": {
+          "path": "benchmark_results/bone_marrow/ramp/alignment/input/cell_metadata.csv.gz",
+          "expected_sha256": "eeda2255a1ff8d669302aad7e3bc279e1ef71d0a27f68695da9dc9452f83b7f8"
+        },
+        "markers": {
+          "path": "benchmark_results/bone_marrow/ramp/alignment/input/markers.txt",
+          "expected_sha256": "af94ca61aed37d00fc8df1c273970aa82ea660cc9312222951a55a1568cc9809"
+        },
+        "native_values": {
+          "path": "benchmark_results/bone_marrow/ramp/alignment/input/raw.npy",
+          "expected_sha256": "a309a1a349b248980c53135aadbdbe2f3725a61fc737f56153e635b0c57d2218"
+        },
+        "kmeanslow": {
+          "path": "benchmark_results/bone_marrow/ramp/alignment/data/kmeanslow_global.npy",
+          "expected_sha256": "6ae1de47ae7c22d918b7405811eb982f23ae57c68b0d7d3bda88e79da0b9e6aa"
+        },
+        "ramp": {
+          "path": "benchmark_results/bone_marrow/ramp/alignment/data/ramp_aligned.npy",
+          "expected_sha256": "94a4136cc2cfaa67e8580708087f70f1cc821b6fd3e0011c2fd7be0396e9e9e6"
+        }
+      },
+      "frozen_source_root": "benchmark_data/bone_marrow",
+      "preprocessing_manifest": "benchmark_results/bone_marrow/cycombine/preprocessing/preprocessing_manifest.json",
+      "input_contract_status": "pending",
+      "patient_identity_status": "pending",
+      "patient_column": null,
+      "fitting_pool_manifest": null
+    },
+    {
+      "name": "tnbc",
+      "layout": "benchmark",
+      "historical_references": {
+        "metadata": {
+          "path": "benchmark_results/tnbc/ramp/alignment/input/cell_metadata.csv.gz",
+          "expected_sha256": "d7c807dabcd27a8ccc6311019aa5a78e8adc81d0cd418189f2d47e9787072560"
+        },
+        "markers": {
+          "path": "benchmark_results/tnbc/ramp/alignment/input/markers.txt",
+          "expected_sha256": "39bb80c51c6b7b246d915f2f524def088b056c51a9a083e2db44ea7fe79cce77"
+        },
+        "native_values": {
+          "path": "benchmark_results/tnbc/ramp/alignment/input/raw.npy",
+          "expected_sha256": "f4b8b9e7e20fe80c005fc3fef549b6a2f5e60b0b03c1d016f8449b0625ff5c10"
+        },
+        "kmeanslow": {
+          "path": "benchmark_results/tnbc/ramp/alignment/data/kmeanslow_global.npy",
+          "expected_sha256": "24f331697b3ea13c79c77e49fe154809f7c92103dd1ee4129b8f191109ef8030"
+        },
+        "ramp": {
+          "path": "benchmark_results/tnbc/ramp/alignment/data/ramp_aligned.npy",
+          "expected_sha256": "cc5a97561a9f17da07528b11e10f9a7743630642eb90d50d2fddb8594a52502b"
+        }
+      },
+      "frozen_source_root": "benchmark_data/tnbc",
+      "preprocessing_manifest": "benchmark_results/tnbc/cycombine/preprocessing/preprocessing_manifest.json",
+      "input_contract_status": "pending",
+      "patient_identity_status": "pending",
+      "patient_column": null,
+      "fitting_pool_manifest": null
+    },
+    {
+      "name": "melanoma",
+      "layout": "benchmark",
+      "historical_references": {
+        "metadata": {
+          "path": "benchmark_results/melanoma/ramp/alignment/input/cell_metadata.csv.gz",
+          "expected_sha256": "56e361cfe78ec05b0e15876bb1bd6d6a29bd30fe8ae208933dd1b7ed3c76b5a0"
+        },
+        "markers": {
+          "path": "benchmark_results/melanoma/ramp/alignment/input/markers.txt",
+          "expected_sha256": "9314e9a8dfe93fa305cda18ddd0ad6e63a1c4c22693106f2c7ec5cef43d1b5ec"
+        },
+        "native_values": {
+          "path": "benchmark_results/melanoma/ramp/alignment/input/raw.npy",
+          "expected_sha256": "eedadfd47dfe09daf1760ec96cb0d8bd5eb0483d8ab0a5274fc108450877a9da"
+        },
+        "kmeanslow": {
+          "path": "benchmark_results/melanoma/ramp/alignment/data/kmeanslow_global.npy",
+          "expected_sha256": "32e9e6441c6c051bb16889c2d2cded59d364ce9c2a0cfad7df0c0e7af382dbb0"
+        },
+        "ramp": {
+          "path": "benchmark_results/melanoma/ramp/alignment/data/ramp_aligned.npy",
+          "expected_sha256": "c5af27981cc3b07e47065c0fb0b419a2f1947b05902a3928470bd8fc0a403606"
+        }
+      },
+      "frozen_source_root": "benchmark_data/melanoma",
+      "preprocessing_manifest": "benchmark_results/melanoma/cycombine/preprocessing/preprocessing_manifest.json",
+      "input_contract_status": "pending",
+      "patient_identity_status": "pending",
+      "patient_column": null,
+      "fitting_pool_manifest": null
+    },
+    {
+      "name": "lung_cancer",
+      "layout": "benchmark",
+      "historical_references": {
+        "metadata": {
+          "path": "benchmark_results/lung_cancer/ramp/alignment/input/cell_metadata.csv.gz",
+          "expected_sha256": "8d77000ad021790a2743de7ca69444059e32b43a5b5709d3088e4bdfc0f9ec13"
+        },
+        "markers": {
+          "path": "benchmark_results/lung_cancer/ramp/alignment/input/markers.txt",
+          "expected_sha256": "067c8e1bfcd0d6292350ecaab8356f3223b0c9e5cf6a8d4f6826d141bd1f5ffb"
+        },
+        "native_values": {
+          "path": "benchmark_results/lung_cancer/ramp/alignment/input/raw.npy",
+          "expected_sha256": "83cef15257b1a522cc11490a5b2b70e97379a469f2120b52b6b9cb1a4c231538"
+        },
+        "kmeanslow": {
+          "path": "benchmark_results/lung_cancer/ramp/alignment/data/kmeanslow_global.npy",
+          "expected_sha256": "9fc5a8f81094705794cf6e6bde3e5fc2685cc52e8401f47bdf3c149519f79912"
+        },
+        "ramp": {
+          "path": "benchmark_results/lung_cancer/ramp/alignment/data/ramp_aligned.npy",
+          "expected_sha256": "c986e48c562fd2cff877cfd044f53ce16545268d28c22f45c68131e1a2c4e7cf"
+        }
+      },
+      "frozen_source_root": "benchmark_data/lung_cancer",
+      "preprocessing_manifest": "benchmark_results/lung_cancer/cycombine/preprocessing/preprocessing_manifest.json",
+      "input_contract_status": "pending",
+      "patient_identity_status": "pending",
+      "patient_column": null,
+      "fitting_pool_manifest": null
+    },
+    {
+      "name": "lung_story",
+      "layout": "story",
+      "historical_references": {
+        "metadata": {
+          "path": "story_lung_HLA_ABC/Comparison/input/evaluation_metadata.csv.gz",
+          "expected_sha256": "73061ed750f88ca7074b4f69926e446a3449a2a4943a9bdaea5cfe4bee8ca429"
+        },
+        "markers": {
+          "path": "story_lung_HLA_ABC/Comparison/input/markers.txt",
+          "expected_sha256": "a7a451507654d2cb0d979323c8ffb8be4ea3640961af2b0d20764fc196ae4957"
+        },
+        "native_values": {
+          "path": "story_lung_HLA_ABC/Comparison/input/raw.npy",
+          "expected_sha256": "04ad67e90e9c3f683ae70f4982c47ad31e9406cd92f4bb17767177aca73fcd7e"
+        },
+        "kmeanslow": {
+          "path": "story_lung_HLA_ABC/data_umap/reference/baseline_SHARED9.npy",
+          "expected_sha256": "dea993128cf2da2c861bcd6a1fcb19803c0eebe5c75fdca9a620d171b8d1ff94"
+        },
+        "ramp": {
+          "path": "story_lung_HLA_ABC/Comparison/input/ramp.npy",
+          "expected_sha256": "c302203f3c8af5eb63299f22a2aa7920fdfa05327bd68746493b1ff25ff12c5f"
+        }
+      },
+      "frozen_source_root": "story_lung_HLA_ABC",
+      "preprocessing_manifest": "story_lung_HLA_ABC/Comparison/input/manifest.json",
+      "input_contract_status": "pending",
+      "patient_identity_status": "pending",
+      "patient_column": null,
+      "fitting_pool_manifest": null
+    },
+    {
+      "name": "melanoma_story",
+      "layout": "story",
+      "historical_references": {
+        "metadata": {
+          "path": "figure_melanoma/Comparison/input/evaluation_metadata.csv.gz",
+          "expected_sha256": "251e09e66f2223fa0960b60b5e00363fab7d0c951dc35c691d98d35ff6ac54e3"
+        },
+        "markers": {
+          "path": "figure_melanoma/Comparison/input/markers.txt",
+          "expected_sha256": "2c91f2b2cd6258786832d001f74305625e7ea059070405eb246483ed5a6769f6"
+        },
+        "native_values": {
+          "path": "figure_melanoma/Comparison/input/raw.npy",
+          "expected_sha256": "1785112b5ffb7a8cda8188e8602838f0eb6f21f2bf54bcb05c155593078ad490"
+        },
+        "kmeanslow": {
+          "path": "figure_melanoma/analysis/alignment/output/kmeanslow_baseline.npy",
+          "expected_sha256": "e9be277f07d87bcf75c52e77b5a52c918c47e7cfd2df44a13a22fabbf1afa6a6"
+        },
+        "ramp": {
+          "path": "figure_melanoma/Comparison/input/ramp.npy",
+          "expected_sha256": "06371c47943e0700a19f79538cd2b289b8d9d67119a3203344a5b34d8906cd9b"
+        }
+      },
+      "frozen_source_root": "figure_melanoma",
+      "preprocessing_manifest": "figure_melanoma/Comparison/input/manifest.json",
+      "input_contract_status": "pending",
+      "patient_identity_status": "pending",
+      "patient_column": null,
+      "fitting_pool_manifest": null
+    },
+    {
+      "name": "hnscc_story",
+      "layout": "story",
+      "historical_references": {
+        "metadata": {
+          "path": "figure_HNSCC/Comparison/input/evaluation_metadata.csv.gz",
+          "expected_sha256": "7c828d74200b1a9d3c80006e10f8465b5f8d7c398d9198e20d3e190278e41411"
+        },
+        "markers": {
+          "path": "figure_HNSCC/Comparison/input/markers.txt",
+          "expected_sha256": "f8fe38fc58fd945a4eea649ff8b6dddf4ab5ccf31917bc62cb19c8033faa0163"
+        },
+        "native_values": {
+          "path": "figure_HNSCC/Comparison/input/raw.npy",
+          "expected_sha256": "e679f828f0cf77cbfc848302ec6b938522d6b3e897d5f4eda18ff6623be494b6"
+        },
+        "kmeanslow": {
+          "path": "figure_HNSCC/alignment/output/baseline_kmeanslow.float32.npy",
+          "expected_sha256": "be824d922b903a426cfff6cef1f1f3d9fcbc582b30f817d7813d9b4729bd2e0c"
+        },
+        "ramp": {
+          "path": "figure_HNSCC/Comparison/input/ramp.npy",
+          "expected_sha256": "3e07adb1d007ecb3cc9910cb2e7d31076b1ba17de619efcaeaea1687f6add67b"
+        }
+      },
+      "frozen_source_root": "figure_HNSCC",
+      "preprocessing_manifest": "figure_HNSCC/Comparison/input/manifest.json",
+      "input_contract_status": "pending",
+      "patient_identity_status": "pending",
+      "patient_column": null,
+      "fitting_pool_manifest": null
+    }
+  ],
+  "fitting_pool_policy": "Register ordered full U from the frozen task manifest before budget sampling; require it for representation fitting; sample only frozen rows.",
+  "head_tie_break": "maximum_source_score_then_effective_configuration_lexicographic",
+  "source_selection_metrics": {
+    "J1_J3": "ID-bound patient-weighted macro-F1",
+    "J2": "ID-bound unit-then-patient effective Spearman against source validation measured A"
+  },
+  "regularization_fields": {
+    "classification_linear": "logistic_c (C; larger means weaker regularization)",
+    "regression_linear": "ridge_alpha (alpha; larger means stronger regularization)",
+    "mlp": "mlp_alpha (alpha; larger means stronger regularization)"
+  }
+}

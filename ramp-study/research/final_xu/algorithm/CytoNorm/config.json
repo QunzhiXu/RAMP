@@ -1,0 +1,50 @@
+{
+  "schema_version": "final_xu.cytonorm.v1",
+  "method_label": "CytoNorm 2.0.6 (batch aggregates; benchmark-only preprocessing)",
+  "seed": 42,
+  "aggregate_cells_per_unit": 2000,
+  "flowsom": {"nCells": 1000000, "xdim": 15, "ydim": 15, "nClus": 10, "rlen": 10, "scale": false},
+  "quantile": {"nQ": 99, "goal": "mean", "limit": null},
+  "cases": {
+    "bone_marrow": {
+      "cells": 88031, "markers": 14, "units": 17,
+      "datasets": ["BM CODEX", "BM CyTOF", "Triana AbSeq"],
+      "directories": ["bm_codex", "bm_cytof", "triana_abseq"],
+      "transforms": [
+        {"operator": "asinh", "cofactor": 1, "reason": "Explicit CODEX intensity adaptation; full-panel provider CLR is unavailable under the benchmark_data-only restriction."},
+        {"operator": "asinh", "cofactor": 5, "reason": "CCT-subtracted normalized CyTOF intensities are not yet nonlinearly transformed."},
+        {"operator": "log1p", "reason": "Explicit raw AbSeq UMI adaptation using frozen shared markers only; not full-panel CLR or library-size normalization."}
+      ]
+    },
+    "tnbc": {
+      "cells": 62701, "markers": 11, "units": 11,
+      "datasets": ["Tietscher IMC", "Meyer IMC", "Shiao CODEX"],
+      "directories": ["tietscher_imc", "meyer_imc", "shiao_codex"],
+      "transforms": [
+        {"operator": "asinh", "cofactor": 1, "reason": "Frozen source intensities; cofactor-1 transformation follows the source IMC analysis convention."},
+        {"operator": "asinh", "cofactor": 1, "reason": "Frozen source counts; cofactor-1 transformation follows the source IMC analysis convention."},
+        {"operator": "asinh", "cofactor": 1, "reason": "Explicit CODEX comparator adaptation of frozen compartment-averaged intensity."}
+      ]
+    },
+    "melanoma": {
+      "cells": 60000, "markers": 12, "units": 46,
+      "datasets": ["MEL_Hickey2023_CODEX", "MEL_Hoch2021_IMC", "MEL_Ptacek2021_MIBI"],
+      "directories": ["hickey_codex", "hoch_imc", "ptacek_mibi"],
+      "transforms": [
+        {"operator": "identity", "reason": "Provider tissue-wise marker z-normalized values; preserve negative values; no second transform."},
+        {"operator": "identity", "reason": "Frozen provider exprs already uses arcsinh; no second transform."},
+        {"operator": "identity", "reason": "Frozen provider MIBI analysis layer is already transformed; no guessed inverse or second transform."}
+      ]
+    },
+    "lung_cancer": {
+      "cells": 60000, "markers": 8, "units": 30,
+      "datasets": ["Senosain CyTOF", "Cords IMC", "Monkman CODEX"],
+      "directories": ["senosain_cytof", "cords_imc", "monkman_codex"],
+      "transforms": [
+        {"operator": "asinh", "cofactor": 5, "reason": "Frozen normalized/denoised CyTOF event intensities."},
+        {"operator": "asinh", "cofactor": 1, "reason": "Frozen reconstructed counts; provider full-cohort p99 censoring is unavailable, so no subset-estimated clipping is added."},
+        {"operator": "asinh", "cofactor": 150, "reason": "Source-study cofactor; full-panel provider marker/cell scaling is unavailable and is not reconstructed from eight markers."}
+      ]
+    }
+  }
+}

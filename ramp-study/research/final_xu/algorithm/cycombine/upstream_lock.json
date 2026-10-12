@@ -1,0 +1,63 @@
+{
+  "method": "cyCombine",
+  "package_version": "0.2.5",
+  "tag": "v0.2.5",
+  "publication_release_note": "cyCombine as used in publication",
+  "repository": "https://github.com/biosurf/cyCombine",
+  "publication_commit": "5b5903c1accc887b4a11c2b25c550a0b0e36876d",
+  "source_archive": {
+    "path": "vendor/cyCombine-v0.2.5.tar.gz",
+    "url": "https://github.com/biosurf/cyCombine/archive/refs/tags/v0.2.5.tar.gz",
+    "sha256": "8ac3a3827b3f68ca4c1e036b22a2adff594b00fb25d09483648c5191da87eaee"
+  },
+  "source_file_sha256": {
+    "DESCRIPTION": "025735389534d0a31ff8e21c621f73d79fe0f7b92d8cde623a7c7ccefc5f7966",
+    "R/01_prepare_data.R": "603af55fa86256498a2cb150444605ec5a950ef99627681eaed93a3c0f44c359",
+    "R/02_batch_correct.R": "bf7a4e2bbe1205bda1218e43f0d9de749b2fe0792112979fb294c54fb9170343",
+    "renv.lock": "1d4409cf40c0fe4195ec6a97b2c78beb59bd00726b793fe8d164f8815e365a18",
+    "LICENSE.md": "f798109a7706718aa66cccfc24fcadf861dbc1fdb0535760c3ff7b64de434c2a"
+  },
+  "installed_function_body_sha256": {
+    "normalize": "0cd7696d17cea6dac7c792d3a7792942042539b95b51db71727b68a69587ae09",
+    "create_som": "32bc7f1661577a8e08bd121a6234db50ca265bd044a1d41aed68657ef7d8a22e",
+    "correct_data": "407d2aaacefa88587c2463a2e56c889fd12931c9d8a65e6086c2cf561b53820c",
+    "batch_correct": "fd6ea1ea423c4aca51346f3c2e5b23c8e35c540a5cecbe3c55218cd7acd131f0"
+  },
+  "paper": {
+    "title": "cyCombine allows for robust integration of single-cell cytometry datasets within and across technologies",
+    "doi": "10.1038/s41467-022-29383-5",
+    "local_pdf_sha256": "3f08d215ff05d7aa939d0f26cc4295a462601a6174ea828a1a54949ddd329fba"
+  },
+  "cross_platform_vignette": {
+    "url": "https://biosurf.org/cyCombine_CITEseq_Spectral_CyTOF.html",
+    "retrieved_date": "2026-08-30",
+    "sha256": "f90ef5082f92827a19aa745f0121d6f7f4f2f36d8a6a7fdfc35e5673b624390a"
+  },
+  "official_cross_platform_vignette_profile": {
+    "definition": "Settings explicit in the official vignette plus unchanged v0.2.5 defaults for omitted batch_correct arguments.",
+    "vignette_explicit_fields": [
+      "seed",
+      "xdim",
+      "ydim",
+      "norm_method",
+      "ties_method"
+    ],
+    "v0.2.5_default_fields": [
+      "rlen",
+      "parametric_combat",
+      "covariate",
+      "anchor"
+    ],
+    "xdim": 8,
+    "ydim": 8,
+    "rlen": 10,
+    "seed": 840,
+    "norm_method": "rank",
+    "ties_method": "average",
+    "parametric_combat": true,
+    "covariate": null,
+    "anchor": null,
+    "batch_definition": "dataset/platform",
+    "fit_mode": "all datasets in one native multi-batch call"
+  }
+}

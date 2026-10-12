@@ -1,0 +1,38 @@
+{
+  "schema_version": "final_xu.cytofruv.upstream_lock.v1",
+  "method": "CytofRUV",
+  "package_version": "0.1",
+  "repository": "https://github.com/mtrussart/CytofRUV",
+  "commit": "7088af8794ede0fc7e3c6ef545638e279e8101eb",
+  "commit_date": "2022-08-01T13:17:06+02:00",
+  "archive": "vendor/CytofRUV-7088af8794ede0fc7e3c6ef545638e279e8101eb.tar.gz",
+  "archive_sha256": "a614b250a7f14488679a8822e1b1b6bb72f5fe292a74289b4f63b3f8b4d9f6b6",
+  "core_source": "R/normalise_data.R",
+  "core_source_sha256": "cb0c07105985d38b86c198816172ea3144b749bf2cbe50e9681ade4e8ae692ab",
+  "cluster_source": "R/cluster_data.R",
+  "cluster_source_sha256": "2154ae39693cc3036e59c824b14a6ddc7d76f0c776d19e997b7743eadbb6f937",
+  "namespace_sha256": "19e1283ba9ee3dd44e1eacbc4ef41fb14a8e034dbe5ed44e06c818c4d733fd4f",
+  "description_sha256": "e4ed3e8d7b8558cff4064eb599ec81272d2b413683341c95cd2ffefead78c3d1",
+  "license": "GPL-3",
+  "paper": "https://doi.org/10.7554/eLife.59630",
+  "notes": [
+    "The upstream repository has no tagged release; the full commit and path-limited git archive hash define the implementation.",
+    "The archive contains unmodified DESCRIPTION, LICENSE.md, NAMESPACE, README.md, R/, man/, and the official vignette; upstream example data and rendered website assets are intentionally excluded.",
+    "The production wrapper calls the unmodified run_RUVIII function loaded from the locked core source.",
+    "The upstream core calls rsvd twice when constructing fullalpha; this wrapper preserves that behavior for source parity."
+  ],
+  "direct_dependencies": {
+    "ruv": {
+      "version": "0.9.7.1",
+      "archive": "vendor/ruv_0.9.7.1.tar.gz",
+      "archive_sha256": "a0c54e56ba3d8f6ae178ae4d0e417a79295abf5dcb68bbae26c4b874734d98d8"
+    },
+    "rsvd": {
+      "version": "1.0.5",
+      "archive": "vendor/rsvd_1.0.5.tar.gz",
+      "archive_sha256": "e40686b869acd4f71fdb1e8e7a6c64cd6792fc9d52a78f9e559a7176ab84e21e"
+    }
+  },
+  "runtime_function_lock": "runtime_function_lock.csv",
+  "runtime_function_lock_note": "Hashes cover the formals and bodies of every ruv/rsvd function reached by the locked numerical core."
+}

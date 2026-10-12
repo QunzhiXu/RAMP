@@ -1,0 +1,14 @@
+{
+  "version": "ridge_full_range_20260922",
+  "benchmark": "bone_marrow",
+  "title": "Bone marrow | CODEX, CyTOF and AbSeq",
+  "folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Bone marrow/ridge_full_range_20260922",
+  "png": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Bone marrow/ridge_full_range_20260922/output/bone_marrow_supplement.png",
+  "pdf": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Bone marrow/ridge_full_range_20260922/output/pdf/bone_marrow_supplement.pdf",
+  "status": "rendered_and_verified",
+  "ridge_display_units": 17,
+  "ridge_display_cells": 88031,
+  "previous_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Bone marrow/ridge_uniform_20260922",
+  "revision": "Complete density support and padded axes; unchanged bandwidth, cell/sample selection, colors and UMAP pixels",
+  "ridge_outline": "Full-support density with endpoints at baseline"
+}

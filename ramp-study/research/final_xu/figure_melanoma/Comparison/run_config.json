@@ -1,0 +1,30 @@
+{
+  "case": "melanoma_story",
+  "root": "/Users/qxu6/Documents/New project/final_xu",
+  "comparison": "/Users/qxu6/Documents/New project/final_xu/figure_melanoma/Comparison",
+  "datasets": [
+    "Moldoveanu IMC",
+    "Engelbrecht CITE-seq"
+  ],
+  "markers": [
+    "PDL1",
+    "CD45",
+    "CD4",
+    "CD20",
+    "CD8",
+    "CD45RA",
+    "CD40",
+    "CD3",
+    "CD45RO",
+    "CD14",
+    "CD31",
+    "CD29",
+    "LAG3",
+    "ICOS",
+    "OX40"
+  ],
+  "input_manifest_sha256": "0aacab6f6bf721949d000dddb6a58f99ac59e550fa9a48de3514a364c6843cf4",
+  "seed": 42,
+  "maxfuse_seed": 20260830,
+  "scope": "same shared marker set and exact original full story cell cohort for every method"
+}

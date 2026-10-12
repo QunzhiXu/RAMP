@@ -1,0 +1,21 @@
+{
+  "release": "j1_scope_update_20260921",
+  "directory": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/releases/j1_scope_update_20260921",
+  "report_sha256": "a49841dd5a8354937530e61d2710cc3848de7f5dba55e9fd8d68a6c40b615b3c",
+  "primary_means_sha256": "2fa5f7fa5c87d49946b6147c60a1222bb94fa69bd459a36b0038a41d4261998f",
+  "accepted_updated_tasks": [
+    "tnbc",
+    "lung_story",
+    "melanoma_story",
+    "hnscc_story"
+  ],
+  "unchanged_tasks": [
+    "bone_marrow",
+    "melanoma",
+    "lung_cancer"
+  ],
+  "figure3_updated": false,
+  "manuscript_updated": false,
+  "pending_scope": "Remaining benchmark reviews before figure/manuscript integration",
+  "human_summary": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/reports/seven_benchmark_latest_summary_20260921/README.md"
+}

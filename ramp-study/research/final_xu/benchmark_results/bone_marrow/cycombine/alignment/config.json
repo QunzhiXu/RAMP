@@ -1,0 +1,28 @@
+{
+  "schema_version": "final_xu.cycombine_repro.v1",
+  "cell_id_column": "cell_id",
+  "batch_column": "dataset",
+  "sample_column": "unit_key",
+  "batch_levels": [
+    "BM CODEX",
+    "BM CyTOF",
+    "Triana AbSeq"
+  ],
+  "input_scale": {
+    "status": "analysis_ready",
+    "description": "BM CODEX source-study CLR, BM CyTOF asinh(x/5), and Triana AbSeq official-vignette CLR margin=2; no transform is applied inside algorithm/cycombine.",
+    "provenance_file": "../preprocessing/preprocessing_manifest.json",
+    "algorithm_applies_transformation": false
+  },
+  "algorithm_parameters": {
+    "xdim": 8,
+    "ydim": 8,
+    "rlen": 10,
+    "seed": 840,
+    "norm_method": "rank",
+    "ties_method": "average",
+    "parametric": true,
+    "covariate": null,
+    "anchor": null
+  }
+}

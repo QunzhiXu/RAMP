@@ -1,0 +1,17 @@
+{
+  "method": "fastMNN",
+  "package": "batchelor",
+  "version": "1.18.1",
+  "bioconductor_release": "3.18",
+  "release_url": "https://bioconductor.org/packages/3.18/bioc/html/batchelor.html",
+  "source_url": "https://bioconductor.org/packages/3.18/bioc/src/contrib/batchelor_1.18.1.tar.gz",
+  "source_archive": "vendor/batchelor_1.18.1.tar.gz",
+  "source_sha256": "a58590880cf00dd2ff7c9fc75ee611e4d4cc5bae98246a1878f8d7d1da6c8dfc",
+  "git_url": "https://git.bioconductor.org/packages/batchelor",
+  "git_branch": "RELEASE_3_18",
+  "git_commit": "c427893",
+  "git_commit_date": "2023-12-27",
+  "primary_paper_doi": "10.1038/nbt.4091",
+  "fastmnn_theory_url": "https://marionilab.github.io/FurtherMNN2018/theory/description.html",
+  "source_modified": false
+}

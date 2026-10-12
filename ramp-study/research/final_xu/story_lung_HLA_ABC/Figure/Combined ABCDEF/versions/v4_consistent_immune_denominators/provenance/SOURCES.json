@@ -1,0 +1,38 @@
+[
+  {
+    "key": "ABC",
+    "title": null,
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/Figure/Combined ABC/panels_ABC_preview.svg",
+    "local": "inputs/panels_ABC_preview.svg",
+    "sha256": "b232a11d04f2b8d4847e2ea28f2a441e31c3b33155203c3f4b08558fb5aa2883",
+    "width_pt": 1025.04,
+    "height_pt": 198.0
+  },
+  {
+    "key": "D",
+    "title": "Validation in mIF",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/Figure/Panel D/panel_D_validation.svg",
+    "local": "inputs/panel_D_validation.svg",
+    "sha256": "34ea09ed90d081e2d8d00d092ab5e6135694d4edade85d1e5fc9c665efd36416",
+    "width_pt": 352.8,
+    "height_pt": 198.0
+  },
+  {
+    "key": "E",
+    "title": "Immune composition",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/Figure/Panel E/panel_E_immune_composition.svg",
+    "local": "inputs/panel_E_immune_composition.svg",
+    "sha256": "9f0e275ddf93278be750056510f53d0c169a5d158cf1177f83c37b08787fd122",
+    "width_pt": 324.0,
+    "height_pt": 198.0
+  },
+  {
+    "key": "F",
+    "title": "vCAF HLA-ABC and DFS",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/Figure/Panel F/panel_F_survival.svg",
+    "local": "inputs/panel_F_survival.svg",
+    "sha256": "694e5024b9ef759ec240bd8ecaf40fb39051ccd37518e88cebdb26147299b02b",
+    "width_pt": 342.24,
+    "height_pt": 198.0
+  }
+]

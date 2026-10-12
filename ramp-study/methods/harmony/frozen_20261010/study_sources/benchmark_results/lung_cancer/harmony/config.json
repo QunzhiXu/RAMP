@@ -1,0 +1,42 @@
+{
+  "schema_version": "final_xu.harmony_benchmark.v1",
+  "benchmark": "lung_cancer",
+  "display_name": "Lung cancer",
+  "input": {
+    "kind": "combined_npy",
+    "matrix": "benchmark_data/lung_cancer/input/raw.npy",
+    "fit_metadata": "benchmark_data/lung_cancer/input/fit_metadata.csv.gz",
+    "identity_metadata": "benchmark_data/lung_cancer/selected_cells.csv.gz",
+    "marker_file": "benchmark_data/lung_cancer/input/markers.txt",
+    "source_scale_note": "Frozen provider/source analysis-ready CyTOF, IMC, and CODEX values; not a common raw-count scale."
+  },
+  "expected": {
+    "cells": 60000,
+    "markers": ["CD3", "CD4", "CD8", "CD31", "HLA_DR", "KI67", "VIMENTIN", "EPI"],
+    "dataset_order": ["Senosain CyTOF", "Cords IMC", "Monkman CODEX"],
+    "dataset_counts": {"Senosain CyTOF": 20000, "Cords IMC": 20000, "Monkman CODEX": 20000}
+  },
+  "umap": {
+    "parameters": {"n_neighbors": 30, "min_dist": 0.12, "metric": "euclidean", "random_state": 42, "transform_seed": 42, "n_jobs": 1, "low_memory": true},
+    "initialization": {
+      "kind": "spectral"
+    }
+  },
+  "display": {
+    "relabel_file": "benchmark_data/lung_cancer/relabel/relabeled_metadata.csv.gz",
+    "palette_file": "benchmark_data/lung_cancer/relabel/display_palette.csv",
+    "draw_order_override": ["Tumor/Epithelial", "Mix", "CD8 T", "Endothelial", "Myeloid", "B-like", "CD4 T"],
+    "dataset_colors": {"Senosain CyTOF": "#1F77B4", "Cords IMC": "#8C564B", "Monkman CODEX": "#9EDAE5"},
+    "shuffle_dataset_points": true,
+    "shuffle_seed": 42,
+    "dataset_point_size": 0.62,
+    "dataset_alpha": 0.68,
+    "figure_size": [12.2, 5.7],
+    "celltype_legend_y": 0.063,
+    "celltype_legend_ncol": 7,
+    "celltype_legend_fontsize": 7.5,
+    "dataset_legend_y": 0.014,
+    "dataset_legend_fontsize": 8.0,
+    "layout_bottom": 0.16
+  }
+}

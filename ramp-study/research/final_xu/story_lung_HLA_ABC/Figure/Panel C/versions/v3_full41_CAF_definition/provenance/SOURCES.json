@@ -1,0 +1,32 @@
+[
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/Figure/Panel C/caf_fullpanel/results/FULL41_UMAP.npy",
+    "local": "data/FULL41_UMAP.npy",
+    "sha256": "f58dabfe302457b928cf4d9f69ea0756fb8e3986ade65ad71d47336cdde25bb0"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/Figure/Panel C/caf_fullpanel/results/FULL41_COORDINATES.csv.gz",
+    "local": "data/FULL41_COORDINATES.csv.gz",
+    "sha256": "27a98a3215606caf190fd85aec053b69d63e503a7f2bddf165796ec7c1240caa"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/Figure/Panel C/caf_fullpanel/results/FULL41_UMAP_CONFIG.json",
+    "local": "provenance/FULL41_UMAP_CONFIG.json",
+    "sha256": "12200946dfba44aa507e8649d7c0132d0f7da4cd72d47d4d0c00ecaeca9cecd7"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/Figure/Panel C/caf_fullpanel/provenance/VERIFICATION.json",
+    "local": "provenance/FULL41_VERIFICATION.json",
+    "sha256": "13b7b243826edb3b0494c389728cf77382d8279266b09b0387b3f18e597cd998"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/Figure/Panel B/provenance/VERIFICATION.json",
+    "local": "provenance/PANEL_B_VERIFICATION.json",
+    "sha256": "50036983b05505eb2e588d423584e25dd073ad3ff0145647ad854ba966a116ea"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/raw_data/lung_cancer/Cords2024/Paper_Cords_2024.md",
+    "local": "provenance/Cords2024_paper.md",
+    "sha256": "52eabac92f6ae89933f880f27ad8dc695c389af348467518bd052f93937d4f72"
+  }
+]

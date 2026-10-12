@@ -1,0 +1,69 @@
+{
+  "input_dependencies": {
+    "status": "passed",
+    "evidence_path": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/formal_preflight_v0_5/RELEASE_REPORT.json",
+    "sha256": "95714b054c7f2c61b26a9e43bb965855f1a6eb028670a89b6a929b1609cf23de"
+  },
+  "patient_mapping": {
+    "status": "passed",
+    "evidence_path": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/formal_preflight_v0_5/RELEASE_REPORT.json",
+    "sha256": "95714b054c7f2c61b26a9e43bb965855f1a6eb028670a89b6a929b1609cf23de"
+  },
+  "source_target_identity": {
+    "status": "passed",
+    "evidence_path": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/formal_preflight_v0_5/RELEASE_REPORT.json",
+    "sha256": "95714b054c7f2c61b26a9e43bb965855f1a6eb028670a89b6a929b1609cf23de"
+  },
+  "fixed_fitting_pool": {
+    "status": "passed",
+    "evidence_path": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/formal_preflight_v0_5/RELEASE_REPORT.json",
+    "sha256": "95714b054c7f2c61b26a9e43bb965855f1a6eb028670a89b6a929b1609cf23de"
+  },
+  "mask_isolation": {
+    "status": "passed",
+    "evidence_path": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/checks_v0_5/REPORT.json",
+    "sha256": "2e369df8372666b17f18df862cda3de0249a2d7dbc05dbac5032a2dfa4c0b076"
+  },
+  "supervision_budget": {
+    "status": "passed",
+    "evidence_path": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/formal_preflight_v0_5/RELEASE_REPORT.json",
+    "sha256": "95714b054c7f2c61b26a9e43bb965855f1a6eb028670a89b6a929b1609cf23de"
+  },
+  "j3_equal_budget": {
+    "status": "passed",
+    "evidence_path": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/formal_preflight_v0_5/RELEASE_REPORT.json",
+    "sha256": "95714b054c7f2c61b26a9e43bb965855f1a6eb028670a89b6a929b1609cf23de"
+  },
+  "source_only_selection": {
+    "status": "passed",
+    "evidence_path": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/checks_v0_5/REPORT.json",
+    "sha256": "2e369df8372666b17f18df862cda3de0249a2d7dbc05dbac5032a2dfa4c0b076"
+  },
+  "representation_provenance": {
+    "status": "passed",
+    "evidence_path": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/formal_preflight_v0_5/RELEASE_REPORT.json",
+    "sha256": "95714b054c7f2c61b26a9e43bb965855f1a6eb028670a89b6a929b1609cf23de"
+  },
+  "aggregation_checks": {
+    "status": "passed",
+    "evidence_path": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/checks_v0_5/REPORT.json",
+    "sha256": "2e369df8372666b17f18df862cda3de0249a2d7dbc05dbac5032a2dfa4c0b076"
+  },
+  "runtime_pilot": {
+    "status": "passed",
+    "evidence_path": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/formal_chain_pilot_v0_5/summary_final/REPORT.json",
+    "sha256": "0e1299643401869b80162362e7083465f83ab37f31e9971727576ab626728d92"
+  },
+  "canonical_melanoma": {
+    "status": "passed",
+    "evidence_path": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/canonical_melanoma_v0_3/REPORT.json",
+    "sha256": "0e19b24d4b5a93876e8ff69007dad28932bad796abc0eddf87a8d2211a967753"
+  },
+  "configuration_frozen": {
+    "status": "passed",
+    "evidence_path": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/formal_preflight_v0_5/RELEASE_REPORT.json",
+    "sha256": "95714b054c7f2c61b26a9e43bb965855f1a6eb028670a89b6a929b1609cf23de",
+    "configuration_sha256": "5b786f8c22be2dcaf76c8448b06e0d72cf790ae70581c27fc698a0d8c2e73d4b",
+    "code_sha256": "e2e58006267a4831ec5d8e3353a546f11b835fdbe60b4df9554dc6427e6fb812"
+  }
+}

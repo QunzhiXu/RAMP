@@ -1,0 +1,114 @@
+{
+  "checked_utc": "2026-10-10T16:43:34.459155+00:00",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "python": "3.14.1",
+  "python_dependencies": {
+    "numpy": "2.4.0",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.8.0",
+    "umap-learn": "0.5.11",
+    "matplotlib": "3.10.8",
+    "numba": "0.64.0",
+    "llvmlite": "0.46.0",
+    "pynndescent": "0.6.0",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0",
+    "pillow": "12.0.0"
+  },
+  "provider_build_environment": {
+    "Python": "3.14.1",
+    "numpy": "2.4.0",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "R": "4.3.2",
+    "SeuratObject": "4.1.4",
+    "Matrix": "1.6.1.1"
+  },
+  "environment_limit": "Local venv inherits system site packages and installs UMAP 0.5.11 locally. Data/relabel were executed by the same Python installation outside the venv; alignment/UMAP inside it. No clean-machine installation tested.",
+  "tests": {
+    "returncode": 0,
+    "count": 13,
+    "stdout": "",
+    "stderr": "test_broken_symlink_rejected (test_port.PathTests.test_broken_symlink_rejected) ... ok\ntest_existing_output_rejected (test_port.PathTests.test_existing_output_rejected) ... ok\ntest_nested_input_output_rejected (test_port.PathTests.test_nested_input_output_rejected) ... ok\ntest_siblings_allowed (test_port.PathTests.test_siblings_allowed) ... ok\ntest_symlink_and_hardlink_targets_rejected (test_port.PathTests.test_symlink_and_hardlink_targets_rejected) ... ok\ntest_cd19_excluded (test_port.SamplingAndLabelsTests.test_cd19_excluded) ... ok\ntest_cytof_rng_and_order (test_port.SamplingAndLabelsTests.test_cytof_rng_and_order) ... ok\ntest_insufficient_pool_rejected (test_port.SamplingAndLabelsTests.test_insufficient_pool_rejected) ... ok\ntest_macrophage_requires_both_provider_labels (test_port.SamplingAndLabelsTests.test_macrophage_requires_both_provider_labels) ... ok\ntest_nk_merge (test_port.SamplingAndLabelsTests.test_nk_merge) ... ok\ntest_no_external_research_tree_runtime_paths (test_port.SourceTests.test_no_external_research_tree_runtime_paths) ... ok\ntest_unmodified_helper_function_ast (test_port.SourceTests.test_unmodified_helper_function_ast) ... ok\ntest_vendor_and_r_export_byte_identical (test_port.SourceTests.test_vendor_and_r_export_byte_identical) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.022s\n\nOK\n"
+  },
+  "full_chain": {
+    "checks_passed": 39,
+    "checks_total": 39,
+    "data_files": 14,
+    "relabel_payload_files": 7,
+    "strict_rank_inversions": 0,
+    "umap_npy_byte_identical": true,
+    "png_byte_identical": true
+  },
+  "original_sources_rechecked": [
+    {
+      "path": "final_xu/benchmark_data/bone_marrow/build_benchmark.py",
+      "sha256": "4946b828d39b9c72587ac45f3888b9ca4cf93dbb774c2e73f1d41a75c2a7c19c",
+      "unchanged": true
+    },
+    {
+      "path": "final_xu/benchmark_data/bone_marrow/export_codex_30k.R",
+      "sha256": "7cf031f7e67e0e7dd9bf961858635f58e6fc6107110ca09ae40862c7e8293675",
+      "unchanged": true
+    },
+    {
+      "path": "final_xu/benchmark_data/bone_marrow/relabel/build_relabel.py",
+      "sha256": "b48537f3446df387ad04cafd040d612590d9ab721fb7babef80a7c0660636782",
+      "unchanged": true
+    },
+    {
+      "path": "final_xu/benchmark_results/bone_marrow/ramp/alignment/run_alignment.py",
+      "sha256": "ad64dab343b29ec23cbd63f52cfd342703d677d86ebd8cd4b9ba1141bb06741e",
+      "unchanged": true
+    },
+    {
+      "path": "final_xu/benchmark_results/bone_marrow/ramp/umap/plot_umap.py",
+      "sha256": "b8d81be084878561ae839498dd634c0a04b2ea2a6482cad1220dec1e8e00a53b",
+      "unchanged": true
+    },
+    {
+      "path": "final_xu/algorithm/ramp/__init__.py",
+      "sha256": "105b99e051b74677fe2071fe31ede842f3d43da223ed4d90761cd4e71ddbc4f0",
+      "unchanged": true
+    },
+    {
+      "path": "final_xu/algorithm/ramp/ramp.py",
+      "sha256": "96845657ec9dbe652073cf7d2e5666c96141168c03604d6ba7a13075d5b4969d",
+      "unchanged": true
+    },
+    {
+      "path": "final_xu/algorithm/ramp/ramp_ver2.py",
+      "sha256": "2501055cf269e383179b602bd99ff39171c8d283bc6332cd4143eed30c4a68c1",
+      "unchanged": true
+    },
+    {
+      "path": "final_xu/algorithm/ramp/run_ramp.py",
+      "sha256": "3829aae72f7df09b0bc829be73e362da6ac0786af5b1ee442b192e7f25ed7ffb",
+      "unchanged": true
+    }
+  ],
+  "inventory_verification": {
+    "source_unchanged_check.json": {
+      "checked_utc": "2026-10-10T16:41:57.662083+00:00",
+      "checked_files": 2950,
+      "changed_or_missing": [],
+      "scope": "Only files present in the initial source census; not provider data or all workspace files."
+    },
+    "curated_unchanged_check.json": {
+      "checked_utc": "2026-10-10T16:41:57.934027+00:00",
+      "checked_files": 563,
+      "changed_or_missing": [],
+      "scope": "Selected files hashed at curated snapshot time; supplementary table contents and large matrices not included."
+    },
+    "audit2_dependency_inputs_verify.json": {
+      "checked_utc": "2026-10-10T16:41:58.064579+00:00",
+      "snapshot_sha256": "abadca0d2732d1979506d274808ade641bf846ff81a4541d91faf8a0755c9aab",
+      "checked_inputs": 9,
+      "checked_consumers": 4,
+      "mismatches": [],
+      "status": "PASS"
+    }
+  }
+}

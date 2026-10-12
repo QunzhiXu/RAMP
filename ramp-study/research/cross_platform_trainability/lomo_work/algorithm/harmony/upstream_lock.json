@@ -1,0 +1,36 @@
+{
+  "schema_version": "final_xu.harmony_upstream_lock.v1",
+  "method_label": "Harmony-direct (ADTnorm protocol; no PCA)",
+  "harmony": {
+    "version": "1.2.3",
+    "publication_date": "2024-11-27",
+    "source_url": "https://cran.r-project.org/src/contrib/Archive/harmony/harmony_1.2.3.tar.gz",
+    "archive": "vendor/harmony_1.2.3.tar.gz",
+    "sha256": "9ab815ab0260a6726b2bb48de3fa4c3cad36acbe9ac6158d515fb16ea66bbddd",
+    "license": "GPL-3"
+  },
+  "dependencies": [
+    {
+      "package": "RcppProgress",
+      "version": "0.4.2",
+      "source_url": "https://cran.r-project.org/src/contrib/RcppProgress_0.4.2.tar.gz",
+      "archive": "vendor/RcppProgress_0.4.2.tar.gz",
+      "sha256": "b1624b21b7aeb1dafb30f092b2a4bef4c3504efd2d6b00b2cdf55dc9df194b48"
+    },
+    {
+      "package": "RhpcBLASctl",
+      "version": "0.23.42",
+      "source_url": "https://cran.r-project.org/src/contrib/RhpcBLASctl_0.23-42.tar.gz",
+      "archive": "vendor/RhpcBLASctl_0.23-42.tar.gz",
+      "sha256": "5c889d5b69e264060b9f1f0383c447f594855b8afc15b7d76d39e4d62b946615"
+    }
+  ],
+  "adtnorm_protocol": {
+    "official_code_url": "https://github.com/yezhengSTAT/ADTnorm/blob/02321b18ccec3ec5ebfcbbb40c28c3a3edb2ec0e/manuscript/BenchmarkingAnalysis/ImplementMethods/harmony_transform.R#L5-L11",
+    "official_wrapper_sha256": "29bc7dbfa1f4683659f85c922785835c5a457f00d2b9041458f83d8a6a727a2a",
+    "call": "HarmonyMatrix(data_mat = cell_x_adt, meta_data = cell_x_feature$batch, do_pca = FALSE)",
+    "exact_harmony_version_reported": false,
+    "main_artifact_profile": "Harmony(CLR)"
+  },
+  "scope_caveat": "Direct marker axes are treated as Harmony coordinates following ADTnorm; this is not canonical PCA-Harmony marker-expression correction."
+}

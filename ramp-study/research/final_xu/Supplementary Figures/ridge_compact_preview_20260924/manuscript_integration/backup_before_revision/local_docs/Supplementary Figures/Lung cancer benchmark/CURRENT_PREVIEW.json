@@ -1,0 +1,14 @@
+{
+  "version": "raw_labels_20260924",
+  "benchmark": "lung_cancer",
+  "title": "Lung cancer | CyTOF, IMC and CODEX",
+  "folder": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924",
+  "png": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924/output/png/figure_s4_lung_cancer_benchmark.png",
+  "pdf": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924/output/pdf/figure_s4_lung_cancer_benchmark.pdf",
+  "status": "rendered_and_verified",
+  "ridge_display_units": 30,
+  "ridge_display_cells": 60000,
+  "previous_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Lung cancer benchmark/ridge_full_range_20260922",
+  "revision": "Raw label only; full density range and all other pixels unchanged.",
+  "ridge_outline": "Full-support density with endpoints at baseline"
+}

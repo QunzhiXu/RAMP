@@ -1,0 +1,71 @@
+{
+  "methods": [
+    "unaligned",
+    "ramp",
+    "harmony_direct",
+    "cycombine",
+    "cytonorm",
+    "fastmnn",
+    "maxfuse",
+    "clipped_zscore",
+    "minmax",
+    "percentile"
+  ],
+  "seeds": [
+    20260919,
+    20260920,
+    20260921
+  ],
+  "primary_fit_cells": 500,
+  "validation_cells": 512,
+  "calibration_per_unit": 64,
+  "learning_fit_cells": [
+    20,
+    100,
+    500,
+    2000
+  ],
+  "capacity_widths": [
+    8,
+    32,
+    128
+  ],
+  "learning_width": 32,
+  "labelled_patients": [
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "j2_primary_markers": "all eligible shared markers, all ordered directions",
+  "j2_resource_directions": "first registered dataset to last registered dataset, all eligible shared markers",
+  "j1_resource_directions": "all ordered directions",
+  "j3_fit_quota_per_class": 25,
+  "j3_validation_quota_per_class": 10,
+  "j4": {
+    "width": 32,
+    "corpus_per_half": 1000,
+    "pretrain_validation_per_source": 100,
+    "probe_fit": 500,
+    "probe_validation": 512,
+    "batch_size": 128,
+    "pretrain_updates": 300,
+    "supervised_updates": 1000,
+    "validation_every": 100,
+    "learning_rate": 0.001,
+    "mask_fraction": 0.3
+  },
+  "bootstrap": {
+    "kind": "paired Bayesian patient-cluster bootstrap",
+    "draws": 500,
+    "seed": 20260920,
+    "identity": "registered global dataset::patient identity; common patients receive identical exponential weights across methods, directions, markers, seeds and tasks",
+    "scope": "conditional on frozen models/splits; unit-descriptive directions have no patient CI"
+  },
+  "workers": 2,
+  "minimum_free_gib": 40,
+  "supervisor_max_hours": 72,
+  "formal_scope": "finite grid; no gating; no target-performance screening",
+  "source_budget_report_sha256": "0e0059822fd6d9d90708fe3252b0beb51c3e8f24d31ee35ba666986dcebbb626"
+}

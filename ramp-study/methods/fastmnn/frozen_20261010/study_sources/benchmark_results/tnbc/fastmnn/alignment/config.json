@@ -1,0 +1,46 @@
+{
+  "algorithm_parameters": {
+    "auto_merge": false,
+    "correct_all": false,
+    "cos_norm": true,
+    "d_policy": "request 50; batchelor realizes min(50, n_markers - 1, n_cells - 1)",
+    "deferred": true,
+    "get_variance": true,
+    "k": 20,
+    "merge_order": null,
+    "min_batch_skip": 0,
+    "ndist": 3,
+    "neighbor_solver": "KmknnParam",
+    "normal_kind": "Inversion",
+    "parallel_solver": "SerialParam",
+    "pca_solver": "IrlbaParam",
+    "prop_k": null,
+    "requested_d": 50,
+    "rng_kind": "Mersenne-Twister",
+    "sample_kind": "Rejection",
+    "seed": 42,
+    "subset_row": null,
+    "weights": null
+  },
+  "batch_column": "dataset",
+  "batch_levels": [
+    "Tietscher IMC",
+    "Meyer IMC",
+    "Shiao CODEX"
+  ],
+  "cell_id_column": "cell_id",
+  "input_scale": {
+    "algorithm_applies_other_expression_transform": false,
+    "algorithm_internal_cosine_normalization": true,
+    "description": "Tietscher and Meyer provider exprs scales verified as asinh(counts/1); Shiao frozen compartment means receive one predeclared asinh(x/1) benchmark adaptation. No marker-wise z-score or cyCombine correction.",
+    "input_sha256": "c37eb7dced3bccad11921f0346450bffa86a242d2e1fb86a4fde1d4ad8f93daa",
+    "marker_file_sha256": "39bb80c51c6b7b246d915f2f524def088b056c51a9a083e2db44ea7fe79cce77",
+    "name": "cofactor1_asinh_analysis_ready",
+    "preprocessing_record_file": "../preprocessing/preprocessing_manifest.json",
+    "preprocessing_record_sha256": "50aa6367582b1a27a1384fb60ad7e92068b4ac766b82e13e781905da06a2e2e3",
+    "status": "analysis_ready"
+  },
+  "method_label": "fastMNN (batchelor 1.18.1; corrected embedding)",
+  "sample_column": "unit_key",
+  "schema_version": "final_xu.fastmnn_repro.v1"
+}

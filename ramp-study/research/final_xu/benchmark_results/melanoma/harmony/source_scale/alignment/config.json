@@ -1,0 +1,43 @@
+{
+  "algorithm_parameters": {
+    "alpha": 0.2,
+    "block_size": 0.05,
+    "early_stop": true,
+    "epsilon_cluster": 0.001,
+    "epsilon_harmony": 0.01,
+    "lambda": 1.0,
+    "max_iter": 10,
+    "max_iter_cluster": 20,
+    "nclust_policy": "min(round(n_cells / 30), 100)",
+    "ncores": 1,
+    "normal_kind": "Inversion",
+    "plot_convergence": false,
+    "return_object": false,
+    "rng_kind": "Mersenne-Twister",
+    "sample_kind": "Rejection",
+    "seed": 42,
+    "sigma": 0.1,
+    "tau": 0.0,
+    "theta": 2.0
+  },
+  "batch_column": "dataset",
+  "batch_levels": [
+    "MEL_Hickey2023_CODEX",
+    "MEL_Hoch2021_IMC",
+    "MEL_Ptacek2021_MIBI"
+  ],
+  "cell_id_column": "cell_id",
+  "input_scale": {
+    "algorithm_applies_transformation": false,
+    "description": "Frozen provider/source analysis-ready values supplied unchanged.",
+    "input_sha256": "9ac7d28f258fd4b13bda659ee1b862fa5d3b5a9aa4c489075f113cb2f4787d8a",
+    "marker_file_sha256": "9314e9a8dfe93fa305cda18ddd0ad6e63a1c4c22693106f2c7ec5cef43d1b5ec",
+    "name": "source_scale",
+    "preprocessing_record_file": "/Users/qxu6/Documents/New project/final_xu/benchmark_results/melanoma/harmony/source_scale/preprocessing/preprocessing_record.txt",
+    "preprocessing_record_sha256": "33cff386b80661ed843f0e310b63c2c95dd994ef1aa63eeb9adf8364687bf1ba",
+    "status": "analysis_ready"
+  },
+  "method_label": "Harmony-direct (ADTnorm protocol; no PCA)",
+  "sample_column": "unit_key",
+  "schema_version": "final_xu.harmony_direct.v1"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "final_xu.fastmnn_repro.v1",
+  "method_label": "fastMNN (batchelor 1.18.1; corrected embedding)",
+  "cell_id_column": "cell_id",
+  "batch_column": "dataset",
+  "sample_column": "unit_key",
+  "batch_levels": [
+    "dataset_A",
+    "dataset_B",
+    "dataset_C"
+  ],
+  "input_scale": {
+    "status": "analysis_ready",
+    "name": "benchmark-specific documented shared-protein scale",
+    "description": "Each dataset has received only its predeclared source-supported preprocessing. No universal transform or marker-wise z-score is applied by algorithm/fastmnn.",
+    "preprocessing_record_file": "preprocessing_manifest.json",
+    "preprocessing_record_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "input_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "marker_file_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "algorithm_internal_cosine_normalization": true,
+    "algorithm_applies_other_expression_transform": false
+  },
+  "algorithm_parameters": {
+    "seed": 42,
+    "rng_kind": "Mersenne-Twister",
+    "normal_kind": "Inversion",
+    "sample_kind": "Rejection",
+    "k": 20,
+    "prop_k": null,
+    "cos_norm": true,
+    "ndist": 3,
+    "requested_d": 50,
+    "d_policy": "request 50; batchelor realizes min(50, n_markers - 1, n_cells - 1)",
+    "deferred": true,
+    "weights": null,
+    "get_variance": true,
+    "merge_order": null,
+    "auto_merge": false,
+    "min_batch_skip": 0,
+    "subset_row": null,
+    "correct_all": false,
+    "pca_solver": "IrlbaParam",
+    "neighbor_solver": "KmknnParam",
+    "parallel_solver": "SerialParam"
+  }
+}

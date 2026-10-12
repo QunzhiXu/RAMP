@@ -1,0 +1,45 @@
+name: source-and-package-tests
+on:
+  push:
+  pull_request:
+jobs:
+  source-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -B release_check.py
+      - run: python -B -m unittest discover -s release_tests -v
+  package-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.12', '3.14']
+    defaults:
+      run:
+        working-directory: ramp-proteomics
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -e '.[test]'
+      - run: python -m pytest
+  frozen-regression:
+    runs-on: macos-15
+    env:
+      RAMP_REQUIRE_FROZEN_LOCK: '1'
+    defaults:
+      run:
+        working-directory: ramp-proteomics
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14.1'
+      - run: python -m pip install -r reproducibility/requirements-paper.txt
+      - run: python -m pip install -e '.[test]' -c reproducibility/requirements-paper.txt
+      - run: python -m pip check
+      - run: python -m pytest

@@ -1,0 +1,18 @@
+{
+  "expression": {
+    "path": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/data_umap/reference/RAMP_SHARED9.npy",
+    "sha256": "c302203f3c8af5eb63299f22a2aa7920fdfa05327bd68746493b1ff25ff12c5f"
+  },
+  "metadata": {
+    "path": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/data_umap/data/CELL_METADATA.csv.gz",
+    "sha256": "74461a04818108949a19099ae6688339b820bdd4966394f9cf93b7bc30d22070"
+  },
+  "markers": {
+    "path": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/data_umap/data/MARKER_MAPPING.csv",
+    "sha256": "4c40963d50f24bc4d200d55f210dd2619b0b2a2981cf5201ecf6d939c9b5c774"
+  },
+  "parent_parameters": {
+    "path": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/umap/results/RAMP_UMAP.json",
+    "sha256": "15713ef426607881d3f584500ba13ac85d90c3bedd55d8250d0035c8f61a3d1a"
+  }
+}

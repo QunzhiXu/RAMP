@@ -1,0 +1,46 @@
+{
+  "algorithm_parameters": {
+    "auto_merge": false,
+    "correct_all": false,
+    "cos_norm": true,
+    "d_policy": "request 50; batchelor realizes min(50, n_markers - 1, n_cells - 1)",
+    "deferred": true,
+    "get_variance": true,
+    "k": 20,
+    "merge_order": null,
+    "min_batch_skip": 0,
+    "ndist": 3,
+    "neighbor_solver": "KmknnParam",
+    "normal_kind": "Inversion",
+    "parallel_solver": "SerialParam",
+    "pca_solver": "IrlbaParam",
+    "prop_k": null,
+    "requested_d": 50,
+    "rng_kind": "Mersenne-Twister",
+    "sample_kind": "Rejection",
+    "seed": 42,
+    "subset_row": null,
+    "weights": null
+  },
+  "batch_column": "dataset",
+  "batch_levels": [
+    "Senosain CyTOF",
+    "Cords IMC",
+    "Monkman CODEX"
+  ],
+  "cell_id_column": "cell_id",
+  "input_scale": {
+    "algorithm_applies_other_expression_transform": false,
+    "algorithm_internal_cosine_normalization": true,
+    "description": "Senosain asinh(x/5), provider Cords c_counts_asinh, and provider Monkman analysis layer; no universal transform or marker z-score is added by fastMNN.",
+    "input_sha256": "68e346f90b286665797b3c194acc68be467ebc76e6a94ea1e95ff0ceb06368a1",
+    "marker_file_sha256": "067c8e1bfcd0d6292350ecaab8356f3223b0c9e5cf6a8d4f6826d141bd1f5ffb",
+    "name": "source-supported platform-specific compressed protein scale",
+    "preprocessing_record_file": "../preprocessing/preprocessing_manifest.json",
+    "preprocessing_record_sha256": "dda384f4fd7c81e25820c4c0e6b485b1578c82c7b968d71e1f9818a9f546f288",
+    "status": "analysis_ready"
+  },
+  "method_label": "fastMNN (batchelor 1.18.1; corrected embedding)",
+  "sample_column": "unit_key",
+  "schema_version": "final_xu.fastmnn_repro.v1"
+}

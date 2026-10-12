@@ -1,0 +1,43 @@
+{
+  "algorithm_parameters": {
+    "alpha": 0.2,
+    "block_size": 0.05,
+    "early_stop": true,
+    "epsilon_cluster": 0.001,
+    "epsilon_harmony": 0.01,
+    "lambda": 1.0,
+    "max_iter": 10,
+    "max_iter_cluster": 20,
+    "nclust_policy": "min(round(n_cells / 30), 100)",
+    "ncores": 1,
+    "normal_kind": "Inversion",
+    "plot_convergence": false,
+    "return_object": false,
+    "rng_kind": "Mersenne-Twister",
+    "sample_kind": "Rejection",
+    "seed": 42,
+    "sigma": 0.1,
+    "tau": 0.0,
+    "theta": 2.0
+  },
+  "batch_column": "dataset",
+  "batch_levels": [
+    "Senosain CyTOF",
+    "Cords IMC",
+    "Monkman CODEX"
+  ],
+  "cell_id_column": "cell_id",
+  "input_scale": {
+    "algorithm_applies_transformation": false,
+    "description": "Frozen provider/source analysis-ready values supplied unchanged.",
+    "input_sha256": "212b0067bebbe6a0e1b27fad5b045f614e53b24d7d5a515071cf0388ba6b30d5",
+    "marker_file_sha256": "067c8e1bfcd0d6292350ecaab8356f3223b0c9e5cf6a8d4f6826d141bd1f5ffb",
+    "name": "source_scale",
+    "preprocessing_record_file": "/Users/qxu6/Documents/New project/final_xu/benchmark_results/lung_cancer/harmony/source_scale/preprocessing/preprocessing_record.txt",
+    "preprocessing_record_sha256": "9206498bfa7ba1ef6390e2cb7740b05a23cd4739edd52395e72b4cecf1a7a833",
+    "status": "analysis_ready"
+  },
+  "method_label": "Harmony-direct (ADTnorm protocol; no PCA)",
+  "sample_column": "unit_key",
+  "schema_version": "final_xu.harmony_direct.v1"
+}

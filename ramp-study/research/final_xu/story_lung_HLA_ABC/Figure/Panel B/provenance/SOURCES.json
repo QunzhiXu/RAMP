@@ -1,0 +1,32 @@
+[
+  {
+    "local": "data/RAMP_UMAP.npy",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/releases/senosain140k_20260921/alignment/RAMP_UMAP.npy",
+    "sha256": "d2d17c1b3c887e5ea98d513f4f3ce96536a78335670715fc709463f5911850e8"
+  },
+  {
+    "local": "data/CELL_METADATA.csv.gz",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/releases/senosain140k_20260921/inputs/CELL_METADATA.csv.gz",
+    "sha256": "278f4c148489f214f85cf1426af0424e737f20b3351902af080c68b407ffc1eb"
+  },
+  {
+    "local": "provenance/SELECTED_DONORS.csv",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/data_umap/data/SELECTED_DONORS.csv",
+    "sha256": "0be70086eea4e957c757111772ade4dd164b416b69d3205e5a76d514c121413c"
+  },
+  {
+    "local": "provenance/MARKER_MAPPING.csv",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/data_umap/data/MARKER_MAPPING.csv",
+    "sha256": "4c40963d50f24bc4d200d55f210dd2619b0b2a2981cf5201ecf6d939c9b5c774"
+  },
+  {
+    "local": "provenance/RAMP_UMAP_PARAMETERS.json",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/releases/senosain140k_20260921/alignment/UMAP_COMPLETE.json",
+    "sha256": "a49fa738c0c926d3b1a991cd3d93695078ef532e499e6ff61a87a566f93ed52e"
+  },
+  {
+    "local": "provenance/SOURCE_UMAP_VERIFICATION.json",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/releases/senosain140k_20260921/provenance/FINAL_CHECKS.json",
+    "sha256": "ca5020d8355946c01a0ebb01c54a08726a37c2f0f48e7dc6106c2b42eb4da83c"
+  }
+]

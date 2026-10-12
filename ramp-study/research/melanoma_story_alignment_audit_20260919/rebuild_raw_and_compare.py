@@ -1,0 +1,20 @@
+import sys, importlib.util
+from pathlib import Path
+import numpy as np, pandas as pd
+P = Path('/Users/qxu6/Documents/New project/final_xu/figure_melanoma/analysis/alignment/run_alignment.py')
+spec = importlib.util.spec_from_file_location('mel_align', P)
+m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+mold_base = pd.read_csv(m.MOLD_INPUT, low_memory=False)
+eng_base = pd.read_csv(m.ENG_INPUT, low_memory=False)
+mold, _ = m.build_moldoveanu(mold_base)
+eng, _ = m.build_engelbrecht(eng_base)
+combined = pd.concat([mold, eng], ignore_index=True)
+raw_true = combined[m.CLEAN15].to_numpy(np.float64)
+raw_cmp = np.load('/Users/qxu6/Documents/New project/final_xu/figure_melanoma/Comparison/input/raw.npy')
+print('shapes', raw_true.shape, raw_cmp.shape)
+d = np.abs(raw_true - raw_cmp)
+print('max abs diff', d.max(), 'n differing', int((d>0).sum()), 'bitwise identical', np.array_equal(raw_true, raw_cmp))
+rel = d / np.maximum(np.abs(raw_true), 1e-12)
+print('max rel diff', rel.max())
+print('per-marker max:', dict(zip(m.CLEAN15, np.round(d.max(0), 9))))
+np.save('/tmp/mel_raw_true.npy', raw_true)

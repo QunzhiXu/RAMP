@@ -1,0 +1,51 @@
+#!/usr/bin/env Rscript
+arg <- grep("^--file=", commandArgs(FALSE), value = TRUE)[1L]
+here <- dirname(normalizePath(gsub("~+~", " ", sub("^--file=", "", arg), fixed = TRUE)))
+.libPaths(c(file.path(here, ".Rlib"), .libPaths()))
+source(file.path(here, "cytonorm_repro.R"))
+args <- commandArgs(TRUE)
+if (!length(args) || "--help" %in% args) {
+  cat("Rscript run_cytonorm.R --input prepared.csv.gz --markers markers.txt --config run_config.json --output new_directory\n")
+  quit(status = if (length(args)) 0 else 2)
+}
+if (length(args) %% 2L != 0L) stop("Flags require values")
+keys <- args[seq(1L, length(args), 2L)]
+if (anyDuplicated(keys) || !setequal(keys, c("--input", "--markers", "--config", "--output"))) stop("Invalid CLI flags")
+opts <- setNames(as.list(args[seq(2L, length(args), 2L)]), sub("^--", "", keys))
+validate_runtime(here)
+config <- jsonlite::read_json(opts$config, simplifyVector = TRUE)
+stopifnot(identical(config$schema_version, "final_xu.cytonorm.v1"))
+if (sha(opts$input) != config$input_sha256 || sha(opts$markers) != config$markers_sha256) stop("Prepared input hash mismatch")
+if (sha(config$preprocessing_file) != config$preprocessing_sha256) stop("Preprocessing record changed")
+markers <- readLines(opts$markers)
+if (anyDuplicated(markers) || any(!nzchar(markers))) stop("Invalid marker names")
+input <- as.data.frame(data.table::fread(opts$input,
+  colClasses = list(character = c("cell_id", "dataset", "unit_key")), check.names = FALSE))
+if (file.exists(opts$output)) stop("Output already exists; refusing overwrite")
+parent <- normalizePath(dirname(opts$output), mustWork = TRUE)
+dest <- file.path(parent, basename(opts$output))
+project <- normalizePath(file.path(here, "..", ".."))
+allowed <- normalizePath(file.path(project, "algorithm_test"))
+if (!startsWith(paste0(parent, "/"), paste0(allowed, "/"))) stop("Benchmark outputs must be inside algorithm_test")
+stage <- paste0(dest, ".staging-", Sys.getpid())
+if (!dir.create(stage)) stop("Cannot create staging directory")
+oldwd <- getwd()
+setwd(stage)
+warnings_seen <- character()
+result <- tryCatch(withCallingHandlers(fit_cytonorm(input, markers, config, stage),
+  warning = function(w) { warnings_seen <<- c(warnings_seen, conditionMessage(w)) }),
+  error = function(e) {
+    write_json(list(status = "FAILED", error = conditionMessage(e)), file.path(stage, "FAILED.json"))
+    stop(e)
+  })
+setwd(oldwd)
+writeLines(unique(warnings_seen), file.path(stage, "warnings.txt"))
+writeLines(markers, file.path(stage, "markers.txt"))
+writeLines(capture.output(sessionInfo()), file.path(stage, "sessionInfo.txt"))
+write_json(config, file.path(stage, "resolved_config.json"))
+write_json(result, file.path(stage, "integrity.json"))
+paths <- list.files(stage, recursive = TRUE, full.names = TRUE)
+hashes <- setNames(as.list(vapply(paths, sha, "")), substring(paths, nchar(stage) + 2L))
+write_json(list(status = "COMPLETE", outputs = hashes), file.path(stage, "COMPLETE.json"))
+if (!file.rename(stage, dest)) stop("Cannot publish completed run")
+cat("COMPLETE", dest, "\n")

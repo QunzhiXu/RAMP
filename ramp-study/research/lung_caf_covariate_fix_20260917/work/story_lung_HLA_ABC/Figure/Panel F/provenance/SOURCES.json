@@ -1,0 +1,37 @@
+[
+  {
+    "source": "/Users/qxu6/Documents/New project/lung_caf_covariate_fix_20260917/work/story_lung_HLA_ABC/summary_steps3_6/06_DFS/KM_CURVE.csv",
+    "local": "data/KM_CURVE.csv",
+    "sha256": "b698bf13818cd1c4b24c7b38b876fee07bc8a1aa86ad6a4e6c881271f14f6dcc"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/lung_caf_covariate_fix_20260917/work/story_lung_HLA_ABC/summary_steps3_6/06_DFS/KM_PATIENTS.csv",
+    "local": "data/KM_PATIENTS.csv",
+    "sha256": "57c987915f60f9769ff4144d1c6db2dbf088119cb3a8bd46d948f8bd5e69ed0c"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/lung_caf_covariate_fix_20260917/work/story_lung_HLA_ABC/summary_steps3_6/06_DFS/KM_SUMMARY.csv",
+    "local": "data/KM_SUMMARY.csv",
+    "sha256": "0d77e4def4036e4e1c7b560a338195fbef3d10b4c6b0902429c0914942bc5358"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/lung_caf_covariate_fix_20260917/work/story_lung_HLA_ABC/summary_steps3_6/06_DFS/FIVE_YEAR_DFS.csv",
+    "local": "data/FIVE_YEAR_DFS.csv",
+    "sha256": "6708916fe6b29859cbef4d54a5288370c534582e1c8a0d83d096bcb1dd8d564c"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/lung_caf_covariate_fix_20260917/work/story_lung_HLA_ABC/summary_steps3_6/06_DFS/COX_TERMS.csv",
+    "local": "data/COX_TERMS.csv",
+    "sha256": "4679b80b957d4db2f3410eeff3ef428bb767581c40e3a0cc5c11bf91e77cfb9e"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/lung_caf_covariate_fix_20260917/work/story_lung_HLA_ABC/summary_steps3_6/06_DFS/NUMBER_AT_RISK.csv",
+    "local": "data/NUMBER_AT_RISK.csv",
+    "sha256": "951bcc9e4d2123e78f9df5404f2da9cf5b2fa0c9bf6508c311df39e396abaf10"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/lung_caf_covariate_fix_20260917/work/story_lung_HLA_ABC/summary_steps3_6/05_immune_environment/PATIENT_SUMMARY.csv",
+    "local": "provenance/IMMUNE_PATIENTS.csv",
+    "sha256": "093e1370e5c2ffb17f2dfaac2e14d28b451a06e776d18e6a7f20b828f14a877a"
+  }
+]

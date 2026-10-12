@@ -1,0 +1,95 @@
+{
+  "schema_version": "final_xu.maxfuse_benchmark.v2",
+  "benchmark_slug": "bone_marrow",
+  "benchmark_title": "Bone marrow",
+  "result_subdir": "maxfuse_v2",
+  "shared_markers": ["CD117", "CD11B", "CD11C", "CD123", "CD14", "CD3", "CD33", "CD34", "CD38", "CD4", "CD45", "CD45RA", "CD61", "CD8"],
+  "datasets": [
+    {
+      "name": "BM CODEX",
+      "slug": "bm_codex",
+      "display": "BM CODEX",
+      "expected_cells": 30000,
+      "shared_input": "benchmark_results/bone_marrow/maxfuse_v2/processed/bm_codex/shared_input_14.csv.gz",
+      "active_input": "benchmark_results/bone_marrow/maxfuse_v2/processed/bm_codex/active_input_48.csv.gz",
+      "active_markers": ["ASMA", "CD4", "CD44", "CD71", "CD271", "CD90", "VIM", "CD68", "SPINK2", "CD117", "CD45RA", "FOXC1", "CD61", "CD45", "CD8", "CD49F", "CD11C", "VECAD", "CD15", "CD123", "CD138", "CD14", "PLP1", "CD11B", "HLA-DR", "CD34", "CD79A", "CD10", "PAX5", "MastCellTryptase", "TGFB1", "VCAM1", "CD146", "CD3", "CD33", "GATA1", "CXCL12", "BCL2", "GYPC", "HIF1A", "MPO", "OXPHOS", "CD38", "CD141", "BCAT", "PDPN", "CD163", "CXCR4"],
+      "input_protocol": {
+        "name": "codex_counts_cd19_excluded_seurat_clr_then_method_zscore",
+        "description": "Provider CODEX counts slot; CD19 removed before per-cell Seurat-style CLR across the remaining 48 proteins; then MaxFuse method-level per-marker sample-SD z-score (ddof=1). Shared14 is sliced from this final active matrix."
+      }
+    },
+    {
+      "name": "BM CyTOF",
+      "slug": "bm_cytof",
+      "display": "BM CyTOF",
+      "expected_cells": 30000,
+      "shared_input": "benchmark_results/bone_marrow/maxfuse_v2/processed/bm_cytof/shared_input_14.csv.gz",
+      "active_input": "benchmark_results/bone_marrow/maxfuse_v2/processed/bm_cytof/active_input_31.csv.gz",
+      "active_markers": ["CD45RA", "CD133", "CD22", "CD11B", "CD4", "CD8", "CD34", "Flt3", "CD20", "CXCR4", "CD235ab", "CD45", "CD123", "CD321", "CD14", "CD33", "CD47", "CD11C", "CD7", "CD15", "CD16", "CD44", "CD38", "CD13", "CD3", "CD61", "CD117", "CD49d", "HLA-DR", "CD64", "CD41"],
+      "input_protocol": {
+        "name": "cytof_asinh5_dataset_marker_sample_zscore",
+        "description": "Provider normalized annotated FCS biological channels from Levine Benchmark Data Set 2 (healthy H1/H2, 32 surface markers); CD19 removed, then asinh(x/5), followed by MaxFuse method-level per-marker sample-SD z-score (ddof=1). Shared14 is sliced from this final active matrix."
+      }
+    },
+    {
+      "name": "Triana AbSeq",
+      "slug": "triana_abseq",
+      "display": "Triana AbSeq",
+      "expected_cells": 28031,
+      "shared_input": "benchmark_results/bone_marrow/maxfuse_v2/processed/triana_abseq/shared_input_14.csv.gz",
+      "active_input": "benchmark_results/bone_marrow/maxfuse_v2/processed/triana_abseq/active_input_96.csv.gz",
+      "active_markers": ["B7.H4", "CD10", "CD103", "CD117", "CD11a", "CD11B", "CD11C", "CD123", "CD124", "CD126", "CD127", "CD13", "CD133", "CD134", "CD137", "CD14", "CD141", "CD152", "CD154", "CD155", "CD16", "CD163", "CD178", "CD18", "CD183", "CD184", "CD185", "CD194", "CD195", "CD196", "CD197", "CD1a", "CD1c", "CD2", "CD20", "CD206", "CD21", "CD223", "CD226", "CD235a-b", "CD24", "CD25", "CD26", "CD27", "CD270", "CD272", "CD273", "CD274", "CD275", "CD278", "CD279", "CD28", "CD29", "CD3", "CD30", "CD314", "CD32", "CD326", "CD33", "CD335", "CD336", "CD34", "CD357", "CD38", "CD39", "CD4", "CD40", "CD45", "CD45RA", "CD49a", "CD49b", "CD49d", "CD49E", "CD5", "CD54", "CD56", "CD61", "CD62L", "CD69", "CD7", "CD8", "CD80", "CD81", "CD83", "CD9", "CD90", "CD94", "CD95", "CD98", "HLA.ABC", "IgD", "IgG", "IL.21R", "TCRab", "TCRgd", "Tim3"],
+      "input_protocol": {
+        "name": "abseq_counts_cd19_excluded_seurat_clr_then_method_zscore",
+        "description": "Raw antibody UMI counts; CD19 removed before per-cell Seurat-style CLR across the remaining 96 proteins; then MaxFuse method-level per-marker sample-SD z-score (ddof=1). Shared14 is sliced from this final active matrix."
+      }
+    }
+  ],
+  "expected_cells": 88031,
+  "display_metadata": "benchmark_data/bone_marrow/relabel/relabeled_metadata.csv.gz",
+  "label_column": "celltype",
+  "missing_label": "Unclassified / technical",
+  "base_seed": 20260830,
+  "feature_protocol": {
+    "active_mode": "dataset_active_inputs",
+    "description": "V2 uses each provider's reliable full native protein panel after CD19 exclusion and dataset-declared source-faithful preprocessing; shared14 is sliced from those same processed active columns."
+  },
+  "fit_sampling": {
+    "strategy": "unit_balanced",
+    "cap_per_dataset": null,
+    "drop_zero_within_cell_variance": true,
+    "reuse_across_hubs": true
+  },
+  "pairwise_config": "benchmark_results/bone_marrow/maxfuse_v2/pairwise_config.json",
+  "pairwise_rank_adaptation": "clip_non_null_official_targets_to_each_view_feature_rank",
+  "three_view_extension": {
+    "method": "MaxFuse pairwise hub-pivot chaining + independent ridge MAXVAR-GCCA",
+    "pca_components": 50,
+    "gcca_components": 15,
+    "gcca_ridge": 0.001,
+    "outer_reuse_policy": "allow"
+  },
+  "umap": {"n_neighbors": 30, "min_dist": 0.15, "init_kind": "gaussian_seed42"},
+  "dataset_colors": {"BM CODEX": "#3E70B2", "BM CyTOF": "#55A868", "Triana AbSeq": "#E28B35"},
+  "palette": [
+    {"label": "Mature / CODEX B", "color": "#D81B60", "legend_order": 0, "draw_order": 1, "point_size": 0.82, "alpha": 0.66},
+    {"label": "Pre / immature B", "color": "#F06292", "legend_order": 1, "draw_order": 2, "point_size": 0.82, "alpha": 0.66},
+    {"label": "Plasma cell", "color": "#8E24AA", "legend_order": 2, "draw_order": 3, "point_size": 0.82, "alpha": 0.66},
+    {"label": "CD4 T", "color": "#1769AA", "legend_order": 3, "draw_order": 4, "point_size": 0.82, "alpha": 0.66},
+    {"label": "CD8 T", "color": "#00A6D6", "legend_order": 4, "draw_order": 5, "point_size": 0.82, "alpha": 0.66},
+    {"label": "Other T / NKT", "color": "#6A5ACD", "legend_order": 5, "draw_order": 6, "point_size": 0.82, "alpha": 0.66},
+    {"label": "NK", "color": "#00A087", "legend_order": 6, "draw_order": 7, "point_size": 0.82, "alpha": 0.66},
+    {"label": "Monocyte", "color": "#F39C12", "legend_order": 7, "draw_order": 8, "point_size": 0.82, "alpha": 0.66},
+    {"label": "Macrophage", "color": "#B45F06", "legend_order": 8, "draw_order": 9, "point_size": 0.82, "alpha": 0.66},
+    {"label": "Dendritic", "color": "#7CB342", "legend_order": 9, "draw_order": 10, "point_size": 0.82, "alpha": 0.66},
+    {"label": "Other myeloid", "color": "#A66E3F", "legend_order": 10, "draw_order": 11, "point_size": 0.82, "alpha": 0.66},
+    {"label": "Promyelocytic progenitors", "color": "#FF7043", "legend_order": 11, "draw_order": 12, "point_size": 0.82, "alpha": 0.66},
+    {"label": "HSPC / progenitor", "color": "#7E57C2", "legend_order": 12, "draw_order": 13, "point_size": 0.82, "alpha": 0.66},
+    {"label": "CODEX erythroid", "color": "#C2185B", "legend_order": 13, "draw_order": 14, "point_size": 0.82, "alpha": 0.66},
+    {"label": "Triana erythroid progenitor", "color": "#EC407A", "legend_order": 14, "draw_order": 15, "point_size": 0.82, "alpha": 0.66},
+    {"label": "Megakaryocytic", "color": "#8D6E63", "legend_order": 15, "draw_order": 16, "point_size": 0.82, "alpha": 0.66},
+    {"label": "Endothelial", "color": "#43A047", "legend_order": 16, "draw_order": 17, "point_size": 0.82, "alpha": 0.66},
+    {"label": "Stromal / VSMC", "color": "#00897B", "legend_order": 17, "draw_order": 18, "point_size": 0.82, "alpha": 0.66},
+    {"label": "Unclassified / technical", "color": "#697386", "legend_order": 18, "draw_order": 0, "point_size": 0.58, "alpha": 0.18}
+  ]
+}

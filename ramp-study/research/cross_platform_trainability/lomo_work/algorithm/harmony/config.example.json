@@ -1,0 +1,43 @@
+{
+  "schema_version": "final_xu.harmony_direct.v1",
+  "method_label": "Harmony-direct (ADTnorm protocol; no PCA)",
+  "cell_id_column": "cell_id",
+  "batch_column": "dataset",
+  "sample_column": "unit_key",
+  "batch_levels": [
+    "dataset_A",
+    "dataset_B",
+    "dataset_C"
+  ],
+  "input_scale": {
+    "status": "analysis_ready",
+    "name": "REPLACE_WITH_EXACT_INPUT_SCALE",
+    "description": "REPLACE_WITH_DATASET-SPECIFIC_PREPROCESSING_DESCRIPTION",
+    "preprocessing_record_file": "REPLACE_WITH_BENCHMARK_OWNED_RECORD",
+    "preprocessing_record_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "input_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "marker_file_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "algorithm_applies_transformation": false
+  },
+  "algorithm_parameters": {
+    "seed": 42,
+    "rng_kind": "Mersenne-Twister",
+    "normal_kind": "Inversion",
+    "sample_kind": "Rejection",
+    "theta": 2.0,
+    "sigma": 0.1,
+    "lambda": 1.0,
+    "nclust_policy": "min(round(n_cells / 30), 100)",
+    "max_iter": 10,
+    "early_stop": true,
+    "ncores": 1,
+    "plot_convergence": false,
+    "return_object": false,
+    "alpha": 0.2,
+    "tau": 0.0,
+    "block_size": 0.05,
+    "max_iter_cluster": 20,
+    "epsilon_cluster": 0.001,
+    "epsilon_harmony": 0.01
+  }
+}

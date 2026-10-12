@@ -1,0 +1,75 @@
+{
+  "case": "Bone marrow",
+  "original_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Bone marrow/layout_v1",
+  "palette_mode": "fixed_technology_across_all_seven_figures",
+  "platforms": [
+    {
+      "dataset": "BM CODEX",
+      "name": "CODEX",
+      "technology": "CODEX",
+      "color": "#2775B6",
+      "available_units": 12,
+      "selected_unit_ids": [
+        "BM CODEX|SB67_NBM27_H10_CODEX_Mesmer",
+        "BM CODEX|SB67_NBM28_H14_CODEX_Mesmer",
+        "BM CODEX|SB67_NBM31_H32_CODEX_Mesmer",
+        "BM CODEX|SB67_NBM32_H37_CODEX_Mesmer",
+        "BM CODEX|SB67_NBM33_H36_CODEX_Mesmer",
+        "BM CODEX|SB67_NBM34_H38_CODEX_Mesmer",
+        "BM CODEX|SB67_NBM36_H26_CODEX_Mesmer",
+        "BM CODEX|SB67_NBM37_H35_CODEX_Mesmer",
+        "BM CODEX|SB67_NBM38_H33_CODEX_Mesmer",
+        "BM CODEX|SB67_NBM39_H41_CODEX_Mesmer",
+        "BM CODEX|SB67_NBM40_H39_CODEX_Mesmer",
+        "BM CODEX|SB67_NBM41_H27_CODEX_Mesmer"
+      ]
+    },
+    {
+      "dataset": "BM CyTOF",
+      "name": "CyTOF",
+      "technology": "CyTOF",
+      "color": "#38A169",
+      "available_units": 2,
+      "selected_unit_ids": [
+        "BM CyTOF|H1",
+        "BM CyTOF|H2"
+      ]
+    },
+    {
+      "dataset": "Triana AbSeq",
+      "name": "AbSeq",
+      "technology": "AbSeq",
+      "color": "#C35199",
+      "available_units": 3,
+      "selected_unit_ids": [
+        "Triana AbSeq|BM1",
+        "Triana AbSeq|BM2",
+        "Triana AbSeq|BM3"
+      ]
+    }
+  ],
+  "full_units": 17,
+  "ridge_units": 17,
+  "full_cells": 88031,
+  "ridge_cells": 88031,
+  "selection": "All units retained",
+  "selection_seed": 20260922,
+  "style": {
+    "fill_alpha": 0.82,
+    "line_width_pt": 0.35,
+    "line_color": "80% RGB of platform fill",
+    "line_alpha": 0.9,
+    "zero_density_outline": "continuous over full display range, including zero-density tails",
+    "bins": 160,
+    "sigma_bins": 6,
+    "range_quantiles": [
+      0.005,
+      0.995
+    ],
+    "range_reference": "Full frozen cohort, unchanged from prior figures",
+    "curve_height": 0.7,
+    "curve_spacing": 0.57,
+    "platform_gap": 0.36,
+    "peak_normalized": true
+  }
+}

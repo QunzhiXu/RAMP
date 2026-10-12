@@ -1,0 +1,14 @@
+{
+  "version": "ridge_compact_20260924",
+  "benchmark": "lung_cancer",
+  "title": "Lung cancer | CyTOF, IMC and CODEX",
+  "folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/ridge_compact_preview_20260924/S4",
+  "png": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/ridge_compact_preview_20260924/output/png/s4_full_preview.png",
+  "pdf": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/ridge_compact_preview_20260924/S4/output/pdf/lung_cancer_benchmark_supplement.pdf",
+  "status": "accepted_and_deployed_to_bioarxiv_Ver2",
+  "ridge_display_units": 30,
+  "ridge_display_cells": 60000,
+  "previous_folder": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924",
+  "revision": "Accepted compact display windows in specified method rows; all density estimates, cell selection, colors and UMAPs unchanged.",
+  "ridge_outline": "Original full-grid density; compact viewport may exclude very low tails without adding artificial zero endpoints."
+}

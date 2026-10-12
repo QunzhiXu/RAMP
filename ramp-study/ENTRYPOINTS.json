@@ -1,0 +1,197 @@
+{
+  "analyses": [
+    {
+      "analysis": "canonical RAMP",
+      "sources": [
+        "final_xu/algorithm/ramp/ramp_ver2.py",
+        "final_xu/algorithm/ramp/ramp.py"
+      ]
+    },
+    {
+      "analysis": "technical cohort preparation",
+      "sources": [
+        "final_xu/benchmark_data/bone_marrow/build_benchmark.py",
+        "final_xu/benchmark_data/tnbc/build_benchmark.py",
+        "final_xu/benchmark_data/melanoma/build_benchmark.py",
+        "final_xu/benchmark_data/lung_cancer/build_benchmark.py"
+      ]
+    },
+    {
+      "analysis": "integration metrics",
+      "sources": [
+        "final_xu/benchmark_results/comparison_evaluation/scripts/evaluate_benchmark.py"
+      ]
+    },
+    {
+      "analysis": "marker values",
+      "sources": [
+        "final_xu/Main Figure/Figure 2/value_evaluation_20260914/evaluate_values.py"
+      ]
+    },
+    {
+      "analysis": "Figure 3 suite",
+      "sources": [
+        "final_xu/cross_platform_trainability_v2_20260919/src/run_formal_suite.py",
+        "final_xu/cross_platform_trainability_v2_20260919/src/build_formal_suite.py",
+        "final_xu/cross_platform_trainability_v2_20260919/config/formal_v0_5/SUITE.json"
+      ]
+    },
+    {
+      "analysis": "CD19",
+      "sources": [
+        "ramp-study/applications/cd19/study.py"
+      ]
+    },
+    {
+      "analysis": "melanoma",
+      "sources": [
+        "ramp-study/applications/melanoma/study.py"
+      ]
+    },
+    {
+      "analysis": "lung",
+      "sources": [
+        "ramp-study/applications/lung/study.py",
+        "final_xu/story_lung_HLA_ABC/releases/senosain140k_20260921/run.sh"
+      ]
+    },
+    {
+      "analysis": "HNSCC",
+      "sources": [
+        "ramp-study/applications/hnscc/study.py"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "figure": "Figure 1",
+      "sources": [
+        "final_xu/figure_raw_labels_20260924/update_labels.py"
+      ]
+    },
+    {
+      "figure": "Figure 2",
+      "sources": [
+        "final_xu/Main Figure/Figure 2/lung_reference_update_20260921/build_all.py"
+      ]
+    },
+    {
+      "figure": "Figure 3",
+      "sources": [
+        "final_xu/figure3_readability_preview_20260924/draw_preview.py"
+      ]
+    },
+    {
+      "figure": "Figure 4",
+      "sources": [
+        "final_xu/story_cd19_prediction/Exploration0909/figure_layout_v31_DAPI_pair/build_figure.py"
+      ]
+    },
+    {
+      "figure": "Figure 5",
+      "sources": [
+        "final_xu/figure_melanoma/figure_layout_v8/prepare_visual_data.py",
+        "final_xu/figure_melanoma/figure_layout_v8/build_figure.py"
+      ]
+    },
+    {
+      "figure": "Figure 6",
+      "sources": [
+        "final_xu/story_lung_HLA_ABC/Figure/Combined ABCDEF/scripts/assemble_ABCDEF.py"
+      ]
+    },
+    {
+      "figure": "Figure 7",
+      "sources": [
+        "final_xu/figure_HNSCC/big_figure/polish_20260913/CEF_D_colorbar_aligned_20260914/build_figure.py"
+      ]
+    },
+    {
+      "figure": "S1",
+      "sources": [
+        "final_xu/Supplementary Figures/ridge_compact_preview_20260924/S1/build_figure.py",
+        "final_xu/Supplementary Figures/ridge_compact_preview_20260924/ridge_common.py"
+      ]
+    },
+    {
+      "figure": "S2",
+      "sources": [
+        "final_xu/Supplementary Figures/ridge_compact_preview_20260924/S2/build_figure.py",
+        "final_xu/Supplementary Figures/ridge_compact_preview_20260924/ridge_common.py"
+      ]
+    },
+    {
+      "figure": "S3",
+      "sources": [
+        "final_xu/Supplementary Figures/ridge_compact_preview_20260924/S3/build_figure.py",
+        "final_xu/Supplementary Figures/ridge_compact_preview_20260924/ridge_common.py"
+      ]
+    },
+    {
+      "figure": "S4",
+      "sources": [
+        "final_xu/Supplementary Figures/ridge_compact_preview_20260924/S4/build_figure.py",
+        "final_xu/Supplementary Figures/ridge_compact_preview_20260924/ridge_common.py"
+      ]
+    },
+    {
+      "figure": "S5",
+      "sources": [
+        "final_xu/Supplementary Figures/ridge_compact_preview_20260924/S5/build_figure.py",
+        "final_xu/Supplementary Figures/ridge_compact_preview_20260924/ridge_common.py"
+      ]
+    },
+    {
+      "figure": "S6",
+      "sources": [
+        "final_xu/Supplementary Figures/ridge_compact_preview_20260924/S6/build_figure.py",
+        "final_xu/Supplementary Figures/ridge_compact_preview_20260924/ridge_common.py"
+      ]
+    },
+    {
+      "figure": "S7",
+      "sources": [
+        "final_xu/Supplementary Figures/ridge_compact_preview_20260924/S7/build_figure.py",
+        "final_xu/Supplementary Figures/ridge_compact_preview_20260924/ridge_common.py"
+      ]
+    },
+    {
+      "figure": "S8",
+      "sources": [
+        "final_xu/Supplementary Figures/Figure 2 complete benchmark/preview_v1/build_figures.py"
+      ]
+    },
+    {
+      "figure": "S9",
+      "sources": [
+        "final_xu/Supplementary Figures/Figure 2 complete benchmark/preview_v1/build_figures.py"
+      ]
+    },
+    {
+      "figure": "S10",
+      "sources": [
+        "final_xu/Supplementary Figures/Figure 3 model benchmark breakdown/final_20260922/paired_annotation.py"
+      ]
+    },
+    {
+      "figure": "S11",
+      "sources": [
+        "final_xu/Supplementary Figures/Figure 3 model benchmark breakdown/final_20260922/paired_annotation.py"
+      ]
+    },
+    {
+      "figure": "S12",
+      "sources": [
+        "final_xu/Supplementary Figures/Figure 3 model benchmark breakdown/final_20260922/missing_marker.py"
+      ]
+    },
+    {
+      "figure": "S13",
+      "sources": [
+        "final_xu/Supplementary Figures/Figure 3 model benchmark breakdown/final_20260922/missing_marker.py"
+      ]
+    }
+  ],
+  "path_base": "original workspace; resolve through SOURCE_COVERAGE.json",
+  "warning": "Historical figure assembly may be one-time or require non-code assets; do not execute blindly."
+}

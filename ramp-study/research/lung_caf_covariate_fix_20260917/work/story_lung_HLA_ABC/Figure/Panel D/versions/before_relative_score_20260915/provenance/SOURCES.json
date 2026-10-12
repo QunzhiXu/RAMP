@@ -1,0 +1,34 @@
+[
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/synthetic_DAPI0913/roi_threshold_search0050913/results/search_summary.json",
+    "sha256": "6831d681704958f137cce9aa536b444d95f0b6a6aa5a8228a84303b675efb99a"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/synthetic_DAPI0913/roi_threshold_search0050913/results/render_verification.json",
+    "sha256": "9ecd85d52b43d56d01fc9777d3f801ab05370936b0831534bf581a14d8fc93b8"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/synthetic_DAPI0913/roi_threshold_search0050913/data/selected_ROI_cells.csv.gz",
+    "sha256": "31c2d5309417ccf24ce4e622632a6b30d7a435646b2f50c684529b7f6ca4d792"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/synthetic_DAPI0913/data/C30_synthetic_cell_lookup.csv.gz",
+    "sha256": "f44c9690d7e517df248efb714330b263cde9752779b510f75d4864a7c3cb222d"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/synthetic_DAPI0913/data/C30_HLA_values_unchanged.csv.gz",
+    "sha256": "ef16ee1be643d75af5806a622dd418d7d2ad74cdff87f4d48ae53ece67192400"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/synthetic_DAPI0913/data/C30_synthetic_DAPI.ome.tif",
+    "sha256": "c1d6a29b25761b6d30e276850b241f5da0227151c57acdea53374583c7885e75"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/synthetic_DAPI0913/data/C30_synthetic_cell_labels.tif",
+    "sha256": "14302d62a4645f0579b3c5e539d64c3ec0f55ba8a269560366ca2f548868e36a"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/synthetic_DAPI0913/results/synthesis_audit.json",
+    "sha256": "7586419280693273fd6cc63ae83882908fed522372d33939f5cb4920a4396c3e"
+  }
+]

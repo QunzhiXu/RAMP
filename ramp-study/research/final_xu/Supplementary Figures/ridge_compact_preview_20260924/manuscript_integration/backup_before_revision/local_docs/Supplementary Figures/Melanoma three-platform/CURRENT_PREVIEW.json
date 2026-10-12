@@ -1,0 +1,14 @@
+{
+  "version": "raw_labels_20260924",
+  "benchmark": "melanoma_three_platform",
+  "title": "Melanoma 1 | CODEX, IMC and MIBI",
+  "folder": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924",
+  "png": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924/output/png/figure_s3_melanoma_three_platform.png",
+  "pdf": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924/output/pdf/figure_s3_melanoma_three_platform.pdf",
+  "status": "rendered_and_verified",
+  "ridge_display_units": 46,
+  "ridge_display_cells": 60000,
+  "previous_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Melanoma three-platform/ridge_full_range_20260922",
+  "revision": "Raw label only; full density range and all other pixels unchanged.",
+  "ridge_outline": "Full-support density with endpoints at baseline"
+}

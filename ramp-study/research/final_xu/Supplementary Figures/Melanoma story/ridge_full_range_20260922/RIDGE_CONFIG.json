@@ -1,0 +1,92 @@
+{
+  "case": "Melanoma story",
+  "original_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Melanoma story/layout_v2_balanced40k",
+  "palette_mode": "fixed_technology_across_all_seven_figures",
+  "platforms": [
+    {
+      "dataset": "Moldoveanu IMC",
+      "name": "IMC",
+      "technology": "IMC",
+      "color": "#E58A2B",
+      "available_units": 30,
+      "selected_unit_ids": [
+        "Moldoveanu IMC::01RD",
+        "Moldoveanu IMC::02RD",
+        "Moldoveanu IMC::04RD",
+        "Moldoveanu IMC::05RD",
+        "Moldoveanu IMC::06RD",
+        "Moldoveanu IMC::08BL",
+        "Moldoveanu IMC::09RD",
+        "Moldoveanu IMC::10RD",
+        "Moldoveanu IMC::12RD",
+        "Moldoveanu IMC::13RD",
+        "Moldoveanu IMC::14RD",
+        "Moldoveanu IMC::16BL",
+        "Moldoveanu IMC::19BL",
+        "Moldoveanu IMC::21RD",
+        "Moldoveanu IMC::22RD",
+        "Moldoveanu IMC::23RD",
+        "Moldoveanu IMC::24RD",
+        "Moldoveanu IMC::25RD",
+        "Moldoveanu IMC::26BL",
+        "Moldoveanu IMC::29RD",
+        "Moldoveanu IMC::31RD",
+        "Moldoveanu IMC::32RD",
+        "Moldoveanu IMC::33RD",
+        "Moldoveanu IMC::34RD",
+        "Moldoveanu IMC::35RD",
+        "Moldoveanu IMC::37RD",
+        "Moldoveanu IMC::39RD",
+        "Moldoveanu IMC::40RD",
+        "Moldoveanu IMC::41BL",
+        "Moldoveanu IMC::42RD"
+      ]
+    },
+    {
+      "dataset": "Engelbrecht CITE-seq",
+      "name": "CITE-seq",
+      "technology": "CITE-seq",
+      "color": "#9B76B5",
+      "available_units": 8,
+      "selected_unit_ids": [
+        "Engelbrecht CITE-seq::P736",
+        "Engelbrecht CITE-seq::P895",
+        "Engelbrecht CITE-seq::P903",
+        "Engelbrecht CITE-seq::P940",
+        "Engelbrecht CITE-seq::P955",
+        "Engelbrecht CITE-seq::P958",
+        "Engelbrecht CITE-seq::P967",
+        "Engelbrecht CITE-seq::P969"
+      ]
+    }
+  ],
+  "full_units": 38,
+  "ridge_units": 38,
+  "full_cells": 165686,
+  "ridge_cells": 165686,
+  "selection": "All units retained",
+  "selection_seed": 20260922,
+  "style": {
+    "fill_alpha": 0.82,
+    "line_width_pt": 0.35,
+    "line_color": "80% RGB of platform fill",
+    "line_alpha": 0.9,
+    "zero_density_outline": "continuous over full display range, including zero-density tails",
+    "bins": "Extended grid at the original bin width",
+    "sigma_bins": 6,
+    "range_quantiles": null,
+    "bandwidth_reference_quantiles": [
+      0.005,
+      0.995
+    ],
+    "bandwidth_reference_bins": 160,
+    "gaussian_truncate_sigma": 4,
+    "padding_bins": 26,
+    "range_reference": "Full frozen cohort minimum to maximum, plus at least four Gaussian bandwidths at both ends",
+    "curve_height": 0.7,
+    "curve_spacing": 0.57,
+    "platform_gap": 0.36,
+    "peak_normalized": true
+  },
+  "previous_ridge_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Melanoma story/ridge_uniform_20260922"
+}

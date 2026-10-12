@@ -1,0 +1,22 @@
+{
+  "package_version": "0.5.0",
+  "timestamp_utc": "2026-09-20T07:27:36.705164+00:00",
+  "status": "formal_suite_released_and_launched_completion_pending",
+  "formal_experiment_started": true,
+  "formal_experiment_completed": false,
+  "tests_passed": 73,
+  "real_chain_jobs_passed": 8,
+  "formal_jobs": 53320,
+  "formal_shards": 70,
+  "formal_suite": "config/formal_v0_5/SUITE.json",
+  "profile": "config/formal_v0_5/PROFILE.json",
+  "live_status": "results/formal_v0_5/RUNNER_STATUS.json",
+  "supervisor_tool_session": 45461,
+  "release_report": "validation/formal_preflight_v0_5/RELEASE_REPORT.json",
+  "release_report_sha256": "95714b054c7f2c61b26a9e43bb965855f1a6eb028670a89b6a929b1609cf23de",
+  "scope": "Finite predeclared grid; full registered U; no gating; source limitations retained",
+  "original_sources_changed": 0,
+  "source_only_budget_report": "validation/formal_budget_v0_5/REPORT.json",
+  "historical_review": "validation/REVIEW_v0_4.json",
+  "launch_notes": "reviews/FORMAL_LAUNCH_20260920.md"
+}

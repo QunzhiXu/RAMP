@@ -1,0 +1,18 @@
+{
+  "version": "raw_labels_20260924",
+  "benchmark": "lung_story",
+  "release": "senosain140k_20260921",
+  "title": "Lung HLA-ABC story | CyTOF, IMC and mIF",
+  "folder": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924",
+  "png": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924/output/png/figure_s5_lung_hla_abc_story.png",
+  "pdf": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924/output/pdf/figure_s5_lung_hla_abc_story.pdf",
+  "ramp_coordinates_reused_from_story": true,
+  "status": "rendered_and_verified",
+  "rendering_revision": "story_render_match_20260922",
+  "opacity_and_relative_point_size_match_story": true,
+  "ridge_display_units": 30,
+  "ridge_display_cells": 30000,
+  "previous_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Lung HLA-ABC story/ridge_full_range_20260922",
+  "revision": "Raw label only; full density range and all other pixels unchanged.",
+  "ridge_outline": "Full-support density with endpoints at baseline"
+}

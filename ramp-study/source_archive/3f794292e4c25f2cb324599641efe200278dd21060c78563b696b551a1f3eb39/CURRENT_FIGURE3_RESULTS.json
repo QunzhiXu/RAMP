@@ -1,0 +1,17 @@
+{
+  "release": "figure3_bc_update_20260922",
+  "directory": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/releases/figure3_bc_update_20260922",
+  "primary_means_sha256": "8513b524e7af2a5f5cc3f5702b552deb7af263509d018119d1f41e940833b9f6",
+  "report_sha256": "6d385730ec9068e1803ff7a21b930e5e8eea642917fcaaf81789cbdba74c4c26",
+  "panel_B": "Updated seven-task J1; exploratory classification scopes.",
+  "panel_C": "Six-task J2 with new Lung reference; 79 benchmark-marker combinations.",
+  "panels_DEF": "Archived; not in current main or supplementary figures.",
+  "figure_updated": true,
+  "manuscript_updated": true,
+  "figure3_updated": true,
+  "figure_release": "figure3_bc_update_20260922",
+  "manuscript": "/Users/qxu6/Documents/New project/bioRxiv_Ver1",
+  "remaining_scope": "Main Figure 3 A\u2013C only; current B/C results unchanged.",
+  "figure_directory": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/Figure/Combined ABC",
+  "display_update": "2026-09-22: A\u2013C layout, Harmony public label."
+}

@@ -1,0 +1,10 @@
+package,version,required_location
+R,4.3.2,runtime
+ruv,0.9.7.1,project_library
+rsvd,1.0.5,project_library
+jsonlite,2.0.0,any_library
+digest,0.6.39,any_library
+Matrix,1.6.1.1,any_library
+ggplot2,3.5.2,any_library
+scales,1.4.0,any_library
+gridExtra,2.3,any_library

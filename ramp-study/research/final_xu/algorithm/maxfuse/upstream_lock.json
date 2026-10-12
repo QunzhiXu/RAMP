@@ -1,0 +1,27 @@
+{
+  "package": "maxfuse",
+  "package_version": "0.0.2",
+  "repository": "https://github.com/shuxiaoc/maxfuse.git",
+  "reviewed_repository_commit": "2900b260b697deec678060ea653015291c4dc5cb",
+  "source_sha256": {
+    "graph.py": "6b0f248a35b47a7b1c8f30923315b60fcc26722201f28a6703c4d0373be75a07",
+    "match_utils.py": "0e836313a9214d40ed55654702dd483cca3027d281107a5ba79e1ae6f866330d",
+    "model.py": "a9711e41d943751db22cb19f0057ace186d0c28ed7b00285d78ba31ab5bbc72a",
+    "utils.py": "729c6566b8c610852342784540ede6e421e7456c7bf02c1e93408707aedc1175"
+  },
+  "reference_notebook": {
+    "path": "docs/citeseq_pbmc_evaluate.ipynb",
+    "sha256": "377bdc9a6fcb909f71cba2b96bf6855ef83ba4b12fc4ddd2b994e0c04d8cfc4b"
+  },
+  "archive_reference_notebooks": [
+    {
+      "path": "Archive/hubmap/code/analysis/CL_tri-integration.ipynb",
+      "sha256": "a79d57194ab3a97008200d9f5aa987f1236c9e06ca72dc4969e2feb2369aef24"
+    },
+    {
+      "path": "Archive/hubmap/code/analysis/SB_tri-integration.ipynb",
+      "sha256": "863bbdd9739250878162750015cfa3085924fe32501b539f433adddee4454d16"
+    }
+  ],
+  "upstream_license_sha256": "7fb73faa0652b79b4e340d2b6314af6715a7122cd267ede7817017112965a9ac"
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "number": "S1",
+    "case": "Bone marrow",
+    "source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/ridge_compact_preview_20260924/S1/output/pdf/bone_marrow_supplement.pdf",
+    "destination": "figure/supplementary/figure_s1_bone_marrow.pdf",
+    "sha256": "481ad5b5486edbde47547816c21aa8acd30276e258c52a50a338767866e9bc88",
+    "previous_source": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924/output/pdf/figure_s1_bone_marrow.pdf",
+    "previous_sha256": "3630c4d14e27c72adccce97a54eec88f19b2c427c98d8d9b41e390b5d19bfba6",
+    "change": "Accepted compact ridge display windows; original density estimates, cell selection, colors and UMAPs retained."
+  },
+  {
+    "number": "S2",
+    "case": "TNBC",
+    "source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/ridge_compact_preview_20260924/S2/output/pdf/tnbc_benchmark_supplement.pdf",
+    "destination": "figure/supplementary/figure_s2_tnbc.pdf",
+    "sha256": "a0bf86d92e6f5853d12b807673480cf0a23872ebed52e9c2f3a7f465faf6a4b6",
+    "previous_source": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924/output/pdf/figure_s2_tnbc.pdf",
+    "previous_sha256": "3ccedf24301a556dbe318907c2f8e51f1bf37a33f5b77156038f28779526d49b",
+    "change": "Accepted compact ridge display windows; original density estimates, cell selection, colors and UMAPs retained."
+  },
+  {
+    "number": "S3",
+    "case": "Melanoma three-platform",
+    "source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/ridge_compact_preview_20260924/S3/output/pdf/melanoma_three_platform_supplement.pdf",
+    "destination": "figure/supplementary/figure_s3_melanoma_three_platform.pdf",
+    "sha256": "f9aaf6a1377b8db2adb3eb0199bef0928fc618e4d8649ed5ae8d00d41595c57a",
+    "previous_source": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924/output/pdf/figure_s3_melanoma_three_platform.pdf",
+    "previous_sha256": "278e9ee283bd7e0b6891dfe8d4c7984673865607ee9fa38fede069b1814861ce",
+    "change": "Accepted compact ridge display windows; original density estimates, cell selection, colors and UMAPs retained."
+  },
+  {
+    "number": "S4",
+    "case": "Lung cancer benchmark",
+    "source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/ridge_compact_preview_20260924/S4/output/pdf/lung_cancer_benchmark_supplement.pdf",
+    "destination": "figure/supplementary/figure_s4_lung_cancer_benchmark.pdf",
+    "sha256": "d63f51533432b8c51c94b9c77ffa51693eb5af71438ce9dcdf5bd5e1400736b6",
+    "previous_source": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924/output/pdf/figure_s4_lung_cancer_benchmark.pdf",
+    "previous_sha256": "ab832f6a7f0f8919dcdd5c516195b733cd8a43dba4c74f290e3935be4fb73ce2",
+    "change": "Accepted compact ridge display windows; original density estimates, cell selection, colors and UMAPs retained."
+  },
+  {
+    "number": "S5",
+    "case": "Lung HLA-ABC story",
+    "source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/ridge_compact_preview_20260924/S5/output/pdf/lung_hla_abc_story_supplement.pdf",
+    "destination": "figure/supplementary/figure_s5_lung_hla_abc_story.pdf",
+    "sha256": "0e8c4f9c0f286046e0e9c591e67092339dfe12cf6519aa6d9318e55a2af202e7",
+    "previous_source": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924/output/pdf/figure_s5_lung_hla_abc_story.pdf",
+    "previous_sha256": "53d1f228046717995811a072812a1a792caf0c8ac0729d49f51d25431766898a",
+    "change": "Accepted compact ridge display windows; original density estimates, cell selection, colors and UMAPs retained."
+  },
+  {
+    "number": "S6",
+    "case": "Melanoma story",
+    "source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/ridge_compact_preview_20260924/S6/output/pdf/melanoma_story_supplement.pdf",
+    "destination": "figure/supplementary/figure_s6_melanoma_story.pdf",
+    "sha256": "5ab6749b6f09a5448c740fc69c9dc6a315896cf50830decb35dbc75f0b43a2a9",
+    "previous_source": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924/output/pdf/figure_s6_melanoma_story.pdf",
+    "previous_sha256": "057b85b7afe23cdeba9801df4dd60645fdf20938a8c4a4dbf08a479160aef3d5",
+    "change": "Accepted compact ridge display windows; original density estimates, cell selection, colors and UMAPs retained."
+  },
+  {
+    "number": "S7",
+    "case": "HNSCC story",
+    "source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/ridge_compact_preview_20260924/S7/output/pdf/hnscc_story_supplement.pdf",
+    "destination": "figure/supplementary/figure_s7_hnscc_story.pdf",
+    "sha256": "e2ad99880151966ec5b7f48f853732cd2464247851fa474b103f499d2f2704b7",
+    "previous_source": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924/output/pdf/figure_s7_hnscc_story.pdf",
+    "previous_sha256": "757160e813ccf1b583e8ceff8135eddb0acea4c22b7c74a893298d71f6b33b1d",
+    "change": "Accepted compact ridge display windows; original density estimates, cell selection, colors and UMAPs retained."
+  },
+  {
+    "number": "S8",
+    "case": "Cell-type structure, label transfer and UMAP metrics",
+    "source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/harmony_display_20260922/pdf/figure_s8_structure_transfer_umap.pdf",
+    "destination": "figure/supplementary/figure_s8_structure_transfer_umap.pdf",
+    "sha256": "9a2e01cf55dfac290333e775e25a60c7cd139b144bcac17bc234825aa9b7ebc1",
+    "previous_source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Figure 2 complete benchmark/preview_v1/output/pdf/supplement_s8_structure_transfer_umap.pdf",
+    "previous_sha256": "b213bea7877cf1438e91f1274f63565301448b88f33dbc8063184bc68be1c872",
+    "change": "Display label Harmony; numeric results and other figure content unchanged."
+  },
+  {
+    "number": "S9",
+    "case": "Platform and donor mixing metrics",
+    "source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/harmony_display_20260922/pdf/figure_s9_platform_donor_mixing.pdf",
+    "destination": "figure/supplementary/figure_s9_platform_donor_mixing.pdf",
+    "sha256": "5d94ed6d0f77f74d3274feb2c294e12678fc683a19bd544a32f0a66aca2b5d44",
+    "previous_source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Figure 2 complete benchmark/preview_v1/output/pdf/supplement_s9_platform_donor_mixing.pdf",
+    "previous_sha256": "889ffbe3f9aba87ae3d3ec956f57cbe59158688a37ca985bddb52683454148e9",
+    "change": "Display label Harmony; numeric results and other figure content unchanged."
+  },
+  {
+    "number": "S10",
+    "case": "Annotation: four original benchmarks",
+    "source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/harmony_display_20260922/pdf/figure_s10_annotation_original_benchmarks.pdf",
+    "destination": "figure/supplementary/figure_s10_annotation_original_benchmarks.pdf",
+    "sha256": "b1a8f9ce4f724e78bf754373a9586abcda81e19bff9536b6243c1f80a5fc46ed",
+    "previous_source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Figure 3 model benchmark breakdown/final_20260922/output/pdf/s10_annotation_by_model.pdf",
+    "previous_sha256": "774a0608a24ec4402682e902a37bb1bba80ef4388b44f44f542fb71ce73ca4fe",
+    "change": "Display label Harmony; numeric results and other figure content unchanged."
+  },
+  {
+    "number": "S11",
+    "case": "Annotation: three application benchmarks",
+    "source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/harmony_display_20260922/pdf/figure_s11_annotation_application_benchmarks.pdf",
+    "destination": "figure/supplementary/figure_s11_annotation_application_benchmarks.pdf",
+    "sha256": "a15a0cd8831598f879bca82ef64c7b62f528bf8f53cd9ab632868a760dbba8ab",
+    "previous_source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Figure 3 model benchmark breakdown/final_20260922/output/pdf/s11_annotation_by_model.pdf",
+    "previous_sha256": "c29ffa9cef725827ca0be6d0d0539d76db20dac612f18f26fc34d51f419fa969",
+    "change": "Display label Harmony; numeric results and other figure content unchanged."
+  },
+  {
+    "number": "S12",
+    "case": "Missing-marker Spearman across models and benchmarks",
+    "source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/harmony_display_20260922/pdf/figure_s12_missing_marker_spearman.pdf",
+    "destination": "figure/supplementary/figure_s12_missing_marker_spearman.pdf",
+    "sha256": "9866e6d7390cf3e9afafbcc31c3a4865390471eb99a75e8e2df3da136f6f11d6",
+    "previous_source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Figure 3 model benchmark breakdown/final_20260922/output/pdf/s12_missing_marker_spearman.pdf",
+    "previous_sha256": "aa0d4f3d91cfad0473be97ce904c46ffac2a35e59a5d533cabf8cc19f26c89ef",
+    "change": "Display label Harmony; numeric results and other figure content unchanged."
+  },
+  {
+    "number": "S13",
+    "case": "Missing-marker MAE across models and benchmarks",
+    "source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/harmony_display_20260922/pdf/figure_s13_missing_marker_mae.pdf",
+    "destination": "figure/supplementary/figure_s13_missing_marker_mae.pdf",
+    "sha256": "1655f77bcd64dacad620d5c492a111b62dc4c916c93e8b438afe62e9fceece14",
+    "previous_source": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Figure 3 model benchmark breakdown/final_20260922/output/pdf/s13_missing_marker_mae.pdf",
+    "previous_sha256": "494703d5a7800105cac6b0b100a95641a162b3d16d2524591669992812cdf2fa",
+    "change": "Display label Harmony; numeric results and other figure content unchanged."
+  }
+]

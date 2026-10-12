@@ -1,0 +1,81 @@
+{
+  "selection_id": "main23_four_categories_without_mixing_asw",
+  "status": "current_main_metric_selection",
+  "n_metrics": 23,
+  "included_metrics": [
+    "leiden_celltype_ari",
+    "leiden_celltype_nmi",
+    "leiden_dataset_ari",
+    "leiden_dataset_nmi",
+    "leiden_unit_ari",
+    "leiden_unit_nmi",
+    "louvain_celltype_ari",
+    "louvain_celltype_nmi",
+    "louvain_dataset_ari",
+    "louvain_dataset_nmi",
+    "louvain_unit_ari",
+    "louvain_unit_nmi",
+    "highdim_celltype_asw_macro",
+    "dataset_ilisi_norm",
+    "unit_ilisi_norm",
+    "dataset_entropy_norm",
+    "conditional_kbet_acceptance",
+    "crossplatform_knn_macro_f1",
+    "crossplatform_knn_balanced_accuracy",
+    "cross_dataset_30nn_fraction",
+    "conditional_cross_dataset_30nn_fraction",
+    "umap_celltype_asw_macro",
+    "umap_dataset_abs_asw"
+  ],
+  "excluded": {
+    "umap_unit_abs_asw": "User-requested exclusion of UMAP donor/ROI absolute silhouette after reviewing its scores; post-hoc reporting change.",
+    "celltype_knn_purity": "User-requested joint exclusion of kNN purity and LISI purity after reviewing their scores; post-hoc reporting change.",
+    "celltype_lisi_purity": "User-requested joint exclusion of kNN purity and LISI purity after reviewing their scores; post-hoc reporting change.",
+    "native_knn_jaccard": "Earlier user-requested exclusion of geometry from the main metric set.",
+    "celltype_graph_connectivity": "User-requested exclusion after reviewing graph-connectivity results; post-hoc reporting change.",
+    "highdim_dataset_asw_conditional": "User requested removal of the two mixing ASW metrics after reviewing results.",
+    "highdim_unit_asw_conditional": "User requested removal of the two mixing ASW metrics after reviewing results.",
+    "crossplatform_mnn_coverage": "Earlier user request to remove the matching-coverage category and retain four categories; applied here after the intervening discussion."
+  },
+  "removed_from_previous_selection": {
+    "highdim_dataset_asw_conditional": "User requested removal of the two mixing ASW metrics after reviewing results.",
+    "highdim_unit_asw_conditional": "User requested removal of the two mixing ASW metrics after reviewing results.",
+    "crossplatform_mnn_coverage": "Earlier user request to remove the matching-coverage category and retain four categories; applied here after the intervening discussion."
+  },
+  "change_type": "post_hoc_user_requested_reporting_subset",
+  "primary_weighting": "family_equal",
+  "sensitivity_weighting": "metric_equal",
+  "primary_family_weights": {
+    "biology": 0.25,
+    "mixing": 0.25,
+    "transfer": 0.25,
+    "visual": 0.25
+  },
+  "benchmark_weighting": "equal_across_seven_benchmarks",
+  "aggregation": "Within each benchmark, average the original per-metric ranks within each family, then average the four family means; finally average the seven benchmark scores. Lower is better. Do not re-rank the family means before averaging.",
+  "weighting_choice": "Post hoc user choice after reviewing results, to prevent the 14 mixing metrics from dominating the 23-metric aggregate; applied uniformly to every method and benchmark.",
+  "raw_31_metric_evaluations_preserved": true,
+  "models_and_umaps_refit": true,
+  "previous_figure_images_redrawn": false,
+  "scope": "same selection for seven benchmark cases and all six methods",
+  "previous_selection": "/Users/qxu6/Documents/New project/final_xu/Main Figure/Figure 2/metric_selection_main26",
+  "source_sha256": {
+    "/Users/qxu6/Documents/New project/final_xu/Main Figure/Figure 2/metric_selection_main23/metric_ranks_7_benchmarks_main23.csv": "2e78eb90d0e1345367aa6c744cf409b6c1d9af02b03587dbe362003dbadea1de",
+    "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/Comparison_senosain140k_20260921/evaluation/metric_method_ranks_all31.csv": "fcc029d2845257eb9cf6b764bb8a27506fd69c6db365b61cdf7eac09e9d76fc6",
+    "/Users/qxu6/Documents/New project/final_xu/benchmark_results/comparison_evaluation/summary/primary_method_family_metric_ranks.csv": "ebbca6a06000d7d5105e5bcb4f724af8a98174f39b93987dc997c55fc1295a13",
+    "/Users/qxu6/Documents/New project/final_xu/figure_melanoma/Comparison/maxfuse_full_panel/evaluation/metric_method_ranks_all31.csv": "ff42e3c6446f9433f43177f6670518014d89655df0d3c6067369e53fc27bcfb3",
+    "/Users/qxu6/Documents/New project/final_xu/figure_HNSCC/Comparison/maxfuse_full_panel/evaluation/metric_method_ranks_all31.csv": "0a1b10520db76a7f3401caa75ff0159b108baf2b14550ea9700aa999403c0d91"
+  },
+  "original_source_sha256": {
+    "benchmark_results/comparison_evaluation/summary/metric_registry.csv": "335dca76c262d1764c89913bbd708bc46d183151c3e1d7e97b931fddeb782c71",
+    "benchmark_results/comparison_evaluation/summary/primary_method_family_metric_ranks.csv": "ebbca6a06000d7d5105e5bcb4f724af8a98174f39b93987dc997c55fc1295a13",
+    "story_lung_HLA_ABC/Comparison/maxfuse_full_panel/evaluation/metric_method_ranks_all31.csv": "e6344447c198df2055415580a344e6814ad36e3d2a4fb969995c55ba8e137e34",
+    "figure_melanoma/Comparison/maxfuse_full_panel/evaluation/metric_method_ranks_all31.csv": "ff42e3c6446f9433f43177f6670518014d89655df0d3c6067369e53fc27bcfb3",
+    "figure_HNSCC/Comparison/maxfuse_full_panel/evaluation/metric_method_ranks_all31.csv": "0a1b10520db76a7f3401caa75ff0159b108baf2b14550ea9700aa999403c0d91",
+    "Main Figure/Figure 2/metric_selection_main27/metric_ranks_7_benchmarks_main27.csv": "ee0f66015aedc0b8da523bb588e0b258b8d0f8628535f028e6289e22c4112553"
+  },
+  "version": "lung_reference_update_20260921",
+  "refit_scope": "lung_story only; all 5 comparator methods; RAMP new application alignment reused",
+  "new_score_reporting_policy": "Existing list/weights fixed before new scores; no metric additions or exclusions this update",
+  "original_metric_policy_sha256": "9f9a433d9cbfdc7dc2a3c78bf281aa62fa862ebcc46bec37b9a55ce2fa7259b8"
+}

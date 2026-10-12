@@ -1,0 +1,52 @@
+{
+  "selection_id": "main27_without_geometry_connectivity_or_local_purity",
+  "status": "current_main_metric_selection",
+  "n_metrics": 27,
+  "excluded": {
+    "celltype_knn_purity": "User-requested joint exclusion of kNN purity and LISI purity after reviewing their scores; post-hoc reporting change.",
+    "celltype_lisi_purity": "User-requested joint exclusion of kNN purity and LISI purity after reviewing their scores; post-hoc reporting change.",
+    "native_knn_jaccard": "Earlier user-requested exclusion of geometry from the main metric set.",
+    "celltype_graph_connectivity": "User-requested exclusion after reviewing graph-connectivity results; post-hoc reporting change."
+  },
+  "included_metrics": [
+    "leiden_celltype_ari",
+    "leiden_celltype_nmi",
+    "leiden_dataset_ari",
+    "leiden_dataset_nmi",
+    "leiden_unit_ari",
+    "leiden_unit_nmi",
+    "louvain_celltype_ari",
+    "louvain_celltype_nmi",
+    "louvain_dataset_ari",
+    "louvain_dataset_nmi",
+    "louvain_unit_ari",
+    "louvain_unit_nmi",
+    "highdim_celltype_asw_macro",
+    "highdim_dataset_asw_conditional",
+    "highdim_unit_asw_conditional",
+    "dataset_ilisi_norm",
+    "unit_ilisi_norm",
+    "dataset_entropy_norm",
+    "conditional_kbet_acceptance",
+    "crossplatform_knn_macro_f1",
+    "crossplatform_knn_balanced_accuracy",
+    "crossplatform_mnn_coverage",
+    "cross_dataset_30nn_fraction",
+    "conditional_cross_dataset_30nn_fraction",
+    "umap_celltype_asw_macro",
+    "umap_dataset_abs_asw",
+    "umap_unit_abs_asw"
+  ],
+  "change_type": "post_hoc_user_requested_reporting_subset",
+  "raw_31_metric_evaluations_preserved": true,
+  "models_and_umaps_refit": false,
+  "previous_figure_images_redrawn": false,
+  "scope": "same selection for all seven benchmark cases and all six methods",
+  "source_sha256": {
+    "benchmark_results/comparison_evaluation/summary/metric_registry.csv": "335dca76c262d1764c89913bbd708bc46d183151c3e1d7e97b931fddeb782c71",
+    "benchmark_results/comparison_evaluation/summary/primary_method_family_metric_ranks.csv": "ebbca6a06000d7d5105e5bcb4f724af8a98174f39b93987dc997c55fc1295a13",
+    "story_lung_HLA_ABC/Comparison/maxfuse_full_panel/evaluation/metric_method_ranks_all31.csv": "e6344447c198df2055415580a344e6814ad36e3d2a4fb969995c55ba8e137e34",
+    "figure_melanoma/Comparison/maxfuse_full_panel/evaluation/metric_method_ranks_all31.csv": "ff42e3c6446f9433f43177f6670518014d89655df0d3c6067369e53fc27bcfb3",
+    "figure_HNSCC/Comparison/maxfuse_full_panel/evaluation/metric_method_ranks_all31.csv": "0a1b10520db76a7f3401caa75ff0159b108baf2b14550ea9700aa999403c0d91"
+  }
+}

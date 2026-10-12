@@ -1,0 +1,1777 @@
+{
+  "name": "e2e_pilot_bone_v0_3",
+  "mode": "pilot",
+  "seed": 20260919,
+  "pilot_cells_per_dataset": 3000,
+  "alignment_timeout_seconds": 7200,
+  "output": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/e2e_pilot_bone_v0_3_r2",
+  "jobs": [
+    {
+      "id": "J1_unaligned_linear",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "unaligned",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_unaligned_knn",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "unaligned",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_unaligned_mlp",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "unaligned",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J2_unaligned_linear",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "unaligned",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_unaligned_knn",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "unaligned",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_unaligned_mlp",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "unaligned",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J1_ramp_linear",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "ramp",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_ramp_knn",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "ramp",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_ramp_mlp",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "ramp",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J2_ramp_linear",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "ramp",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_ramp_knn",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "ramp",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_ramp_mlp",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "ramp",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J1_harmony_direct_linear",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "harmony_direct",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_harmony_direct_knn",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "harmony_direct",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_harmony_direct_mlp",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "harmony_direct",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J2_harmony_direct_linear",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "harmony_direct",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_harmony_direct_knn",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "harmony_direct",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_harmony_direct_mlp",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "harmony_direct",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J1_cycombine_linear",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "cycombine",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_cycombine_knn",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "cycombine",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_cycombine_mlp",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "cycombine",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J2_cycombine_linear",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "cycombine",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_cycombine_knn",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "cycombine",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_cycombine_mlp",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "cycombine",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J1_cytonorm_linear",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "cytonorm",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_cytonorm_knn",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "cytonorm",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_cytonorm_mlp",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "cytonorm",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J2_cytonorm_linear",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "cytonorm",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_cytonorm_knn",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "cytonorm",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_cytonorm_mlp",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "cytonorm",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J1_fastmnn_linear",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "fastmnn",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_fastmnn_knn",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "fastmnn",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_fastmnn_mlp",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "fastmnn",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J2_fastmnn_linear",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "fastmnn",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_fastmnn_knn",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "fastmnn",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_fastmnn_mlp",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "fastmnn",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J1_maxfuse_linear",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "maxfuse",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_maxfuse_knn",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "maxfuse",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_maxfuse_mlp",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "maxfuse",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J2_maxfuse_linear",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "maxfuse",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_maxfuse_knn",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "maxfuse",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_maxfuse_mlp",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "maxfuse",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J1_clipped_zscore_linear",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "clipped_zscore",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_clipped_zscore_knn",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "clipped_zscore",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_clipped_zscore_mlp",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "clipped_zscore",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J2_clipped_zscore_linear",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "clipped_zscore",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_clipped_zscore_knn",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "clipped_zscore",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_clipped_zscore_mlp",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "clipped_zscore",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J1_minmax_linear",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "minmax",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_minmax_knn",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "minmax",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_minmax_mlp",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "minmax",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J2_minmax_linear",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "minmax",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_minmax_knn",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "minmax",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_minmax_mlp",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "minmax",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J1_percentile_linear",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "percentile",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_percentile_knn",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "percentile",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J1_percentile_mlp",
+      "task": "bone_marrow",
+      "task_type": "J1",
+      "method": "percentile",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 64,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ]
+    },
+    {
+      "id": "J2_percentile_linear",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "percentile",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "linear",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_percentile_knn",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "percentile",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "knn",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "knn",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J2_percentile_mlp",
+      "task": "bone_marrow",
+      "task_type": "J2",
+      "method": "percentile",
+      "source": "BM CODEX",
+      "target": "BM CyTOF",
+      "fit_budget": 256,
+      "validation_budget": 256,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "mlp",
+          "scale": "identity",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        },
+        {
+          "family": "mlp",
+          "scale": "standard",
+          "max_epochs": 15,
+          "patience": 5,
+          "width": 16
+        }
+      ],
+      "marker": "CD3",
+      "calibration_per_unit": 16
+    },
+    {
+      "id": "J3_unaligned",
+      "task": "bone_marrow",
+      "task_type": "J3",
+      "method": "unaligned",
+      "sources": [
+        "BM CODEX",
+        "BM CyTOF"
+      ],
+      "target": "Triana AbSeq",
+      "fit_quota_per_class": 3,
+      "validation_quota_per_class": 1,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "standard"
+        }
+      ]
+    },
+    {
+      "id": "J4_unaligned",
+      "task": "bone_marrow",
+      "task_type": "J4",
+      "method": "unaligned",
+      "sources": [
+        "BM CODEX",
+        "BM CyTOF"
+      ],
+      "target": "Triana AbSeq",
+      "seed": 20260919,
+      "pretrain": {
+        "corpus_per_half": 100,
+        "pretrain_validation_per_source": 50,
+        "probe_fit": 128,
+        "probe_validation": 64,
+        "pretrain_updates": 20,
+        "supervised_updates": 20,
+        "validation_every": 5,
+        "width": 16
+      }
+    },
+    {
+      "id": "J3_ramp",
+      "task": "bone_marrow",
+      "task_type": "J3",
+      "method": "ramp",
+      "sources": [
+        "BM CODEX",
+        "BM CyTOF"
+      ],
+      "target": "Triana AbSeq",
+      "fit_quota_per_class": 3,
+      "validation_quota_per_class": 1,
+      "seed": 20260919,
+      "candidates": [
+        {
+          "family": "linear",
+          "scale": "standard"
+        }
+      ]
+    },
+    {
+      "id": "J4_ramp",
+      "task": "bone_marrow",
+      "task_type": "J4",
+      "method": "ramp",
+      "sources": [
+        "BM CODEX",
+        "BM CyTOF"
+      ],
+      "target": "Triana AbSeq",
+      "seed": 20260919,
+      "pretrain": {
+        "corpus_per_half": 100,
+        "pretrain_validation_per_source": 50,
+        "probe_fit": 128,
+        "probe_validation": 64,
+        "pretrain_updates": 20,
+        "supervised_updates": 20,
+        "validation_every": 5,
+        "width": 16
+      }
+    }
+  ],
+  "representation_root": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/e2e_pilot_bone_v0_3/representations",
+  "input_root": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/data/real_inputs_v0_3",
+  "pilot_amendment": "Validation budget reduced after source-ID feasibility check (98 available CODEX validation cells); no target score used. First pilot preserved."
+}

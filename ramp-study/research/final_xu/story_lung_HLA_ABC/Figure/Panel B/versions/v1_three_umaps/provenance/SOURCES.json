@@ -1,0 +1,42 @@
+[
+  {
+    "local": "data/baseline_UMAP.npy",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/umap/results/baseline_UMAP.npy",
+    "sha256": "8b81fc6d0944e15f3f6bfbaff4770395acbf8b579a1753173fb40f7aa2879df0"
+  },
+  {
+    "local": "data/RAMP_UMAP.npy",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/umap/results/RAMP_UMAP.npy",
+    "sha256": "be8d789bb39a32a49e4cff6ffa06049d993bab110c7010e75a9993c9e57ae893"
+  },
+  {
+    "local": "data/CELL_METADATA.csv.gz",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/data_umap/data/CELL_METADATA.csv.gz",
+    "sha256": "74461a04818108949a19099ae6688339b820bdd4966394f9cf93b7bc30d22070"
+  },
+  {
+    "local": "provenance/SELECTED_DONORS.csv",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/data_umap/data/SELECTED_DONORS.csv",
+    "sha256": "0be70086eea4e957c757111772ade4dd164b416b69d3205e5a76d514c121413c"
+  },
+  {
+    "local": "provenance/MARKER_MAPPING.csv",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/data_umap/data/MARKER_MAPPING.csv",
+    "sha256": "4c40963d50f24bc4d200d55f210dd2619b0b2a2981cf5201ecf6d939c9b5c774"
+  },
+  {
+    "local": "provenance/baseline_UMAP_PARAMETERS.json",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/umap/results/baseline_UMAP.json",
+    "sha256": "edc8d93ffa1e3c99b7c1c7bd762490c9dec325984cfd57af7b70104f30a13ec9"
+  },
+  {
+    "local": "provenance/RAMP_UMAP_PARAMETERS.json",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/umap/results/RAMP_UMAP.json",
+    "sha256": "15713ef426607881d3f584500ba13ac85d90c3bedd55d8250d0035c8f61a3d1a"
+  },
+  {
+    "local": "provenance/SOURCE_UMAP_VERIFICATION.json",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/umap/results/VERIFICATION.json",
+    "sha256": "cf9de3dce9df3e8f2d6cdfe28324642452a9f50c1457924921aae81eef292dce"
+  }
+]

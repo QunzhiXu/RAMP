@@ -1,0 +1,140 @@
+{
+  "schema_version": "final_xu.fastmnn_benchmark.v1",
+  "benchmark_slug": "tnbc",
+  "benchmark_title": "TNBC",
+  "method_label": "fastMNN (batchelor 1.18.1; corrected embedding)",
+  "expected_cells": 62701,
+  "expected_embedding_dimensions": 10,
+  "cell_id_column": "cell_id",
+  "batch_column": "dataset",
+  "sample_column": "unit_key",
+  "label_column": "celltype",
+  "missing_label": "Non-joint",
+  "datasets": [
+    {
+      "name": "Tietscher IMC",
+      "expected_cells": 20000
+    },
+    {
+      "name": "Meyer IMC",
+      "expected_cells": 22701
+    },
+    {
+      "name": "Shiao CODEX",
+      "expected_cells": 20000
+    }
+  ],
+  "markers": [
+    "CD11C",
+    "CD20",
+    "CD3",
+    "CD31",
+    "CD4",
+    "CD68",
+    "CD8",
+    "HLA_DR",
+    "KI67",
+    "PANCK",
+    "SMA"
+  ],
+  "paths": {
+    "preprocessing_builder": "preprocessing/build_inputs.py",
+    "combined_input": "preprocessing/data/combined_analysis_ready.csv.gz",
+    "marker_file": "preprocessing/markers.txt",
+    "preprocessing_manifest": "preprocessing/preprocessing_manifest.json",
+    "algorithm_config": "alignment/config.json",
+    "alignment_output": "alignment/data",
+    "display_metadata": "../../../benchmark_data/tnbc/relabel/relabeled_metadata.csv.gz",
+    "umap_output": "umap"
+  },
+  "umap": {
+    "n_neighbors": 30,
+    "min_dist": 0.15,
+    "metric": "euclidean",
+    "random_state": 42,
+    "transform_seed": 42,
+    "n_jobs": 1,
+    "low_memory": true,
+    "initialization": "spectral",
+    "initialization_sd": null
+  },
+  "palette": [
+    {
+      "label": "Non-joint",
+      "color": "#1F77B4",
+      "legend_order": 1,
+      "draw_order": 1,
+      "point_size": 0.7,
+      "alpha": 0.2
+    },
+    {
+      "label": "B lineage",
+      "color": "#F2C14E",
+      "legend_order": 2,
+      "draw_order": 2,
+      "point_size": 0.7,
+      "alpha": 0.72
+    },
+    {
+      "label": "CD4 T",
+      "color": "#17BECF",
+      "legend_order": 3,
+      "draw_order": 3,
+      "point_size": 0.7,
+      "alpha": 0.72
+    },
+    {
+      "label": "CD8 T",
+      "color": "#1F77B4",
+      "legend_order": 4,
+      "draw_order": 4,
+      "point_size": 0.7,
+      "alpha": 0.72
+    },
+    {
+      "label": "Endothelial",
+      "color": "#59A14F",
+      "legend_order": 5,
+      "draw_order": 5,
+      "point_size": 0.7,
+      "alpha": 0.72
+    },
+    {
+      "label": "Myeloid",
+      "color": "#E17C05",
+      "legend_order": 6,
+      "draw_order": 6,
+      "point_size": 0.7,
+      "alpha": 0.72
+    },
+    {
+      "label": "NK",
+      "color": "#00A087",
+      "legend_order": 7,
+      "draw_order": 7,
+      "point_size": 0.7,
+      "alpha": 0.72
+    },
+    {
+      "label": "Stroma",
+      "color": "#9467BD",
+      "legend_order": 8,
+      "draw_order": 8,
+      "point_size": 0.7,
+      "alpha": 0.72
+    },
+    {
+      "label": "Tumor / epithelial",
+      "color": "#D62728",
+      "legend_order": 9,
+      "draw_order": 0,
+      "point_size": 0.7,
+      "alpha": 0.72
+    }
+  ],
+  "dataset_colors": {
+    "Tietscher IMC": "#2F6FB0",
+    "Meyer IMC": "#8C564B",
+    "Shiao CODEX": "#9EDAE5"
+  }
+}

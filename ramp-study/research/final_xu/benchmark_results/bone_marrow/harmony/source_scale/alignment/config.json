@@ -1,0 +1,43 @@
+{
+  "algorithm_parameters": {
+    "alpha": 0.2,
+    "block_size": 0.05,
+    "early_stop": true,
+    "epsilon_cluster": 0.001,
+    "epsilon_harmony": 0.01,
+    "lambda": 1.0,
+    "max_iter": 10,
+    "max_iter_cluster": 20,
+    "nclust_policy": "min(round(n_cells / 30), 100)",
+    "ncores": 1,
+    "normal_kind": "Inversion",
+    "plot_convergence": false,
+    "return_object": false,
+    "rng_kind": "Mersenne-Twister",
+    "sample_kind": "Rejection",
+    "seed": 42,
+    "sigma": 0.1,
+    "tau": 0.0,
+    "theta": 2.0
+  },
+  "batch_column": "dataset",
+  "batch_levels": [
+    "BM CODEX",
+    "BM CyTOF",
+    "Triana AbSeq"
+  ],
+  "cell_id_column": "cell_id",
+  "input_scale": {
+    "algorithm_applies_transformation": false,
+    "description": "Frozen provider/source analysis-ready values supplied unchanged.",
+    "input_sha256": "15100b7a5753b37055bef437eec419efcbe12d48d35dbc2a3af5011dbea91596",
+    "marker_file_sha256": "af94ca61aed37d00fc8df1c273970aa82ea660cc9312222951a55a1568cc9809",
+    "name": "source_scale",
+    "preprocessing_record_file": "/Users/qxu6/Documents/New project/final_xu/benchmark_results/bone_marrow/harmony/source_scale/preprocessing/preprocessing_record.txt",
+    "preprocessing_record_sha256": "f4248cd690a4c5bf55f921622b420f0438cb042f7d3625525535fa2920d51382",
+    "status": "analysis_ready"
+  },
+  "method_label": "Harmony-direct (ADTnorm protocol; no PCA)",
+  "sample_column": "unit_key",
+  "schema_version": "final_xu.harmony_direct.v1"
+}

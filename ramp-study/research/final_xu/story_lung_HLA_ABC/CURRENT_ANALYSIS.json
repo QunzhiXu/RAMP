@@ -1,0 +1,18 @@
+{
+  "version": "senosain140k_20260921",
+  "release": "releases/senosain140k_20260921",
+  "figure": "Figure/Combined ABCDEF/panels_ABCDEF_preview.png",
+  "source_test": "test/new_senosain_20260921",
+  "summary": "summary_steps3_6",
+  "legacy_frozen_packages": [
+    "data_umap",
+    "umap",
+    "validation",
+    "data_cords",
+    "survival",
+    "mechanism_support"
+  ],
+  "note": "Legacy packages preserve the previous reproducible analysis; current scientific outputs are the versioned release.",
+  "comparison": "Comparison_senosain140k_20260921",
+  "comparison_figure": "../Main Figure/Figure 2/lung_reference_update_20260921"
+}

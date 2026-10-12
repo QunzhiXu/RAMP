@@ -1,0 +1,77 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ramp-proteomics"
+version = "2.3.0"
+description = "Rank-preserving alignment of multi-platform single-cell protein data"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Qunzhi Xu", email = "QXu6@mdanderson.org"},
+]
+keywords = [
+  "single-cell proteomics",
+  "spatial proteomics",
+  "data integration",
+  "rank preservation",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2.0,<3",
+  "scipy>=1.11,<2",
+  "scikit-learn>=1.4,<2",
+]
+
+[project.urls]
+Paper = "https://doi.org/10.64898/2026.09.25.754510"
+Repository = "https://github.com/QunzhiXu/RAMP"
+Issues = "https://github.com/QunzhiXu/RAMP/issues"
+
+[project.optional-dependencies]
+parquet = ["pyarrow>=14"]
+test = [
+  "pytest>=8",
+  "pytest-cov>=5",
+]
+dev = [
+  "build>=1.2",
+  "ruff>=0.6",
+  "twine>=5",
+]
+
+[project.scripts]
+ramp-proteomics = "ramp_proteomics.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ramp_proteomics = ["py.typed"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+extend-exclude = [
+  "src/ramp_proteomics/_algorithm.py",
+  "src/ramp_proteomics/_helpers.py",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]

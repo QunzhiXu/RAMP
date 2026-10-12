@@ -1,0 +1,24 @@
+{
+  "seed": 20260913,
+  "pixel_size_um": 0.5,
+  "core": "C_30",
+  "patient": "P_26",
+  "n_cells": 10719,
+  "padding_um": 35,
+  "n_prototypes": 1536,
+  "prototype_grid_size": 64,
+  "geometry_source": "Zheng mIF_data.h5ad; joined by exact CellID and source_row_id",
+  "template_source": "Bone marrow H14 real DAPI, with nuclei segmented inside author Mesmer whole-cell masks",
+  "DAPI_uses_HLA_values": false,
+  "DAPI_uses_cell_type_labels": false,
+  "orientation": "seeded uniform random; not observed",
+  "DAPI_intensity": "synthetic brightness sampled independently of HLA; not observed in Zheng",
+  "output_interpretation": "Synthetic DAPI, real cell coordinates, morphology-constrained synthetic nuclei",
+  "HLA_overlay_interpretation": "cell-level color overlay; not synthesized HLA fluorescence",
+  "no_model_retraining": true,
+  "no_new_prediction": true,
+  "HLA_display_range": [
+    0.25,
+    0.6
+  ]
+}

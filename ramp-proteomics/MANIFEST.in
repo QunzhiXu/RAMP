@@ -1,0 +1,12 @@
+include README.md
+include LICENSE
+include AUTHORS.md
+include CHANGELOG.md
+include CITATION.cff
+include CONTRIBUTING.md
+include LEGAL_STATUS.md
+include PROVENANCE.md
+recursive-include docs *.md
+recursive-include examples *.md *.py
+recursive-include reproducibility *.txt
+recursive-include tests *.py

@@ -1,0 +1,25 @@
+{
+  "release": "j1_scope_update_20260921_r3",
+  "directory": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/releases/j1_scope_update_20260921_r3",
+  "report_sha256": "d9ffed41b3c7f6085231a3c624f78e0e7c4c33dbcd28b53aca1b8f3a2818f379",
+  "primary_means_sha256": "95b7cb2e95af237e10ca704a2f79c680b496acdf479622591b78d0e38626c58e",
+  "accepted_updated_tasks": [
+    "tnbc",
+    "melanoma",
+    "lung_cancer",
+    "lung_story",
+    "melanoma_story",
+    "hnscc_story"
+  ],
+  "unchanged_tasks": [
+    "bone_marrow"
+  ],
+  "figure3_updated": true,
+  "manuscript_updated": true,
+  "pending_scope": "D/E/F remain original-scope resource experiments; disclosed in figure caption and Methods. No retraining was performed for them.",
+  "human_summary": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/reports/seven_benchmark_latest_summary_20260921/README.md",
+  "figure_updated": true,
+  "figure_release": "figure3_bc_update_20260922",
+  "manuscript": "/Users/qxu6/Documents/New project/bioRxiv_Ver1",
+  "remaining_scope": "D/E/F remain original-scope resource experiments; disclosed in figure caption and Methods. No retraining was performed for them."
+}

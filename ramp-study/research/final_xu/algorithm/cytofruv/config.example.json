@@ -1,0 +1,62 @@
+{
+  "schema_version": "final_xu.cytofruv.config.v1",
+  "method_mode": "official_replicated_reference",
+  "seed": 1234,
+  "k": 2,
+  "marker_columns": [
+    "CD3",
+    "CD4",
+    "CD8",
+    "CD19",
+    "CD45"
+  ],
+  "input_scale": {
+    "name": "arcsinh_intensity_over_cofactor",
+    "cofactor": 5,
+    "already_transformed": true,
+    "source_document": "/absolute/path/to/preprocessing_manifest.json",
+    "source_document_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "clustering": {
+    "method": "CytofRUV::cluster_data",
+    "type_markers": [
+      "CD3",
+      "CD4",
+      "CD8",
+      "CD19",
+      "CD45"
+    ],
+    "number_of_clusters": 20,
+    "seed": 1234,
+    "provenance_document": "/absolute/path/to/clustering_manifest.json",
+    "provenance_document_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "replicate_design": {
+    "attestation": "same_biological_reference_sample_remeasured_across_all_target_batches",
+    "target_batches": [
+      "batch_1",
+      "batch_2",
+      "batch_3"
+    ],
+    "source_document": "/absolute/path/to/experimental_design_document",
+    "source_document_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "replicate_map": "/absolute/path/to/replicate_map.csv",
+    "replicate_map_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "replicate_sets": [
+    {
+      "reference_id": "reference_A",
+      "sample_ids": [
+        "reference_A_batch_1",
+        "reference_A_batch_2",
+        "reference_A_batch_3"
+      ],
+      "clusters": [
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  ],
+  "minimum_cells_per_reference_sample_cluster": 2
+}

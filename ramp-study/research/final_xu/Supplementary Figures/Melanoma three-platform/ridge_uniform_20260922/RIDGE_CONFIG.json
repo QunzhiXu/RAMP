@@ -1,0 +1,104 @@
+{
+  "case": "Melanoma three-platform",
+  "original_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/Melanoma three-platform/layout_v2_matched_style",
+  "palette_mode": "fixed_technology_across_all_seven_figures",
+  "platforms": [
+    {
+      "dataset": "MEL_Hickey2023_CODEX",
+      "name": "CODEX",
+      "technology": "CODEX",
+      "color": "#2775B6",
+      "available_units": 6,
+      "selected_unit_ids": [
+        "MEL_Hickey2023_CODEX|patient_15",
+        "MEL_Hickey2023_CODEX|patient_17",
+        "MEL_Hickey2023_CODEX|patient_2",
+        "MEL_Hickey2023_CODEX|patient_5",
+        "MEL_Hickey2023_CODEX|patient_6",
+        "MEL_Hickey2023_CODEX|patient_7"
+      ]
+    },
+    {
+      "dataset": "MEL_Hoch2021_IMC",
+      "name": "IMC",
+      "technology": "IMC",
+      "color": "#E58A2B",
+      "available_units": 17,
+      "selected_unit_ids": [
+        "MEL_Hoch2021_IMC|patient_13",
+        "MEL_Hoch2021_IMC|patient_24",
+        "MEL_Hoch2021_IMC|patient_34",
+        "MEL_Hoch2021_IMC|patient_4",
+        "MEL_Hoch2021_IMC|patient_41",
+        "MEL_Hoch2021_IMC|patient_44",
+        "MEL_Hoch2021_IMC|patient_5",
+        "MEL_Hoch2021_IMC|patient_51",
+        "MEL_Hoch2021_IMC|patient_54",
+        "MEL_Hoch2021_IMC|patient_64",
+        "MEL_Hoch2021_IMC|patient_65",
+        "MEL_Hoch2021_IMC|patient_66",
+        "MEL_Hoch2021_IMC|patient_71",
+        "MEL_Hoch2021_IMC|patient_79",
+        "MEL_Hoch2021_IMC|patient_82",
+        "MEL_Hoch2021_IMC|patient_83",
+        "MEL_Hoch2021_IMC|patient_93"
+      ]
+    },
+    {
+      "dataset": "MEL_Ptacek2021_MIBI",
+      "name": "MIBI",
+      "technology": "MIBI",
+      "color": "#079EAA",
+      "available_units": 23,
+      "selected_unit_ids": [
+        "MEL_Ptacek2021_MIBI|R10C3",
+        "MEL_Ptacek2021_MIBI|R10C5",
+        "MEL_Ptacek2021_MIBI|R11C3",
+        "MEL_Ptacek2021_MIBI|R11C4",
+        "MEL_Ptacek2021_MIBI|R12C1",
+        "MEL_Ptacek2021_MIBI|R12C3",
+        "MEL_Ptacek2021_MIBI|R12C5",
+        "MEL_Ptacek2021_MIBI|R1C5",
+        "MEL_Ptacek2021_MIBI|R2C4",
+        "MEL_Ptacek2021_MIBI|R4C2",
+        "MEL_Ptacek2021_MIBI|R5C1",
+        "MEL_Ptacek2021_MIBI|R5C5",
+        "MEL_Ptacek2021_MIBI|R6C2",
+        "MEL_Ptacek2021_MIBI|R6C5",
+        "MEL_Ptacek2021_MIBI|R7C1",
+        "MEL_Ptacek2021_MIBI|R7C2",
+        "MEL_Ptacek2021_MIBI|R7C3",
+        "MEL_Ptacek2021_MIBI|R7C5",
+        "MEL_Ptacek2021_MIBI|R8C1",
+        "MEL_Ptacek2021_MIBI|R8C2",
+        "MEL_Ptacek2021_MIBI|R8C4",
+        "MEL_Ptacek2021_MIBI|R9C1",
+        "MEL_Ptacek2021_MIBI|R9C3"
+      ]
+    }
+  ],
+  "full_units": 46,
+  "ridge_units": 46,
+  "full_cells": 60000,
+  "ridge_cells": 60000,
+  "selection": "All units retained",
+  "selection_seed": 20260922,
+  "style": {
+    "fill_alpha": 0.82,
+    "line_width_pt": 0.35,
+    "line_color": "80% RGB of platform fill",
+    "line_alpha": 0.9,
+    "zero_density_outline": "continuous over full display range, including zero-density tails",
+    "bins": 160,
+    "sigma_bins": 6,
+    "range_quantiles": [
+      0.005,
+      0.995
+    ],
+    "range_reference": "Full frozen cohort, unchanged from prior figures",
+    "curve_height": 0.7,
+    "curve_spacing": 0.57,
+    "platform_gap": 0.36,
+    "peak_normalized": true
+  }
+}

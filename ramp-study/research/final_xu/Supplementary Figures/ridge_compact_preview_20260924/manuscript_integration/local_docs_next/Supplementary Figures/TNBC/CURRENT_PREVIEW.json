@@ -1,0 +1,20 @@
+{
+  "status": "accepted_and_deployed_to_bioarxiv_Ver2",
+  "version": "ridge_compact_20260924",
+  "folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/ridge_compact_preview_20260924/S2",
+  "png": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/ridge_compact_preview_20260924/output/png/s2_full_preview.png",
+  "pdf": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/ridge_compact_preview_20260924/S2/output/pdf/tnbc_benchmark_supplement.pdf",
+  "caption": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/TNBC/ridge_full_range_20260922/CAPTION.md",
+  "readme": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/TNBC/ridge_full_range_20260922/README_ZH.md",
+  "qa": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/TNBC/ridge_full_range_20260922/QA.json",
+  "cells": 62701,
+  "sample_units": 11,
+  "shared_markers": 11,
+  "figure1_rendering": "Four existing methods match Figure 1 pixel-for-pixel at matched size",
+  "updated": "2026-09-22",
+  "ridge_display_units": 11,
+  "ridge_display_cells": 62701,
+  "previous_folder": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924",
+  "revision": "Accepted compact display windows in specified method rows; all density estimates, cell selection, colors and UMAPs unchanged.",
+  "ridge_outline": "Original full-grid density; compact viewport may exclude very low tails without adding artificial zero endpoints."
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "final_xu.cytonorm.v1",
+  "method_label": "CytoNorm 2.0.6 (batch aggregates; benchmark-only preprocessing)",
+  "seed": 42,
+  "aggregate_cells_per_unit": 2000,
+  "flowsom": {
+    "nCells": 1000000,
+    "xdim": 15,
+    "ydim": 15,
+    "nClus": 10,
+    "rlen": 10,
+    "scale": false
+  },
+  "quantile": {
+    "nQ": 99,
+    "goal": "mean",
+    "limit": null
+  },
+  "input_sha256": "ea883d15fd3f1f3e621002f8c3a3e91e833c8b68965918e891293d77806da013",
+  "markers_sha256": "af94ca61aed37d00fc8df1c273970aa82ea660cc9312222951a55a1568cc9809",
+  "preprocessing_file": "/Users/qxu6/Documents/New project/final_xu/algorithm_test/cytonorm_validation/results/bone_marrow/prepared/preprocessing.json",
+  "preprocessing_sha256": "6478ec419f9bbd972cd8cc0b55f535c97cf80c410662d8036a3ae4e3e54beb35",
+  "code_hashes": {
+    "run_cytonorm.R": "f0bfeb575576c299564ca459b57bb4c02788d6277917d858becf4b34d9d7ec52",
+    "bootstrap_library.R": "116852846ba360fad0177fff13aac39f2deabbfb3abd88d7ef412baa6aed5d74",
+    "cytonorm_repro.R": "a94f4d4be22eceb63efd777c1024434748a18126fbd918f7a6d2bef041770105"
+  },
+  "upstream_lock_sha256": "e93e99c4d357df379bdff2780945c32ea32e7b3dcb287f79800e628a24d78b12",
+  "runtime_lock_sha256": "9fc1cfec2a58cf20680ddbc9c786580d2f3965b558e9ce14f7f4d1ee76408138"
+}

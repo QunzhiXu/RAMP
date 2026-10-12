@@ -1,0 +1,29 @@
+{
+  "schema_version": "final_xu.cycombine_repro.v1",
+  "cell_id_column": "cell_id",
+  "batch_column": "dataset",
+  "sample_column": "unit_key",
+  "batch_levels": [
+    "Tietscher IMC",
+    "Meyer IMC",
+    "Shiao CODEX"
+  ],
+  "input_scale": {
+    "status": "analysis_ready",
+    "description": "Tietscher and Meyer provider exprs assays equal asinh(counts/1); Shiao frozen compartment means receive one explicitly declared comparator-adaptation asinh(x/1); algorithm/cycombine applies no transform.",
+    "provenance_file": "../preprocessing/preprocessing_manifest.json",
+    "algorithm_applies_transformation": false
+  },
+  "algorithm_parameters": {
+    "xdim": 8,
+    "ydim": 8,
+    "rlen": 10,
+    "seed": 840,
+    "norm_method": "rank",
+    "ties_method": "average",
+    "parametric": true,
+    "covariate": null,
+    "anchor": null
+  }
+}
+

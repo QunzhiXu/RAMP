@@ -1,0 +1,20 @@
+{
+  "status": "rendered_and_verified",
+  "version": "raw_labels_20260924",
+  "folder": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924",
+  "png": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924/output/png/figure_s2_tnbc.png",
+  "pdf": "/Users/qxu6/Documents/New project/final_xu/figure_raw_labels_20260924/output/pdf/figure_s2_tnbc.pdf",
+  "caption": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/TNBC/ridge_full_range_20260922/CAPTION.md",
+  "readme": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/TNBC/ridge_full_range_20260922/README_ZH.md",
+  "qa": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/TNBC/ridge_full_range_20260922/QA.json",
+  "cells": 62701,
+  "sample_units": 11,
+  "shared_markers": 11,
+  "figure1_rendering": "Four existing methods match Figure 1 pixel-for-pixel at matched size",
+  "updated": "2026-09-22",
+  "ridge_display_units": 11,
+  "ridge_display_cells": 62701,
+  "previous_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/TNBC/ridge_full_range_20260922",
+  "revision": "Raw label only; full density range and all other pixels unchanged.",
+  "ridge_outline": "Full-support density with endpoints at baseline"
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "maxfuse_repro.PairwiseConfig.v1",
+  "method": "centroid_shrinkage",
+  "batching": {
+    "max_outward_size": 5000,
+    "matching_ratio": 3.0,
+    "metacell_size": 2,
+    "method": "random",
+    "batching_scheme": "pairwise",
+    "prebatching_smoothing": false,
+    "shared_wt1": 1.0,
+    "shared_wt2": 1.0,
+    "active_wt1": 1.0,
+    "active_wt2": 1.0,
+    "shared_svd_components1": null,
+    "shared_svd_components2": null,
+    "active_svd_components1": null,
+    "active_svd_components2": null,
+    "randomized_svd": false,
+    "svd_runs": 1,
+    "seed": 20260830
+  },
+  "graph": {
+    "n_neighbors1": 15,
+    "n_neighbors2": 15,
+    "svd_components1": null,
+    "svd_components2": null,
+    "resolution1": 2.0,
+    "resolution2": 2.0,
+    "randomized_svd": false,
+    "svd_runs": 1,
+    "resolution_tol": 0.1,
+    "leiden_runs": 1,
+    "metric": "correlation",
+    "leiden_seed": 20260830
+  },
+  "initial": {
+    "wt1": 0.7,
+    "wt2": 0.7,
+    "svd_components1": null,
+    "svd_components2": null,
+    "randomized_svd": false,
+    "svd_runs": 1
+  },
+  "refine": {
+    "wt1": 0.7,
+    "wt2": 0.7,
+    "svd_components1": null,
+    "svd_components2": null,
+    "cca_components": 12,
+    "filter_prop": 0.0,
+    "n_iters": 3,
+    "randomized_svd": false,
+    "svd_runs": 1,
+    "cca_max_iter": 2000
+  },
+  "pivot_filter_prop": 0.3,
+  "propagation": {
+    "enabled": false,
+    "wt1": 0.7,
+    "wt2": 0.7,
+    "svd_components1": null,
+    "svd_components2": null,
+    "metric": "euclidean",
+    "randomized_svd": false,
+    "svd_runs": 1,
+    "filter_prop": 0.0,
+    "full_matching_order": null
+  },
+  "numpy_seed": 20260830
+}

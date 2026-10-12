@@ -1,0 +1,43 @@
+{
+  "algorithm_parameters": {
+    "alpha": 0.2,
+    "block_size": 0.05,
+    "early_stop": true,
+    "epsilon_cluster": 0.001,
+    "epsilon_harmony": 0.01,
+    "lambda": 1.0,
+    "max_iter": 10,
+    "max_iter_cluster": 20,
+    "nclust_policy": "min(round(n_cells / 30), 100)",
+    "ncores": 1,
+    "normal_kind": "Inversion",
+    "plot_convergence": false,
+    "return_object": false,
+    "rng_kind": "Mersenne-Twister",
+    "sample_kind": "Rejection",
+    "seed": 42,
+    "sigma": 0.1,
+    "tau": 0.0,
+    "theta": 2.0
+  },
+  "batch_column": "dataset",
+  "batch_levels": [
+    "MEL_Hickey2023_CODEX",
+    "MEL_Hoch2021_IMC",
+    "MEL_Ptacek2021_MIBI"
+  ],
+  "cell_id_column": "cell_id",
+  "input_scale": {
+    "algorithm_applies_transformation": false,
+    "description": "ADTnorm official fixed element-wise transform asinh(1 + x/5).",
+    "input_sha256": "5e463d0b68166c64b1e43d9948fa56141999337f914f8a3958a2fcb4cea7fdba",
+    "marker_file_sha256": "9314e9a8dfe93fa305cda18ddd0ad6e63a1c4c22693106f2c7ec5cef43d1b5ec",
+    "name": "ADTnorm_fixed_arcsinh_a1_b1over5_c0",
+    "preprocessing_record_file": "/Users/qxu6/Documents/New project/final_xu/benchmark_results/melanoma/harmony/adtnorm_fixed_arcsinh/preprocessing/preprocessing_record.txt",
+    "preprocessing_record_sha256": "25858ebb4dfda85d99c2324a0f1542a7edfabcc85ab5557d87fd476685dbfd9c",
+    "status": "analysis_ready"
+  },
+  "method_label": "Harmony-direct (ADTnorm protocol; no PCA)",
+  "sample_column": "unit_key",
+  "schema_version": "final_xu.harmony_direct.v1"
+}

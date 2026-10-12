@@ -1,0 +1,32 @@
+{
+  "schema_version": "final_xu.maxfuse_benchmark.v2",
+  "benchmark_slug": "lung_cancer",
+  "benchmark_title": "Lung cancer",
+  "shared_markers": ["CD3", "CD4", "CD8", "CD31", "HLA_DR", "KI67", "VIMENTIN", "EPI"],
+  "datasets": [
+    {"name": "Senosain CyTOF", "slug": "senosain_cytof", "display": "Senosain CyTOF", "expected_cells": 20000, "shared_input": "benchmark_data/lung_cancer/senosain_cytof/alignment_input_8.csv.gz", "input_protocol": {"name": "raw_no_transform", "description": "Exact canonical raw/source-scale values; float64 conversion only; no transformation."}},
+    {"name": "Cords IMC", "slug": "cords_imc", "display": "Cords IMC", "expected_cells": 20000, "shared_input": "benchmark_data/lung_cancer/cords_imc/alignment_input_8.csv.gz", "input_protocol": {"name": "raw_no_transform", "description": "Exact canonical raw/source-scale values; float64 conversion only; no transformation."}},
+    {"name": "Monkman CODEX", "slug": "monkman_codex", "display": "Monkman CODEX", "expected_cells": 20000, "shared_input": "benchmark_data/lung_cancer/monkman_codex/alignment_input_8.csv.gz", "input_protocol": {"name": "raw_no_transform", "description": "Exact canonical raw/source-scale values; float64 conversion only; no transformation."}}
+  ],
+  "expected_cells": 60000,
+  "combined_shared_reference_npy": "benchmark_data/lung_cancer/input/raw.npy",
+  "display_metadata": "benchmark_data/lung_cancer/relabel/relabeled_metadata.csv.gz",
+  "label_column": "display_label",
+  "missing_label": "Mix",
+  "base_seed": 20260830,
+  "feature_protocol": {"active_mode": "shared_only", "description": "The active panel intentionally reuses the shared panel for this equal-information benchmark."},
+  "fit_sampling": {"strategy": "unit_balanced", "cap_per_dataset": 4000, "drop_zero_within_cell_variance": true, "reuse_across_hubs": true},
+  "pairwise_config": "benchmark_results/lung_cancer/maxfuse/pairwise_config.json",
+  "three_view_extension": {"method": "MaxFuse pairwise hub-pivot chaining + independent ridge MAXVAR-GCCA", "pca_components": 8, "gcca_components": 8, "gcca_ridge": 0.001, "outer_reuse_policy": "allow"},
+  "umap": {"n_neighbors": 30, "min_dist": 0.12, "init_kind": "gaussian_seed42"},
+  "dataset_colors": {"Senosain CyTOF": "#1F77B4", "Cords IMC": "#8C564B", "Monkman CODEX": "#9EDAE5"},
+  "palette": [
+    {"label": "Tumor/Epithelial", "color": "#D73027", "legend_order": 0, "draw_order": 0, "point_size": 0.66, "alpha": 0.52},
+    {"label": "CD4 T", "color": "#E78AC3", "legend_order": 1, "draw_order": 6, "point_size": 0.72, "alpha": 0.78},
+    {"label": "CD8 T", "color": "#D95F02", "legend_order": 2, "draw_order": 2, "point_size": 0.72, "alpha": 0.74},
+    {"label": "B-like", "color": "#1F78B4", "legend_order": 3, "draw_order": 5, "point_size": 0.72, "alpha": 0.78},
+    {"label": "Myeloid", "color": "#E6AB02", "legend_order": 4, "draw_order": 4, "point_size": 0.72, "alpha": 0.74},
+    {"label": "Endothelial", "color": "#17BECF", "legend_order": 5, "draw_order": 3, "point_size": 0.72, "alpha": 0.74},
+    {"label": "Mix", "color": "#9CA3AF", "legend_order": 6, "draw_order": 1, "point_size": 0.60, "alpha": 0.34}
+  ]
+}

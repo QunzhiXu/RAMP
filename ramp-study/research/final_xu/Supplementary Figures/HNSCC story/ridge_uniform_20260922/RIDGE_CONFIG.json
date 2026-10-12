@@ -1,0 +1,79 @@
+{
+  "case": "HNSCC story",
+  "original_folder": "/Users/qxu6/Documents/New project/final_xu/Supplementary Figures/HNSCC story/layout_v1_story94488",
+  "palette_mode": "fixed_technology_across_all_seven_figures",
+  "platforms": [
+    {
+      "dataset": "GSE212797_ADT",
+      "name": "CITE-seq",
+      "technology": "CITE-seq",
+      "color": "#9B76B5",
+      "available_units": 3,
+      "selected_unit_ids": [
+        "GSE212797_126",
+        "GSE212797_indiv_1",
+        "GSE212797_indiv_2"
+      ]
+    },
+    {
+      "dataset": "Haist_CODEX",
+      "name": "CODEX",
+      "technology": "CODEX",
+      "color": "#2775B6",
+      "available_units": 74,
+      "selected_unit_ids": [
+        "HAIST_11611",
+        "HAIST_14937",
+        "HAIST_16965",
+        "HAIST_1764",
+        "HAIST_190",
+        "HAIST_22717",
+        "HAIST_23138",
+        "HAIST_2331",
+        "HAIST_2427",
+        "HAIST_2612",
+        "HAIST_27355",
+        "HAIST_29770",
+        "HAIST_31596",
+        "HAIST_33808",
+        "HAIST_35029",
+        "HAIST_37394",
+        "HAIST_3845",
+        "HAIST_40137",
+        "HAIST_4208",
+        "HAIST_46311",
+        "HAIST_46475",
+        "HAIST_4945",
+        "HAIST_8451",
+        "HAIST_85",
+        "HAIST_8508",
+        "HAIST_9566",
+        "HAIST_9808"
+      ]
+    }
+  ],
+  "full_units": 77,
+  "ridge_units": 30,
+  "full_cells": 94488,
+  "ridge_cells": 47488,
+  "selection": "Display-only subset: deterministic SHA256 ranking of 20260922|dataset|unit ID; smallest hashes selected within platform; no expression, method or performance used",
+  "selection_seed": 20260922,
+  "style": {
+    "fill_alpha": 0.82,
+    "line_width_pt": 0.35,
+    "line_color": "80% RGB of platform fill",
+    "line_alpha": 0.9,
+    "zero_density_outline": "continuous over full display range, including zero-density tails",
+    "bins": 160,
+    "sigma_bins": 6,
+    "range_quantiles": [
+      0.005,
+      0.995
+    ],
+    "range_reference": "Full frozen cohort, unchanged from prior figures",
+    "curve_height": 0.7,
+    "curve_spacing": 0.57,
+    "platform_gap": 0.36,
+    "peak_normalized": true
+  }
+}

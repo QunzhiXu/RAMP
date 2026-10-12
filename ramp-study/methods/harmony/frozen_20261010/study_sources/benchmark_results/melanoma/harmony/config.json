@@ -1,0 +1,42 @@
+{
+  "schema_version": "final_xu.harmony_benchmark.v1",
+  "benchmark": "melanoma",
+  "display_name": "Melanoma",
+  "input": {
+    "kind": "combined_npy",
+    "matrix": "benchmark_data/melanoma/input/raw.npy",
+    "fit_metadata": "benchmark_data/melanoma/input/fit_metadata.csv.gz",
+    "identity_metadata": "benchmark_data/melanoma/selected_cells.csv.gz",
+    "marker_file": "benchmark_data/melanoma/input/markers.txt",
+    "source_scale_note": "Frozen provider/source analysis-ready CODEX, IMC, and MIBI values, including legitimate negative source values; not a common raw-count scale."
+  },
+  "expected": {
+    "cells": 60000,
+    "markers": ["CD163", "CD3", "CD31", "CD68", "CD8", "HLA_DR", "LAG3", "PD1", "PDL1", "SMA", "SOX10", "VIMENTIN"],
+    "dataset_order": ["MEL_Hickey2023_CODEX", "MEL_Hoch2021_IMC", "MEL_Ptacek2021_MIBI"],
+    "dataset_counts": {"MEL_Hickey2023_CODEX": 20000, "MEL_Hoch2021_IMC": 20000, "MEL_Ptacek2021_MIBI": 20000}
+  },
+  "umap": {
+    "parameters": {"n_neighbors": 30, "min_dist": 0.15, "metric": "euclidean", "random_state": 42, "transform_seed": 42, "n_jobs": 1, "low_memory": true},
+    "initialization": {
+      "kind": "spectral"
+    }
+  },
+  "display": {
+    "relabel_file": "benchmark_data/melanoma/relabel/relabeled_metadata.csv.gz",
+    "palette_file": "benchmark_data/melanoma/relabel/display_palette.csv",
+    "dataset_colors": {"MEL_Hickey2023_CODEX": "#2F6FB0", "MEL_Hoch2021_IMC": "#E58A2B", "MEL_Ptacek2021_MIBI": "#38A169"},
+    "dataset_display": {"MEL_Hickey2023_CODEX": "Hickey CODEX", "MEL_Hoch2021_IMC": "Hoch IMC", "MEL_Ptacek2021_MIBI": "Ptacek MIBI"},
+    "shuffle_dataset_points": true,
+    "shuffle_seed": 42,
+    "dataset_point_size": 0.62,
+    "dataset_alpha": 0.68,
+    "figure_size": [12.2, 5.7],
+    "celltype_legend_y": 0.065,
+    "celltype_legend_ncol": 5,
+    "celltype_legend_fontsize": 7.6,
+    "dataset_legend_y": 0.016,
+    "dataset_legend_fontsize": 8.0,
+    "layout_bottom": 0.17
+  }
+}

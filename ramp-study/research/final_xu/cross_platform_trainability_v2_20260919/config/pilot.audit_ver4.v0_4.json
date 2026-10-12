@@ -1,0 +1,58 @@
+{
+  "name": "e2e_pilot_bone_v0_3",
+  "mode": "pilot",
+  "seed": 20260919,
+  "pilot_cells_per_dataset": 3000,
+  "alignment_timeout_seconds": 7200,
+  "output": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/audit_ver4_j4_pilot_v0_4",
+  "jobs": [
+    {
+      "id": "J4_unaligned",
+      "task": "bone_marrow",
+      "task_type": "J4",
+      "method": "unaligned",
+      "sources": [
+        "BM CODEX",
+        "BM CyTOF"
+      ],
+      "target": "Triana AbSeq",
+      "seed": 20260919,
+      "pretrain": {
+        "corpus_per_half": 100,
+        "pretrain_validation_per_source": 50,
+        "probe_fit": 128,
+        "probe_validation": 64,
+        "pretrain_updates": 20,
+        "supervised_updates": 20,
+        "validation_every": 5,
+        "width": 16
+      }
+    },
+    {
+      "id": "J4_ramp",
+      "task": "bone_marrow",
+      "task_type": "J4",
+      "method": "ramp",
+      "sources": [
+        "BM CODEX",
+        "BM CyTOF"
+      ],
+      "target": "Triana AbSeq",
+      "seed": 20260919,
+      "pretrain": {
+        "corpus_per_half": 100,
+        "pretrain_validation_per_source": 50,
+        "probe_fit": 128,
+        "probe_validation": 64,
+        "pretrain_updates": 20,
+        "supervised_updates": 20,
+        "validation_every": 5,
+        "width": 16
+      }
+    }
+  ],
+  "representation_root": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/validation/audit_ver4_j4_pilot_v0_4/representations",
+  "input_root": "/Users/qxu6/Documents/New project/final_xu/cross_platform_trainability_v2_20260919/data/real_inputs_v0_3",
+  "pilot_amendment": "Validation budget reduced after source-ID feasibility check (98 available CODEX validation cells); no target score used. First pilot preserved.",
+  "regression_note": "Audit Ver4 refactor regression only. Same frozen input, subset name, seeds, budgets and hyperparameters as v0.3; fresh representations; not a performance search."
+}

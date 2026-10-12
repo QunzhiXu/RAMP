@@ -1,0 +1,32 @@
+[
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/summary_steps3_6/05_immune_environment/PATIENT_SUMMARY.csv",
+    "local": "data/PATIENT_SUMMARY.csv",
+    "sha256": "093e1370e5c2ffb17f2dfaac2e14d28b451a06e776d18e6a7f20b828f14a877a"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/summary_steps3_6/05_immune_environment/COMPOSITION_COMPARISONS.csv",
+    "local": "data/COMPOSITION_COMPARISONS.csv",
+    "sha256": "34edbda4cf23634cde6c595ed5aab1d03cc2eee99ed28280df5169c26a62fa73"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/summary_steps3_6/05_immune_environment/COMPOSITION_ADJUSTED.csv",
+    "local": "data/COMPOSITION_ADJUSTED.csv",
+    "sha256": "27bf49615a9dfb08d8335aefddcfff84fba8f76685884a2cae838efcd7a9382b"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/mechanism_support/patient_immune/results/PATIENT_IMMUNE_COMPOSITION.csv",
+    "local": "data/PATIENT_IMMUNE_COMPOSITION.csv",
+    "sha256": "d8119488f724e71f93a9d91c70f1ce89bf779d329aaf4827898f4e875542a171"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/summary_steps3_6/06_DFS/KM_PATIENTS.csv",
+    "local": "provenance/KM_PATIENTS.csv",
+    "sha256": "57c987915f60f9769ff4144d1c6db2dbf088119cb3a8bd46d948f8bd5e69ed0c"
+  },
+  {
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/summary_steps3_6/06_DFS/KM_SUMMARY.csv",
+    "local": "provenance/KM_SUMMARY.csv",
+    "sha256": "0d77e4def4036e4e1c7b560a338195fbef3d10b4c6b0902429c0914942bc5358"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "panel": "A",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/Figure/Panel A/panel_A_workflow.svg",
+    "local": "inputs/panel_A_workflow.svg",
+    "sha256": "5adad6c82fd8315f2b628d89263e5a93b67c95e3f9172b159b58af41d2762ed1"
+  },
+  {
+    "panel": "B",
+    "source": "/Users/qxu6/Documents/New project/final_xu/story_lung_HLA_ABC/Figure/Panel B/panel_B_alignment.svg",
+    "local": "inputs/panel_B_alignment.svg",
+    "sha256": "7db516e7859188b4c2f815cfedfe7402547777804591bbf8499296cd8159bc23"
+  }
+]
