@@ -5,12 +5,10 @@ shared protein markers across two or three single-cell or spatial proteomics
 datasets. It returns a corrected marker matrix rather than only a latent
 embedding and introduces no strict within-unit marker-rank inversions.
 
-This repository packages the audited canonical RAMP 2.3.0 implementation used
-by the manuscript. The numerical algorithm is unchanged; the package adds a
-stable Python interface, command-line runner, validated file formats,
-provenance manifests, tests, and synthetic examples. One frozen lung benchmark
-used a documented historical pair-fit-size override rather than the canonical
-defaults; see [docs/reproducibility.md](docs/reproducibility.md).
+This package provides the RAMP 2.3.0 implementation with a Python API,
+command-line interface, file readers, tests and synthetic examples.
+Paper-specific settings, including the lung benchmark's pair-fit sizes,
+are described in [docs/reproducibility.md](docs/reproducibility.md).
 
 ## Associated preprint
 
@@ -21,8 +19,7 @@ RAMP is described in:
 > Proteomics.** bioRxiv (2026).
 > [https://doi.org/10.64898/2026.09.25.754510](https://doi.org/10.64898/2026.09.25.754510)
 
-This is a local release candidate. See the repository-root `RELEASE_GATES.md`
-before distribution. Installation commands below run inside `ramp-proteomics/`.
+Installation commands below run inside `ramp-proteomics/`.
 
 ## Installation
 
@@ -40,8 +37,7 @@ pytest
 ```
 
 The distribution name is `ramp-proteomics`; the Python import is
-`ramp_proteomics`. Public PyPI release requires separate distribution
-authorization and confirmation of the distribution name.
+`ramp_proteomics`. Install from this repository using the commands above.
 
 ## Python quick start
 
@@ -168,13 +164,8 @@ numerical package versions and runtime environment are recorded in
 Numerical changes to the algorithm require a new algorithm version and golden
 regression against the frozen 2.3.0 implementation.
 
-## Development status and license
+## License
 
-This is a beta publication package. No provider raw data are included.
-The original package code and documentation use **CC BY-NC-ND 4.0**, matching
-the associated preprint at the package owner's express instruction. See
-[`LICENSE`](LICENSE), [`LEGAL_STATUS.md`](LEGAL_STATUS.md) and
-[`AUTHORS.md`](AUTHORS.md). The license restricts commercial use and sharing
-adapted material; this is not a permissive or OSI-approved open-source license.
-Third-party dependencies retain their own terms. This local candidate has not
-been uploaded, and its license choice is not upload authorization.
+Original package code and documentation are licensed under **CC BY-NC-ND 4.0**.
+See [LICENSE](LICENSE) and [AUTHORS.md](AUTHORS.md). Third-party dependencies
+retain their own terms.

@@ -12,8 +12,8 @@
       "sha256": "b952d67a521a635bef08369f5232a422c7400c4f85b116146650f62c6995d30e"
     },
     "README.md": {
-      "bytes": 3360,
-      "sha256": "465b3272d1e9f9f7f520b3a231915c318caf0c308d65be36f7695e01ad9905b7"
+      "bytes": 3801,
+      "sha256": "6cfe87d65658226aa7121d55055c593c9756ff65187bf26429cef60fc56335e0"
     },
     "RELEASE_GATES.md": {
       "bytes": 2725,
@@ -60,8 +60,8 @@
       "sha256": "8809be3d3cf19e24dd2cd44feede14f6e398c6bfd9c455b7b22c9771fc726a48"
     },
     "ramp-proteomics/README.md": {
-      "bytes": 7232,
-      "sha256": "532c09a989106d951ac6984fa4a25387e25e943df398893d76cccafd2359cea4"
+      "bytes": 6486,
+      "sha256": "59976d35a144e9c09e36dde96c7c298d3567e5065bdd9bef0dadc988b96d72da"
     },
     "ramp-proteomics/docs/input-format.md": {
       "bytes": 5676,
@@ -176,8 +176,8 @@
       "sha256": "c4d3adf023aa40f7f505e3536a5cec3b3596146972efe192b657e70488982237"
     },
     "ramp-study/README.md": {
-      "bytes": 3967,
-      "sha256": "90c63b7f70c7e45fc564fd53bfd93f12c37fe8a0a43e40e7145e724a42a13cb0"
+      "bytes": 3316,
+      "sha256": "6656de6c02af6bc4e28c396fb269dd2f375a4c7d30d411bf35127d8b1d5070b0"
     },
     "ramp-study/SOURCE_COVERAGE.json": {
       "bytes": 8426133,
